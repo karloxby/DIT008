@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discrete Math: Direct Proofs & Counterexamples</title>
+<style>
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --panel-2: #20242d;
+  --text: #eef2f7;
+  --muted: #9ba7b4;
+  --accent: #7cc4ff;
+  --good: #7ee787;
+  --bad: #ff7b72;
+  --border: #2b313c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #18202b 0, var(--bg) 42%);
+  color: var(--text);
+  min-height: 100vh;
+}
+button, input, select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+.app {
+  width: min(1100px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 28px 0 50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+.subtitle {
+  color: var(--muted);
+  max-width: 720px;
+  line-height: 1.5;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(88px, 1fr));
+  gap: 8px;
+  min-width: 300px;
+}
+.stat {
+  background: rgba(23,26,33,.92);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+}
+.stat strong {
+  display: block;
+  font-size: 1.35rem;
+}
+.stat span {
+  color: var(--muted);
+  font-size: .78rem;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.tab {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+.tab.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+.card {
+  background: rgba(23,26,33,.96);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: clamp(18px, 3vw, 30px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.22);
+}
+.mode { display: none; }
+.mode.active { display: block; }
+.question-type {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .76rem;
+  margin-bottom: 10px;
+}
+.question {
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+  line-height: 1.45;
+  margin-bottom: 20px;
+}
+.math {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  background: #11151b;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 3px 7px;
+}
+.choices {
+  display: grid;
+  gap: 10px;
+}
+.choice {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  padding: 14px;
+  border-radius: 13px;
+}
+.choice:hover {
+  border-color: #4d5969;
+}
+.choice.correct {
+  border-color: var(--good);
+  background: rgba(126,231,135,.08);
+}
+.choice.wrong {
+  border-color: var(--bad);
+  background: rgba(255,123,114,.08);
+}
+.feedback {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 13px;
+  background: #11151b;
+  border: 1px solid var(--border);
+  line-height: 1.5;
+}
+.feedback.good { border-color: var(--good); }
+.feedback.bad { border-color: var(--bad); }
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.primary, .secondary {
+  border-radius: 12px;
+  padding: 11px 16px;
+}
+.primary {
+  background: var(--accent);
+  color: #08111a;
+  border: none;
+  font-weight: 700;
+}
+.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.proof-bank, .proof-order {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.proof-step {
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  padding: 12px 14px;
+  border-radius: 12px;
+  user-select: none;
+}
+.proof-step:hover {
+  border-color: var(--accent);
+}
+.proof-step.selected {
+  opacity: .45;
+}
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+.field label {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 6px;
+  font-size: .85rem;
+}
+.field input {
+  width: 100%;
+  background: #11151b;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 11px 12px;
+}
+.reference {
+  display: grid;
+  gap: 12px;
+}
+.ref-section {
+  background: #11151b;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.ref-section h3 {
+  margin: 0 0 10px;
+}
+.ref-section p, .ref-section li {
+  color: #d4dbe4;
+  line-height: 1.5;
+}
+.small {
+  color: var(--muted);
+  font-size: .86rem;
+}
+.progress {
+  height: 8px;
+  background: #0d1015;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+.progress > div {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  transition: width .2s ease;
+}
+@media (max-width: 760px) {
+  header { flex-direction: column; }
+  .stats { min-width: 0; width: 100%; }
+  .counter-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div>
+      <h1>Discrete Math Proof Game</h1>
+      <div class="subtitle">
+        Practice direct proofs, counterexamples, rational numbers, parity, and divisibility from your lecture notes.
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong id="score">0</strong><span>Score</span></div>
+      <div class="stat"><strong id="streak">0</strong><span>Streak</span></div>
+      <div class="stat"><strong id="answered">0</strong><span>Answered</span></div>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-mode="quiz">Concept Quiz</button>
+    <button class="tab" data-mode="proof">Proof Builder</button>
+    <button class="tab" data-mode="counter">Counterexample Lab</button>
+    <button class="tab" data-mode="reference">Reference</button>
+  </div>
+
+  <div class="card">
+    <section id="quiz" class="mode active">
+      <div class="progress"><div id="quizProgress"></div></div>
+      <div class="question-type" id="quizType"></div>
+      <div class="question" id="quizQuestion"></div>
+      <div class="choices" id="quizChoices"></div>
+      <div id="quizFeedback"></div>
+      <div class="actions">
+        <button class="primary" id="nextQuiz">Next question</button>
+      </div>
+    </section>
+
+    <section id="proof" class="mode">
+      <div class="question-type">Proof Builder</div>
+      <div class="question" id="proofQuestion"></div>
+      <div class="small">Click the proof steps in the order they should appear.</div>
+      <div class="proof-bank" id="proofBank"></div>
+      <h3>Your proof</h3>
+      <div class="proof-order" id="proofOrder"></div>
+      <div id="proofFeedback"></div>
+      <div class="actions">
+        <button class="primary" id="checkProof">Check proof</button>
+        <button class="secondary" id="resetProof">Reset</button>
+        <button class="secondary" id="newProof">New proof</button>
+      </div>
+    </section>
+
+    <section id="counter" class="mode">
+      <div class="question-type">Counterexample Lab</div>
+      <div class="question">
+        Disprove the statement:
+        <br><br>
+        <span class="math">∀ a,b ∈ ℝ, if a² = b², then a = b</span>
+      </div>
+      <div class="small">Enter values for a and b that make the hypothesis true and the conclusion false.</div>
+      <div class="counter-grid">
+        <div class="field">
+          <label for="aVal">a</label>
+          <input id="aVal" type="number" step="any">
+        </div>
+        <div class="field">
+          <label for="bVal">b</label>
+          <input id="bVal" type="number" step="any">
+        </div>
+      </div>
+      <div id="counterFeedback"></div>
+      <div class="actions">
+        <button class="primary" id="checkCounter">Test counterexample</button>
+        <button class="secondary" id="randomCounter">Give me a valid random one</button>
+      </div>
+    </section>
+
+    <section id="reference" class="mode">
+      <div class="reference">
+        <div class="ref-section">
+          <h3>Parity</h3>
+          <p><span class="math">n even ⇔ ∃k ∈ ℤ such that n = 2k</span></p>
+          <p><span class="math">n odd ⇔ ∃k ∈ ℤ such that n = 2k + 1</span></p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Prime and composite</h3>
+          <p>A positive integer n is prime when n &gt; 1 and its only positive divisors are 1 and n.</p>
+          <p>A positive integer greater than 1 is composite when it is not prime.</p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Existential proof</h3>
+          <p>To prove <span class="math">∃x ∈ D such that P(x)</span>, give one specific x in D for which P(x) is true.</p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Counterexamples</h3>
+          <p>The negation of <span class="math">∀x ∈ D, P(x) → Q(x)</span> is <span class="math">∃x ∈ D such that P(x) ∧ ¬Q(x)</span>.</p>
+          <p>A counterexample is one element for which the hypothesis is true and the conclusion is false.</p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Direct proof</h3>
+          <p>Choose an arbitrary element satisfying the hypothesis. Use definitions and established facts to show that the conclusion follows. Because the element was arbitrary, the result holds universally.</p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Rational numbers</h3>
+          <p><span class="math">r ∈ ℚ ⇔ ∃a,b ∈ ℤ such that r = a/b and b ≠ 0</span></p>
+          <p>Every integer is rational because <span class="math">r = r/1</span>.</p>
+        </div>
+
+        <div class="ref-section">
+          <h3>Divisibility</h3>
+          <p><span class="math">d | n ⇔ ∃q ∈ ℤ such that n = qd</span>, with d ≠ 0.</p>
+          <p>The expression <span class="math">d | n</span> is a proposition. It is not a number.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+const state = {
+  score: 0,
+  streak: 0,
+  answered: 0,
+  quizIndex: 0,
+  currentProof: 0,
+  proofSelection: []
+};
+
+const quiz = [
+  {
+    type: "Definition",
+    q: "Which statement correctly defines an even integer n?",
+    options: [
+      "For every k ∈ ℤ, n = 2k",
+      "There exists k ∈ ℤ such that n = 2k",
+      "There exists k ∈ ℝ such that n = 2k",
+      "n = 2"
+    ],
+    answer: 1,
+    explain: "Evenness is existential: one integer k must exist such that n = 2k."
+  },
+  {
+    type: "Counterexample",
+    q: "To disprove ∀x ∈ D, P(x) → Q(x), what must a counterexample satisfy?",
+    options: [
+      "P(x) is false and Q(x) is true",
+      "P(x) and Q(x) are both false",
+      "P(x) is true and Q(x) is false",
+      "P(x) and Q(x) are both true"
+    ],
+    answer: 2,
+    explain: "A conditional is false exactly when its hypothesis is true and its conclusion is false."
+  },
+  {
+    type: "Direct proof",
+    q: "Why can a direct proof begin by choosing an arbitrary element of the domain?",
+    options: [
+      "Because arbitrary means random",
+      "Because proving the claim for an arbitrary qualifying element makes the reasoning reusable for every such element",
+      "Because examples prove universal statements",
+      "Because the domain must be finite"
+    ],
+    answer: 1,
+    explain: "The chosen element is particular but unrestricted. The proof cannot depend on a special choice."
+  },
+  {
+    type: "Common mistake",
+    q: "Let m and n be odd. Which setup is correct?",
+    options: [
+      "m = 2k + 1 and n = 2k + 1 for the same k",
+      "m = 2r + 1 and n = 2s + 1 for some r,s ∈ ℤ",
+      "m = 2r and n = 2s",
+      "m = r + 1 and n = s + 1"
+    ],
+    answer: 1,
+    explain: "m and n may be different odd integers, so their witnesses need not be the same integer."
+  },
+  {
+    type: "Rational numbers",
+    q: "Why is every integer r rational?",
+    options: [
+      "Because r = r/0",
+      "Because r = 1/r",
+      "Because r = r/1, with r and 1 integers and denominator nonzero",
+      "Because every real number is rational"
+    ],
+    answer: 2,
+    explain: "Writing r as r/1 satisfies the definition of a rational number."
+  },
+  {
+    type: "Divisibility",
+    q: "What does d | n mean?",
+    options: [
+      "d/n is an integer",
+      "n = qd for some q ∈ ℤ",
+      "d = qn for every q ∈ ℤ",
+      "d is smaller than n"
+    ],
+    answer: 1,
+    explain: "d divides n exactly when n is an integer multiple of d."
+  },
+  {
+    type: "Proof logic",
+    q: "In a proof that the sum of two rational numbers is rational, why must bd ≠ 0?",
+    options: [
+      "Because products are always positive",
+      "Because b and d are nonzero, so their product is nonzero",
+      "Because a and c are integers",
+      "Because rational numbers cannot be negative"
+    ],
+    answer: 1,
+    explain: "The denominator must be nonzero. Since b ≠ 0 and d ≠ 0, the zero-product property gives bd ≠ 0."
+  },
+  {
+    type: "Divisibility theorem",
+    q: "Suppose a,b ∈ ℤ⁺ and a | b. From b = qa and a,b > 0, what can you conclude about q?",
+    options: [
+      "q = 0",
+      "q < 0",
+      "q ≥ 1",
+      "q is irrational"
+    ],
+    answer: 2,
+    explain: "q is an integer and must be positive, so q ≥ 1."
+  },
+  {
+    type: "Notation",
+    q: "Which expression is a proposition rather than a numerical value?",
+    options: [
+      "4 + 8",
+      "8/4",
+      "4 | 8",
+      "2 × 4"
+    ],
+    answer: 2,
+    explain: "4 | 8 means '4 divides 8'. It has a truth value rather than a numeric value."
+  },
+  {
+    type: "Proof writing",
+    q: "Which sentence best separates what is known from what is to be shown?",
+    options: [
+      "Since mn is odd, mn is odd.",
+      "Let m,n be odd. We must show that mn is odd.",
+      "Examples suggest mn is odd.",
+      "Assume mn is odd because that is the theorem."
+    ],
+    answer: 1,
+    explain: "A good proof states the hypothesis and clearly identifies the target before deriving it."
+  }
+];
+
+const proofs = [
+  {
+    q: "Build a proof: The sum of any two even integers is even.",
+    steps: [
+      "Let m,n ∈ ℤ be even.",
+      "By definition of even, m = 2r and n = 2s for some r,s ∈ ℤ.",
+      "Then m + n = 2r + 2s = 2(r + s).",
+      "Since r + s ∈ ℤ, m + n has the form 2k for an integer k.",
+      "Therefore m + n is even."
+    ]
+  },
+  {
+    q: "Build a proof: The difference of any odd integer and any even integer is odd.",
+    steps: [
+      "Let a ∈ ℤ be odd and b ∈ ℤ be even.",
+      "By definition, a = 2r + 1 and b = 2s for some r,s ∈ ℤ.",
+      "Then a - b = (2r + 1) - 2s = 2(r - s) + 1.",
+      "Let t = r - s. Since r,s ∈ ℤ, t ∈ ℤ.",
+      "Thus a - b = 2t + 1 for some t ∈ ℤ.",
+      "Therefore a - b is odd."
+    ]
+  },
+  {
+    q: "Build a proof: The sum of any two rational numbers is rational.",
+    steps: [
+      "Let r,s ∈ ℚ.",
+      "Then r = a/b and s = c/d for some a,b,c,d ∈ ℤ with b,d ≠ 0.",
+      "Compute r + s = (ad + cb)/(bd).",
+      "Let p = ad + cb and q = bd.",
+      "Then p,q ∈ ℤ and q ≠ 0.",
+      "Therefore r + s = p/q, so r + s ∈ ℚ."
+    ]
+  }
+];
+
+function updateStats() {
+  document.getElementById("score").textContent = state.score;
+  document.getElementById("streak").textContent = state.streak;
+  document.getElementById("answered").textContent = state.answered;
+}
+
+function switchMode(mode) {
+  document.querySelectorAll(".mode").forEach(x => x.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+  document.getElementById(mode).classList.add("active");
+  document.querySelector(`.tab[data-mode="${mode}"]`).classList.add("active");
+}
+
+document.querySelectorAll(".tab").forEach(btn => {
+  btn.addEventListener("click", () => switchMode(btn.dataset.mode));
+});
+
+function renderQuiz() {
+  const item = quiz[state.quizIndex % quiz.length];
+  document.getElementById("quizType").textContent = item.type;
+  document.getElementById("quizQuestion").textContent = item.q;
+  document.getElementById("quizFeedback").innerHTML = "";
+  document.getElementById("quizProgress").style.width = `${((state.quizIndex % quiz.length) + 1) / quiz.length * 100}%`;
+  const choices = document.getElementById("quizChoices");
+  choices.innerHTML = "";
+  item.options.forEach((opt, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "choice";
+    btn.textContent = opt;
+    btn.addEventListener("click", () => answerQuiz(idx, btn));
+    choices.appendChild(btn);
+  });
+}
+
+function answerQuiz(idx) {
+  const item = quiz[state.quizIndex % quiz.length];
+  const buttons = [...document.querySelectorAll("#quizChoices .choice")];
+  if (buttons.some(b => b.disabled)) return;
+  buttons.forEach(b => b.disabled = true);
+  state.answered += 1;
+  if (idx === item.answer) {
+    state.score += 10 + state.streak * 2;
+    state.streak += 1;
+    buttons[idx].classList.add("correct");
+    document.getElementById("quizFeedback").innerHTML = `<div class="feedback good"><strong>Correct.</strong> ${item.explain}</div>`;
+  } else {
+    state.streak = 0;
+    buttons[idx].classList.add("wrong");
+    buttons[item.answer].classList.add("correct");
+    document.getElementById("quizFeedback").innerHTML = `<div class="feedback bad"><strong>Not quite.</strong> ${item.explain}</div>`;
+  }
+  updateStats();
+}
+
+document.getElementById("nextQuiz").addEventListener("click", () => {
+  state.quizIndex = (state.quizIndex + 1) % quiz.length;
+  renderQuiz();
+});
+
+function shuffled(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function renderProof() {
+  const p = proofs[state.currentProof];
+  state.proofSelection = [];
+  document.getElementById("proofQuestion").textContent = p.q;
+  document.getElementById("proofFeedback").innerHTML = "";
+  document.getElementById("proofOrder").innerHTML = "";
+  const bank = document.getElementById("proofBank");
+  bank.innerHTML = "";
+  shuffled(p.steps.map((text, index) => ({text, index}))).forEach(step => {
+    const div = document.createElement("button");
+    div.className = "proof-step";
+    div.textContent = step.text;
+    div.dataset.index = step.index;
+    div.addEventListener("click", () => {
+      if (div.classList.contains("selected")) return;
+      div.classList.add("selected");
+      state.proofSelection.push(step.index);
+      const chosen = document.createElement("div");
+      chosen.className = "proof-step";
+      chosen.textContent = `${state.proofSelection.length}. ${step.text}`;
+      chosen.addEventListener("click", () => {
+        const position = state.proofSelection.indexOf(step.index);
+        state.proofSelection.splice(position, 1);
+        renderProofFromSelection();
+        div.classList.remove("selected");
+      });
+      document.getElementById("proofOrder").appendChild(chosen);
+    });
+    bank.appendChild(div);
+  });
+}
+
+function renderProofFromSelection() {
+  const p = proofs[state.currentProof];
+  const order = document.getElementById("proofOrder");
+  order.innerHTML = "";
+  state.proofSelection.forEach((idx, i) => {
+    const div = document.createElement("div");
+    div.className = "proof-step";
+    div.textContent = `${i + 1}. ${p.steps[idx]}`;
+    order.appendChild(div);
+  });
+  document.querySelectorAll("#proofBank .proof-step").forEach(div => {
+    div.classList.toggle("selected", state.proofSelection.includes(Number(div.dataset.index)));
+  });
+}
+
+document.getElementById("checkProof").addEventListener("click", () => {
+  const p = proofs[state.currentProof];
+  const correct = state.proofSelection.length === p.steps.length &&
+    state.proofSelection.every((value, index) => value === index);
+  state.answered += 1;
+  if (correct) {
+    state.score += 25 + state.streak * 2;
+    state.streak += 1;
+    document.getElementById("proofFeedback").innerHTML = `<div class="feedback good"><strong>Correct proof order.</strong> You moved from hypotheses, to definitions, to algebra, to closure, and finally to the conclusion.</div>`;
+  } else {
+    state.streak = 0;
+    document.getElementById("proofFeedback").innerHTML = `<div class="feedback bad"><strong>The order is not complete or not yet correct.</strong> Think: setup → definitions → calculation → establish integer/nonzero condition → conclusion.</div>`;
+  }
+  updateStats();
+});
+
+document.getElementById("resetProof").addEventListener("click", renderProof);
+document.getElementById("newProof").addEventListener("click", () => {
+  state.currentProof = (state.currentProof + 1) % proofs.length;
+  renderProof();
+});
+
+document.getElementById("checkCounter").addEventListener("click", () => {
+  const a = Number(document.getElementById("aVal").value);
+  const b = Number(document.getElementById("bVal").value);
+  const feedback = document.getElementById("counterFeedback");
+  if (!Number.isFinite(a) || !Number.isFinite(b)) {
+    feedback.innerHTML = `<div class="feedback bad">Enter two real numbers first.</div>`;
+    return;
+  }
+  const hypothesis = Math.abs(a*a - b*b) < 1e-9;
+  const conclusionFalse = Math.abs(a - b) >= 1e-9;
+  state.answered += 1;
+  if (hypothesis && conclusionFalse) {
+    state.score += 20 + state.streak * 2;
+    state.streak += 1;
+    feedback.innerHTML = `<div class="feedback good"><strong>Valid counterexample.</strong> a² = b² is true, but a = b is false. Therefore the universal statement is disproved.</div>`;
+  } else {
+    state.streak = 0;
+    let reason = "";
+    if (!hypothesis) reason = "Your values do not satisfy the hypothesis a² = b².";
+    else reason = "Your values make a = b true, so the conclusion is not false.";
+    feedback.innerHTML = `<div class="feedback bad"><strong>Not a counterexample.</strong> ${reason}</div>`;
+  }
+  updateStats();
+});
+
+document.getElementById("randomCounter").addEventListener("click", () => {
+  let n = 0;
+  while (n === 0) n = Math.floor(Math.random() * 19) - 9;
+  document.getElementById("aVal").value = n;
+  document.getElementById("bVal").value = -n;
+  document.getElementById("counterFeedback").innerHTML = `<div class="feedback">Try testing these values and explain to yourself why they work.</div>`;
+});
+
+renderQuiz();
+renderProof();
+updateStats();
+</script>
+</body>
+</html>

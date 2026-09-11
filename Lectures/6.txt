@@ -1,0 +1,225 @@
+Recap:
+
+We introduced rational numbers and divisibility
+
+For n,d in Z, n is divisible by d <=> (E) q in Z s.t. n = qd and d ≠ 0.
+In this case we write d | n.
+
+
+Theorem 4.4.1
+
+(A) a, b in Z+, if a | b, then a ≤ b
+
+
+Theorem 4.4.2
+The only divisors of 1 are 1 and -1
+
+Remark:
+The negation of d | n <=> (E) q in Z s.t. n = qd and d ≠ 0
+is
+d /| n <=> (A) q in Z n ≠ qd or d = 0
+
+Therefore d /| n <=> n / d not in Z
+
+
+Theorem 4.4.3
+(A) a, b, c in Z, if a | b and b | c then a | c				(transitivity)
+
+Proof: Look in book
+
+
+Theorem 4.4.4
+Any integer n > 1 is divisible by a prime number.
+
+Proof:
+	let n in Z, n > 1
+	if n is prime, it is divisible by a prime
+
+	if n is not prime, it is composite and hence
+	(E) r0, s0 in Z+ s.t. n = r0s0 and 1 < r0 < n, 1 < s0 < n
+
+	Hence, r0 | n. If r1 is prime, then we are done
+
+	If r0 is composite (E) r1, s1 in Z s.t. r0 = r1s1 and 1 < r1 < r0, 1 < s1 < r0
+	Hence, r2 | r1.
+
+	Since r0 | n, r1 | n by theorem 4.4.3 if r1 is prime, then we are done
+	If r1 is composite, we can keep factoring
+
+	Since each factor is smaller than the previous one, and larger than 1,
+	this terminates
+
+	We end up with a sequence:
+	r0, r1..., rk k in Z+ with
+	1 < rk < rk-1 < ... < r0 < n					By theorem 4.4.1
+	and ri | n for each i = 0, ..., k.
+
+	We terminate at a prime, so rk is prime and rk | n
+							(proof)
+
+Unique factorization of integers:
+In this proof above, we can continue factoring out primes from the ri and si,
+by theorem 4.4.4:
+	E.g.
+		72 = 8 * 9 = 2 * 4 * 9 = 2 * 2 * 2 * 3 * 3
+		     |   |   |   |   |   |   -----   -----
+		     r0 s0   r1 s1  s0   r1    s1     s0
+
+In fact, each integer can be uniquely written as a product
+of primes.
+
+
+Theorem 4.4.5 (FUNDAMENTAL THEOREM OF ARITHMATIC)
+
+Given n in Z, n > 1, (E) k in Z, distinct primes p1, ..., pk in Z
+and e1, ..., ek in Z+ st. 
+
+n = p1**e1, p2**e2, ... pk**ek		= *
+
+Any other expression for n as a product of primes is identical, up to order
+* is called the STANDARD FACTORED FORM if the primes are in ascending order,
+p1 < p2 < ... < pk
+
+	E.g.
+		The standard factored form of 72 is 2**3 * 3**2
+
+
+4.5 Direct Proof and Counterexample V:
+Division into cases and quotient-remainder theorem
+
+When 11 is divided by 4, there is a remainder of 3:
+	11 = 2 * 4 + 3
+
+
+Theorem 4.5.1 (QUOTIENT-REMAINDER THEOREM):
+
+	Let n, d in Z, with d ≠ 0
+	Then (E) UNIQUE q, r in Z st.
+		n = dq + r and 0 ≤ r ≤ |d|.
+		
+		d = divisor
+		q = quotient
+		r = remainder
+	
+		   |x ≥ 0
+	Here |x| = |		(A) x in R is the absolute value
+		   |-x < 0
+
+	Illustrated on the number line for n > 0 and d > 0:
+
+					    r
+					--------
+	----------------------------------------------------------->
+	0	d	2d ...		qd	n	(q+1)d
+
+	
+	and n < 0 and d > 0 (ie. q < 0)
+
+	    r
+	--------
+	----------------------------------------------------------->
+	qd	n	(q+1)d		-2d	-d		0
+
+
+Definition:
+Quotient and remainder can be computed using div and mod functions
+	
+	(A) n in Z, d in Z+, n div d = q, n mod d = r
+			     <=> n = dq + r
+	with q, r in Z and 0 ≤ r < d
+
+
+Example 4.5.6:
+	
+	(A) n in Z, (E) q in Z st. n = 4q, n = 4q + 1, n = 4q + 2 or n = 4q + 3
+
+	Proof:
+		Let n in Z by thm 4.5.1 (QRT) with d = 4,
+
+		We have (E) q, r in Z st. n = 4q + r and 0 ≤ r < 4
+
+		The inequality implies that r is in {0, 1, 2, 3}
+						(proof)
+
+
+Division into cases:
+
+To prove the statement "If A1 or A2 or ... or Ak, then C",
+we show all of:
+
+	If A1, then C
+	If A2, then C
+	If ..., then C
+	If Ak, then C
+
+Then, no matter which Ai is true, C is true.
+
+
+Example
+Thm 4.5.3
+
+(A) n in Z odd, (E) m in Z st. n**2 = 8m + 1
+
+Proof:
+	Let n in Z be odd
+
+	By Example 4.5.6 above, n can be written as either
+	n = 4q, n = 4q + 1, n = 4q + 2 or n = 4q + 3 with
+	q in Z
+	
+	Since n is odd and 4q and 4q + 2 is even,
+	n must have one of the forms
+
+		n = 4q + 1
+		n = 4q + 3
+	
+	Case 1:
+		n = 4q + 1 for some q in Z
+		
+		Then, n**2 = (4q + 1)**2 = 16q**2 + 8q + 1 = 8(2q**2 + q) + 1
+
+		let m = 2q**2 + q. Then, m in Z and n**2 = 8m + 1
+
+	Case 2:
+		n = 4q + 3 for some q in Z
+
+		Then, n**2 = (4q + 3)**2 = 16q**2 + 24q + 9 = 8(2q**2 + 3q + 1) + 1
+
+		Let m ) 2q**2 + 3q + 1. then, m in Z and n**2 = 8m + 1
+	
+	Therefore, in both cases, (E) m in Z st. n**2 = 8m + 1
+						(proof)
+
+
+ABSOLUTE VALUE AND THE TRIANGLE INEQUALITY
+Definition:
+
+(A) x in R, THE ABSOLUTE VALUE OF X, |x|, is defined by
+
+	      | x if x ≥ 0
+	|x| = |
+	      | -x if x < 0
+
+Note that hence, |x| ≥ 0 (A) x in R
+
+
+Lemma 4.5.4							(lemmas are not as important as theorems)
+
+(A) r in R, -|r| ≤ r ≤ |r|
+
+Proof: by division into cases (see book)
+
+
+Lemma 4.5.5
+
+(A) r in R, |-r| = |r|
+
+Proof: by division into cases (see book)
+
+
+THM 4.5.6 THE TRIANGLE INEQUALITY
+
+(A) x, y in R, the |x + y| ≤ |x| + |y|
+
+Proof: by division into cases (using Lemmas)
+

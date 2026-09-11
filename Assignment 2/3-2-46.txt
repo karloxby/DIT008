@@ -1,0 +1,63 @@
+Use the facts that the negation of a (A) statement is
+a (E) statement and that the negation of an if-then
+statement is an and statement to rewrite each of the
+statements 45-48 without using the word necessary or
+sufficient.
+
+
+46.	Having a large income is not a necessary condi-
+	tion for a person to be happy.
+
+	Let's look at the definition of a necessary condition
+	according to Epp:
+
+	"(A)x, r(x) is a necessary condition for s(x)" means
+	"(A)x, if ~r(x) then ~s(x)" or, equivalently,
+	"(A)x, if s(x) then r(x)"
+
+	Let's assign predicates from the initial statement:
+		
+		Let x be a person, and 
+		let r(x) = x has a large income, and 
+		let s(x) = x is happy
+	
+	Epp gives us (A)x, if s(x) then r(x), which in English
+	means:
+
+		"For all x, if x is happy then x has a large income"
+
+		which can be written as
+
+		(A)x, if s(x) then r(x)
+
+	But the wording of the initial statement states that r(x) is
+	NOT a necessary condition for s(x).
+
+	So what we're essentially trying to say, is that there is
+	at least one person that is happy, but does not have a 
+	large income.
+
+	This is an existential statement. And by definition, if we negate 
+	a universal statement, we get an existential statement.
+
+	Therefore, we negate the statement as such:
+
+		(1)	~((A)x, if s(x) then r(x))
+
+		(2)	~((A)x) = (E)x s.t.
+
+		(3)	~(if s(x) then r(x)) = s(x) and ~r(x)
+
+			(E)x s.t. s(x) ^ ~r(x)
+			
+			In English:
+
+			"There is at least one person, such that
+			the person is happy, and does not have
+			a large income."
+	
+	This statement now fulfills the condition of the assignment,
+	and we can therefore conclude that we are done.
+
+
+Solution:	(E)x s.t. s(x) ^ ~r(x)

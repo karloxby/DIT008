@@ -1,0 +1,223 @@
+Recap:
+
+Let n in Z, then
+
+n is even <-> (E) k in Z st n = 2k
+n is odd <-> (E) k in z st n = 2k + 1
+
+n is prime <-> n > 1 and (A) r,s in Z+
+	if n = rs, then r = n, s = 1 or
+	r = 1, s = n
+n is composite <-> n is not a prime
+
+One can prove "(E) x in D st P(x)" by finding
+an x in D for which P(x) is true
+
+Disproving universal statements by counterexample:
+
+The negation of (A) x in D, P(x) -> Q(x) 
+is (E) x in D s.t. P(x) and ~Q(x).
+Therefore, one can disprove the universal statement 
+by finding an x in D s.t. P(x) and ~Q(x)
+
+This x is called a counterexample.
+
+E.g. disprove (A) a,b in R, if a**2 = b**2, then a = b
+
+Counterexample:
+	a = 1
+	b = -1
+	a**2 = b**2 = 1
+	a ≠ b
+
+Proving universal statements:
+
+Consider (A) x in D, P(x) -> Q(x)
+
+This can be proven by exhaustion, i.e. by trying
+every element in D explicitly, if D is finite
+
+Another way of proving this is by generalizing
+from the generic particular: Suppose that x is
+a particular, but arbitrarily chosen element of D
+which satisfies P(x). Show Q(x) for that element.
+Then the universal statement is proven since we
+could use the same argument for any element of D.
+We call this a direct proof.
+
+
+E.g. theorem 4.1.1:
+The sum of any two even integers is even.
+
+Proof:
+	Let m, n in Z be even (generic particular)
+	Then, (E) r, s in Z s.t. m = 2r and n = 2s
+	Hence, m + n = 2r + 2s = 2(r + s)
+	Since r + s in Z, m + n is even
+					(proof)
+
+
+4.2 Direct proof and counterexample II:
+
+Writing advice:
+	(1) Copy the theorem.
+	(2) Mark the beginning with "Proof".
+	(3) Make the proof self contained,
+	introduce all variables.
+	(4) Write complete sentences.
+	Equations, abbreviations etc are
+	part of sentences.
+	(5) Make clear which statements are
+	assumed established or still to be
+	deducted. 
+		E.g. "Suppose", "Assume"
+		or "We must show that...".
+	(6) Give a reason for each assertion
+	in your proof. 
+		E.g. "by hypothesis",
+		"by definition of" or 
+		"by theorem".
+	(7) Use conjunctions to bind sentences
+	together. 
+		E.g. "because", "hence", "since",
+		"therefore", "then" or "thus".
+
+Common mistakes:
+	(1) Arguing from examples.
+	(2) Using the same letter for two different
+	things. 
+		E.g. Let m,n in Z be odd. Then,
+	(E) k in Z s.t. m = 2k + 1 and n = 2k + 1
+	(3) Jumping to conclusion. 
+		E.g. m + n = 2r + 2s,
+		therefore m + n is even.
+	(4) Assuming what is to be proven. 
+		E.g. "Proof"
+		that the product of odd integers is odd:
+		Let m,n in Z be odd. Since the product of odd
+		integers is odd, mn is odd.
+	(5) Confusion between what is known and what is
+	to be shown:
+		E.g. Let m,n in Z be odd.
+		We must show that mn is odd.
+		This means (E) s in Z s.t. mn = 2s + 1
+		By definition of odd, (E) a,b in Z s.t.
+			m= 2a + 1 and n = 2b + 1
+		Therefore, mn = (2a + 1)(2b + 1) = 2s + 1
+		Since s in Z, mn is odd.
+
+	(6) Confusing "any" and "some":
+		E.g. 
+		"By definition of odd, n = 2a + 1 for any a in Z" 
+		vs. 
+		"By definition of odd, n = 2a + 1 for some a in Z"
+
+
+Example of a good argument
+Theorem 4.2.1:
+The difference of any odd integer and any even integer is odd.
+
+Proof:
+	Let a in Z be odd, and b in Z be even.
+	We must show that a - b is odd.
+	By definition of odd:
+		a = 2r + 1 for some r in Z
+	And by definition of even:
+		b = 2s for some s in Z
+	Therefore, a - b = (2r + 1) - (2s) = 2(r-s) + 1.
+	Let t = r -s
+	Since t is the difference of integers, t in Z.
+	Hence, a - b = 2t + 1 with t in Z.
+	Therefore, a - b is odd.
+			(Proof)
+
+
+4.3 Direct proof and counterexample III: Rational numbers Q
+
+Note: Most quotients of integers are not integers
+
+Define:
+	r in R is rational <-> (E) a, b in Z s.t. r = a/b and b ≠ 0.
+	if r in R is not rational, it is called irrational.
+	The set rational numbers is denoted by Q.
+
+	E.g.
+		10/3 in Q
+		-5/39 in Q
+		7 in Q
+		0 in Q
+		0.1212... = 12/99 in Q
+
+		2/0 not in Q
+		2/0 not in R
+
+Zero product property:
+	(A) a,b in R, a ≠ 0 and b ≠ 0 -> ab ≠ 0.
+	(A) a,b in R, a = 0 or b = 0 -> ab = 0
+
+
+Theorem 4.3.1:
+Every integer is a rational number.
+
+Proof:
+	Let r in Z
+	Then, r = r/1
+	Since r, 1 in Z, r in Q
+			(Proof)
+
+Theorem 4.3.2:
+The sum of any two rational numbers is rational.
+
+Proof:
+	Let r, s in Q
+	Then, a, b, c, d in Z s.t. r = a/b and s = c/d
+	and b ≠ 0, d ≠ 0.
+	r + s = (a/b) + (c/d) = (ad + cb) / bd
+	Let p = ad + cb and q = bd
+	Then p, q in Z and q ≠ 0, since b ≠ 0 and d ≠ 0.
+	Hence, r + s in Q.
+			(Proof)
+
+
+E.g. use a theorem in a proof
+Corollary 4.2.3:
+
+The double of a rational number Q is rational.
+
+Proof:
+	Let r in Q
+	then 2r = r + r
+	By theorem 4.3.2 r + r in Q
+	Hence, 2r in Q
+			(Proof)
+
+
+4.4 Direct proof and counter example IV: Divisibility
+
+Definition:
+	For n, d in Z, n is divisible by d <-> (E) q in Z s.t.
+	n = q * d and d ≠ 0. In this case, d is called the divisor 
+	and we write d | n ("d divides n"). The contrary is
+	d /| n.
+
+Note:
+	Any integer divides 0, since 0 = q * 0.
+	d | n is not a number
+	i.e
+		4 | (3 + 5) = 4 | 8 is nonsense
+
+
+Theorem 4.4.1
+(A) a, b in Z+ if a | b, then a ≤ b
+
+Proof:
+	Let a, b in Z+ s.t. a | b
+	Then, (E) q in Z s.t. b = qa
+	Since a, b > 0, q > 0
+	Hence 1 ≤ q
+	=> a ≤ qa = b
+	=> a ≤ b
+			(Proof)
+
+
+

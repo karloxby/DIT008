@@ -1,0 +1,33 @@
+Rewrite each statement of 39-44 in if-then form.
+
+
+40.	Being divisible by 8 is a sufficient condition
+	for being divisible by 4.
+
+	Let's look at the definition of a sufficient condition
+	according to Epp:
+
+	"For all x, r(x) is a SUFFICIENT CONDITION for s(x)"
+	means "For all x, if r(x) then s(x)"
+
+	Now, let's look at what the initial statement again:
+
+	"Being divisible by 8 is a sufficient condition
+	for being divisible by 4."
+	
+	Let n be an integer
+	Then for all integers n, if 8 | n, then 4 | n.	
+
+	(A) n in Z, if 8 | n -> 4 | n.
+
+	And in English:
+
+	"For all integers n, if n is divisible by 8, then
+	n is also divisible by 4."
+
+	Since the assignment was to rewrite the statement, not
+	prove or disprove it, we can therefore conclude that
+	we are now done.
+
+
+Solution:	(A) n in Z, if 8 | n -> 4 | n

@@ -1,0 +1,41 @@
+Write a negation for each statement.
+
+
+19. 	(A) n in Z, if n is prime then n is odd or n = 2
+
+	Let's write it out in English:
+
+	"For all integers n, if n is prime, then n is odd or n equals to two."
+
+
+	Universal statement
+	-----------
+	(A) n in Z, if n is prime -> n is odd or n = 2
+		    --------------   -----------------
+		    Hypothesis       Conclusion
+	
+
+	Universal statement:	(A) n in Z
+	Predicate:		if n is prime -> n is odd or n = 2
+
+	Let's negate using De Morgans Law:
+	
+		~((A) n in Z), 
+		is 
+		(E) n in Z s.t.
+
+	The universal statement becomes an existential statement.
+	Furthermore,
+
+		~(if n is prime -> n is odd or n = 2)
+		is
+		if n is prime and n is not odd and n ≠ 2
+	
+	Therefore, 
+		~((A) n in Z, if n is prime, then n is odd or n = 2)
+		is logically equivalent to
+		(E) n in Z s.t., if n is prime, and n is not odd and n ≠ 2
+
+
+Solution:	"There is at least one integer, such that n is prime, 
+		and n is not odd, and n is not equal to two."
