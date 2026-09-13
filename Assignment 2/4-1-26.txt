@@ -1,0 +1,36 @@
+Each of the statements in 23-26 is true. For each, (a)
+rewrite the statement with the quantification implicit as
+If ____, then ____, and (b) write the first sentence
+of a proof (the "starting point") and the last sentence of
+a proof (the "conclusion to be shown"). (Note that you do
+not need to understand the statements in order to be able
+to do these exercises.)
+
+
+26.	For every real number x, if 0 < x < 1 then x**2 < x.
+
+		
+	(a)	If 0 < x < 1, then x**2 < x
+
+	(b)	Suppose x is a particular but arbitrarily chosen
+		real number, such that x is greater than 0 and 
+		less than 1.
+
+		We have to show that x**2 is less than x.
+
+		Proof:
+			
+			Suppose x is a particular but arbitrarily chosen
+			real number, such that x is greater than 0 and
+			less than 1.
+
+			.
+			.
+			.
+
+			Therefore, x**2 < x
+
+							(Proof)
+
+
+Solution:	(A)x in R, if 0 < x < 1 -> x**2 < x

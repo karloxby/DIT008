@@ -1,0 +1,46 @@
+Prove the statements in 5-11
+
+7.	There are real numbers a and b such that
+	sqrt(a + b) = sqrt(a) + sqrt(b).
+
+
+	Proof:
+		
+		Let a, b in R s.t. sqrt(a + b) = sqrt(a) + sqrt(b)
+
+		We are looking for one particular case of a and b
+		where the sum of sqrt(a) + sqrt(b) is equal to
+		sqrt(a + b).
+
+		Let a, b in R s.t. sqrt(a + b) = sqrt(a) + sqrt(b)
+
+		If we write that out in argument form:
+
+		(E)a, b in R s.t. sqrt(a + b) = sqrt(a) + sqrt(b)
+
+		Since the statement can be phrased as an existential
+		statement, we have to prove that there is at least one
+		pair of real numbers and b for which this is true.
+
+		Therefore, we choose particular values for a and b.
+
+		We know that the sqrt(0) is 0, since 0 * 0 is 0. In
+		the same way, we also know that the sqrt(4) is 2, since
+		2 * 2 is 4.
+
+		So let's assign variables:
+
+		a = 0
+		b = 4
+
+		sqrt(a + b)
+			sqrt(0 + 4) = sqrt(4) = 2
+
+		sqrt(a) + sqrt(b)
+			sqrt(0) + sqrt(4) = 0 + 2 = 2
+
+		So, for a = 0 and b = 4, the statement is true.
+						(Proof)
+
+
+Solution:	The statement is true for a = 0 and b = 4.

@@ -1,0 +1,43 @@
+2.	Which of the following is a negation for "All dogs
+	are loyal"? More than one answer may be correct.
+
+	a.	All dogs are disloyal.
+	b.	No dogs are loyal.
+	c.	Some dogs are disloyal.
+	d.	Some dogs are loyal.
+	e.	There is a disloyal animal that is not a dog.
+
+	
+	let d = Is a dog, and
+	let l = Is loyal
+
+	Let's look at the statement:
+
+	"All dogs are loyal."
+
+	Since the statement clearly claims that all dogs are
+	loyal, we can consider the statement to be universal,
+	and the negation of a universal statement is an
+	existential statement, which can be written as:
+
+	"There is at least one dog that is not loyal."
+
+	Now, if we look at the options a through e again:
+
+	a.	All dogs are disloyal.
+	b.	No dogs are loyal.
+	c.	Some dogs are disloyal.
+	d.	Some dogs are loyal.
+	e.	There is a disloyal animal that is not a dog.
+
+	We can check which option fits the negation best.
+
+	b.	Some dogs are disloyal.
+	c.	Some dogs are loyal.
+
+	Both of these statements imply that there are both
+	loyal and disloyal dogs, which corresponds with our
+	negation of the given statement.
+
+
+Solution:	b and c are negations of the given statement.

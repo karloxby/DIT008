@@ -18,7 +18,7 @@ Write a negation for each statement.
 	Universal statement:	(A) n in Z
 	Predicate:		if n is prime -> n is odd or n = 2
 
-	Let's negate using De Morgans Law:
+	Let's negate this:
 	
 		~((A) n in Z), 
 		is 
@@ -29,7 +29,7 @@ Write a negation for each statement.
 
 		~(if n is prime -> n is odd or n = 2)
 		is
-		if n is prime and n is not odd and n ≠ 2
+		n is prime and n is not odd and n ≠ 2
 	
 	Therefore, 
 		~((A) n in Z, if n is prime, then n is odd or n = 2)

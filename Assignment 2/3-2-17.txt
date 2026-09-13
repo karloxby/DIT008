@@ -1,0 +1,39 @@
+In 16-23, write a negation for each statement.
+
+
+17.	(A) integer d, if b / d is an integer, then d = 3.
+
+	
+	Let d in Z, and
+	let P(d) be 6 / d is an integer, and
+	let Q(d) be d = 3
+
+	(A) d in Z, P(d) -> Q(d)
+
+	Then we negate it:
+
+	~((A)d in Z,) is equivalent to:
+		(E) d in Z s.t.
+	
+	~(P(d) -> Q(d)) is equivalent to:
+		P(d) ^ ~Q(d)
+
+	And if we put it together:
+
+	(E) d in Z s.t. P(d) ^ ~Q(d)
+
+	In English:
+
+	"There is at least one integer d, such that
+	P(d) and ~Q(d)."
+
+	Let's pick a particular integer d:
+
+		Let d = 1
+		6 / 1 = 6 in Z
+		d ≠ 3
+
+	Therefore, the statement is true.
+
+
+Solution:	(E) d in Z s.t. 6 / d is an integer, and d ≠ 3.

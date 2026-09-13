@@ -1,0 +1,27 @@
+10.	Assume that m and n are both integers and that
+	n ≠ 0. Explain why (5m - 12n) / (4n) must be a
+	rational number.
+
+	
+	Suppose m and n are both integers and that
+	n ≠ 0.
+
+	We must explain why (5m - 12n) / (4n) must be
+	a rational number.
+
+	Let's look at the definition of a rational number
+	according to Epp:
+
+		"r is rational <=> (E) a, b in Z, such that
+		r = a / b and b ≠ 0"
+	
+	Since (5m - 12n) is an integer, and 4n is an
+	integer, where n ≠ 0, (5m - 12n) / (4n) is
+	a quotient of the integers (5m - 12n) and 4n,
+	and hence is rational, because it fulfills the
+	definition of a rational number.
+
+	Therefore, (5m - 12n) / (4n) is rational.
+
+
+Solution:	Yes, (5m - 12n) / (4n) is rational.

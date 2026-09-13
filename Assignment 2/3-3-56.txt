@@ -1,0 +1,83 @@
+Let P(X) and Q(x) be predicates and suppose D is the
+domain of x. In 55-58, for the statement forms in each
+pair, determine whether (a) they have the same truth
+value for every choice of P(x), Q(x) and D, or (b) there is
+a choice of P(x), Q(x), and D for which they have opposite
+truth values.
+
+
+56.	(E)x in D s.t. P(x) ^ Q(x) and ((E)x in D s.t. P(x)) ^ ((E)x in D s.t. Q(x))
+
+	(E)x in D s.t. P(x) ^ Q(x)
+
+	In English:
+
+	"There is at least one x in D, such that
+	P(x) and Q(x)."
+
+	((E)x in D s.t. P(x)) ^ ((E)x in D s.t. Q(x))
+
+	In English:
+
+	"There is at least one x in D, such that P(x)
+	and there is at least one x in D, such that Q(x)."
+
+	Let's revisit the conditions for (a) and (b):
+	
+		(a)	Both statement forms share the same truth
+			value for every choice of P(x), Q(x) and D
+
+		(b)	There is a choice of P(x), Q(x) and D, for
+			which they have the opposite truth values.
+
+	Let D = {0, 1}, and 
+	let P(x) : x = 0, and
+	let Q(x) : x = 1.
+
+	In the first statement form, we are looking
+	for a row where both P(x) and Q(x) are true.
+
+	(E)x in D s.t. P(x) ^ Q(x)
+
+
+	x	P(x)	Q(x)	P(x) ^ Q(x)
+	----------------------------------
+	0	T	F	F
+	1	F	T	F	  
+	
+
+	(E)x in D s.t. P(x) ^ Q(x) is false, since
+	there exists no value of x where both P(x)
+	and Q(x) is true.
+
+	(E)x in D s.t. P(x) ^ Q(x) = False
+
+	However, in the second statement form, we are
+	looking for a true value of P(x) and a true
+	value of Q(x) in any row.
+
+	((E)x in D s.t. P(x)) ^ ((E)x in D s.t. Q(x))
+
+
+	x	P(x)	Q(x)	
+	-------------------
+	0	T	F
+	1	F	T
+
+	
+	((E)x in D s.t. P(x)) ^ ((E)x in D s.t. Q(x))
+	is true, since there exists a value of x where
+	P(x) can be true and Q(x) can be true.
+
+	((E)x in D s.t. P(x)) ^ ((E)x in D s.t. Q(x)) = True
+
+	In which case, upon comparison, we can conclude that
+	the two statement forms can have the opposite truth 
+	values.
+
+	Therefore, option (b) is the correct answer
+	for the given statement forms.
+
+
+Solution:	(b) 	There is a choice of P(x), Q(x) and D
+			for which they have opposite truth values.

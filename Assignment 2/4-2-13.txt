@@ -1,0 +1,84 @@
+Prove that the statements in 12-14 are false.
+
+
+13.	There exists an integer n such that 6n**2 + 27 is
+	prime.
+
+	
+	Proof:
+		
+		Suppose we pick a particular, but arbitrarily chosen,
+		integer n.
+
+		We have to disprove that 6n**2 + 27 is prime.
+
+		Let's write the given statement in argument form:
+
+		(E) n in Z, s.t. 6n**2 + 27 is prime
+
+		If we negate that argument:
+
+		~((E) n in Z, s.t. 6n**2 + 27 is prime)) =
+			(A) n in Z, 6n**2 + 27 is not prime
+
+		(A) n in Z, 6n**2 + 27 is not prime
+
+		In English:
+
+		"For all n in Z, 6n**2 + 27 is not prime"
+
+		The definition of a composite according to Epp is:
+
+			"n is composite <=> (E) r, s in Z+ s.t.
+			n = rs and 1 < r < n and 1 < s < n."
+
+			"n is composite, if and only if, there is
+			at least one r and s with 1 < r < n and
+			1 < s < n and n = rs."
+		
+		Let m, r, s in Z+
+		
+		1 < r < m
+		1 < s < m
+
+		m = rs = 6n**2 + 27
+
+		Let's look at 6n**2 + 27. Can we factor this into two
+		positive integers greater than 1?
+
+		6 = 3 * 2	Done
+		27 = 3 * 9	Done
+
+		So, 6n**2 + 27 can be rewritten as:
+
+		(3 * 2)n**2 + (3 * 9) = 3(2n**2 + 9)
+
+		m = 3(2n**2 + 9)
+
+		This fulfills the condition of m = rs.
+
+		r = 3, which's greater than 1.
+
+		Therefore, s = 2n**2 + 9.
+
+		Since n**2 ≥ 0, then 2n**2 ≥ 0, so 2n**2 + 9 ≥ 9,
+		therefore s ≥ 9.
+
+		s = 2n**2 + 9
+
+		m = rs = 3(2n**2 + 9) = 3s
+
+		3 * 9 = 27, so 3s ≥ 27.
+
+		So 1 < r < m is true, since r = 3 and m ≥ 27.
+
+		We also know that s ≥ 9, so s > 1. Since m = 3s, then m > s.
+		Therefore, 1 < s < m.
+
+		Therefore, 6n**2 + 27 is composite, and therefore 
+		it is not prime.
+
+							(Proof)
+							
+		
+Solution:	For all n in Z, 6n**2 + 27 is not prime.

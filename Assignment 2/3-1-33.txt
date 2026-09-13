@@ -1,0 +1,77 @@
+33.	Let R be the domain of the predicate variables a,
+	b, c, and d. Which of the following are true and
+	which are false? Give counterexamples for the
+	statements that are false.
+
+	a.	a > 0 and b > 0 -> ab > 0
+	b	a < 0 and b < 0 -> ab < 0
+	c	ab = 0 -> a = 0 or b = 0
+	d.	a < b and c < d -> ac < bd
+
+
+Let a, b, c, d in R
+
+a.	a > 0 and b > 0 -> ab > 0
+
+	In English:
+
+	"If a is greater than 0 and b is greater than 0,
+	then ab is greater than 0."
+
+
+Solution:	The statement is true (A) a, b in R.
+
+
+b.	a < 0 and b < 0 -> ab < 0
+
+	In English:
+
+	"If a is less than 0 and b is less than 0,
+	then ab is less than 0.
+
+
+Solution:	The statement is false, because when
+		multiplying two negative factors, the
+		product is always positive.
+
+		E.g.
+			a = -1
+			b = -1
+
+			ab = 1
+			ab > 0
+
+
+c.	ab = 0 -> a = 0 or b = 0
+
+	In English:
+
+	"If ab is 0, then a is 0 or b is 0."
+
+
+Solution:	The statement is true (A) a,b in R
+
+
+d.	a < b and c < d -> ac < bd
+
+	In English:
+
+	"If a is less than b and c is less than d, then
+	ac is less than bd."
+
+
+Solution:	The statement is false, because a or c can
+		be negative, which fulfills the condition,
+		but can still produce a product for ac which's
+		larger than bd.
+
+		E.g.
+			a = -0.1
+			b = 0.11
+			c = -10.1
+			d = 1.11
+
+			ac = 1.01
+			bd = 0.1221
+
+			ac > bd

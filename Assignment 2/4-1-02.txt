@@ -1,0 +1,111 @@
+In 1-4 justify your answers by using the definition of
+even, odd, prime, and composite numbers.
+
+2.	Assume that c is a particular integer.
+
+	a.	Is 6m + 8n even?
+	b.	Is 10mn + 7 odd?
+	c.	If m > n > 0, is m**2 - n**2 composite?
+
+
+	Let's start by by defining what even, odd, prime and
+	composite are according to Epp:
+
+	Definitions:
+
+		"An integer n is even if, and only if, n equals
+		twice some integer."
+
+		n is even <=> n = 2k for some integer k
+
+		"And integer n is odd if, and only if, n equals
+		twice some integer plus 1."
+
+		n is odd <=> n = 2k + 1 for some integer k
+
+		"An integer n is prime if, and only if, n > 1 and
+		for all positive integers r and s, if n = rs, then
+		either r or s equals n."
+
+		n is prime <=> (A) r, s in Z+, if n = rs -> r = 1 ^ s = n v r = n ^ s = 1
+
+		"An integer n is composite if, and only if, n > 1 and
+		n = rs for some integers r and s with 1 < r < n and
+		1 < s < n."
+
+		n is composite <=> n is not prime
+
+		n is composite <=> (E) r, s in Z+ s.t. n = rs ^ 1 < r < n ^ 1 < s < n.
+
+
+	a.	Is 6m + 8n even?
+
+		"n is even <=> n = 2k for some integer k"
+
+		Let m, n in Z
+
+		6m + 8n = 2(3m + 4n)
+
+
+	Solution:	Yes, 6m + 8n is even, because it can be rewritten
+			as 2(3m + 4n).
+
+
+	b.	Is 10mn + 7 odd?
+
+		"n is odd <=> n = 2k + 1 for some integer k"
+
+		Let m, n in Z
+
+		10mn is an integer, since the product of two integers
+		is always an integer. Therefore, we can continue:
+
+		10mn + 7 = 2(5mn + 3) + 1
+
+	
+	Solution:	Yes, 10mn + 7 is odd, because it can be rewritten
+			as 2(5mn + 3) + 1.
+
+
+	c.	If m > n > 0, is m**2 - n**2 composite?
+
+		"n is composite <=> is not a prime"
+		"n is prime <=> (A) r, s in Z+, if n = rs -> r = 1 ^ s = n v r = n ^ s = 1"
+		
+		A prime number greater than 1 has no positive divisors other than 1
+		and itself.
+
+		Let m, n in Z+ s.t. m > n > 0
+
+			m = 2
+			n = 1
+
+			2 > 1 > 0
+
+			m**2 = 2**2 = 4
+			n**2 = 1**2 = 1
+
+			m**2 - n**2 = 4 - 1 = 3
+
+		We know 3 is prime, because it is only divisible by
+		itself and by 1. But the question is whether the given
+		statement can be composite.
+
+			m**2 - n**2 = (m - n)(m + n)
+
+		Because m > n > 0, we know that (m + n) > 1, but we do
+		not necessarily know if m - n > 1. They could be consecutive
+		integers, giving:
+
+			m - n = 1
+
+		Which's what's happening with our example above.
+
+
+Solution:	No, m**2 - n**2 is not necessarily composite when m > n > 0. For
+		example, let m = 2 and n = 1. Then
+
+			m**2 - n**2 = (m - n)(m + n) = (2 - 1)(2 + 1) = 1 * 3 = 3.
+
+		Since 3 is prime, this is a counterexample to the statement that
+		m**2 - n**2 is composite whenever m > n > 0.

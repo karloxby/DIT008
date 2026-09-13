@@ -1,0 +1,81 @@
+Let P(X) and Q(x) be predicates and suppose D is the
+domain of x. In 55-58, for the statement forms in each
+pair, determine whether (a) they have the same truth
+value for every choice of P(x), Q(x) and D, or (b) there is
+a choice of P(x), Q(x), and D for which they have opposite
+truth values.
+
+
+57.	(A)x in D, (P(x) v Q(x)), and ((A)x in D, P(x)) v ((A)x in D, Q(x))
+
+	(A)x in D, (P(x) v Q(x))
+
+	In English:
+
+	"For all x in D, P(x) or Q(x)."
+
+	((A)x in D, P(x)) v ((A)x in D, Q(x))
+
+	In English:
+
+	"For all x in D, P(x), or For all x in D, Q(x)."
+
+	Let's revisit the conditions for (a) and (b):
+	
+		(a)	Both statement forms share the same truth
+			value for every choice of P(x), Q(x) and D
+
+		(b)	There is a choice of P(x), Q(x) and D, for
+			which they have the opposite truth values.
+
+	Let D = {0, 1}, and 
+	let P(x) : x = 0, and
+	let Q(x) : x = 1.
+	
+	In the first statement form, we are looking
+	for where P(x) or Q(x) is true for all x.
+
+	(A)x in D, (P(x) v Q(x))
+
+	
+	x	P(x)	Q(x)	P(x) v Q(x)
+	----------------------------------
+	0	T	F	T
+	1	F	T	T
+
+
+	Whereas, in the second statement form, we are
+	looking for where P(x) is true for all x or where
+	Q(x) is true for all x.
+
+	((A)x in D, P(x)) v ((A)x in D, Q(x))
+
+
+	x	P(x)	Q(x)
+	-------------------
+	0	T	F
+	1	F	T
+
+
+	The truth table for the first statement form tells
+	us that the condition can be true for P(x) or Q(x).
+
+	(A)x in D, (P(x) v Q(x)) = True
+
+	However, the truth table for the second statement
+	form tells us that the condition is neither true
+	for P(x) or Q(x).
+
+	((A)x in D, P(x)) v ((A)x in D, Q(x)) = False
+
+	In which case, upon comparison, we can conclude that
+	the two statement forms can have the opposite truth 
+	values.
+
+	Therefore, option (b) is the correct answer
+	for the given statement forms.
+
+
+Solution:	(b) 	There is a choice of P(x), Q(x) and D
+			for which they have opposite truth values.
+

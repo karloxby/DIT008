@@ -1,0 +1,45 @@
+Prove the statements in 1-11. In each case use only the
+definitions of the terms and the Assumptions listed on
+page 161, not any previously established properties of
+odd and even integers. Follow the directions given in this
+section for writing proofs of universal statements.
+
+
+5.	If a and b are any odd integers, then a**2 + b**2 is
+	even.
+
+	Proof:
+
+		Suppose a and b are any particular, but arbitrarily
+		chosen, odd integers.
+
+		We have to prove that a**2 + b **2 is even.
+
+		The definition of an even and odd number according to
+		Epp:
+
+		"n is even <=> n = 2k for some integer k"
+		"n is odd <=> n = 2k + 1 for some integer k"
+
+		Let x, y in Z.
+
+		a = 2x + 1
+		b = 2y + 1
+
+		a**2 = (2x + 1)**2 = 4x**2 + 4x + 1
+		b**2 = (2y + 1)**2 = 4y**2 + 4y + 1
+
+		(4x**2 + 4x + 1) + (4y**2 + 4y + 1) =
+			4x**2 + 4y**2 + 4x + 4y + 2 =
+			2(2x**2 + 2y**2 + 2x + 2y + 1)
+
+		2x**2 + 2y**2 + 2x + 2y + 1 is an integer and 
+		2(2x**2 + 2y**2 + 2x + 2y + 1) fulfills the
+		definition of an even number.
+
+		Therefore, a**2 + b**2 is even.
+
+							(Proof)
+
+
+Solution:	If a and b are any odd integers, then a**2 + b**2 is even.

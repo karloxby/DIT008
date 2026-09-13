@@ -1,0 +1,244 @@
+12.	Let D = E = {-2, -1, 0, 1, 2}. Write negations
+	for each of the following statements and determine
+	which is true, the given statement or its negation.
+
+	a.	(A)x in D, (E)y in E s.t. x + y = 1
+	b.	(E)x in D s.t. (A)y in E, x + y = -y
+	c.	(A)x in D, (E)y in E s.t. xy ≥ y
+	d.	(E)x in D s.t. (A)y in E, x ≤ y
+
+
+	a.	(A)x in D, (E)y in E s.t. x + y = 1
+
+		In English:
+
+		"For all x in D, there is at least one
+		y in E, such that x + y is 1."
+
+		Here, we have two different quantifiers,
+		for which we have to read from left to right
+		when negating.
+
+		Let's break the statement into multiple
+		components as we negate:
+		
+		~((A)x in D,)) is equivalent to:
+			(E)x in D s.t.
+
+		~((E)y in E s.t. x + y = 1) is equivalent to
+			(A)y in E, x + y ≠ 1
+
+		And then we can put them together into a
+		sequence of negated quantifiers. Do also note
+		the negated predicate.
+
+		(E)x in D s.t. (A)y in E, x + y ≠ 1
+
+		In English:
+
+		"There is at least one x in D, such that for
+		all y in E, x + y is not 1."
+
+		Since both D and E are finite subsets, we could
+		exhaust our options to check whether the given
+		statement, or its negation, is true.
+
+		D = E = {-2, -1, 0, 1, 2}.
+
+		Starting with the given statement:
+
+		(A)x in D, (E)y in E s.t. x + y = 1
+
+		But since the given statement claims that
+		x + y = 1 for all x in D, let's first look
+		at x = -2.
+
+		-2 + y = 1
+		y = 3
+
+		And since 3 does not exist in the subsets,
+		we can conclude that the statement is false.
+
+		Which means by definition, that the negated
+		statement must be true. We are looking for
+		one value of x, where all sums with y are not
+		equal to 1. Let's exhaust our options, one x
+		value at a time:
+
+		D = E = {-2, -1, 0, 1, 2}.
+
+		(E)x in D s.t. (A)y in E, x + y ≠ 1
+		
+
+		 x	 y	x + y
+		 --------------------
+		-2	-2	-4
+		-2	-1	-3
+		-2	 0	-2
+		-2	 1	-1
+		-2	 2	 0
+
+		
+		The negation of the given statement is
+		true.
+
+
+Solution:	The given statement is false, and its negation
+		is true.
+
+		
+	b.	(E)x in D s.t. (A)y in E, x + y = -y
+
+		In English:
+
+		"There is at least one x in D, such that for
+		all y in E, x + y is -y."
+
+		We have another statement with two quantifiers,
+		so let's follow the same practice.
+
+		~((E)x in D s.t.) is equivalent to:
+			(A)x in D,
+
+		~((A)y in E, x + y = -y)) is equivalent to:
+			(E)y in E s.t. x + y ≠ -y
+
+		And if we put them together:
+
+		(A)x in D, (E)y in E s.t. x + y ≠ -y
+
+		In English:
+
+		"For all x in D, there is at least one y
+		in E, such that x + y is not -y."
+
+		Since the negation of the given statement
+		should be valid for all values of x, it is
+		appropriate to see whether we can find a case
+		where this is not true:
+
+		D = E = {-2, -1, 0, 1, 2}.
+
+		(A)x in D, (E)y in E s.t. x + y ≠ -y
+
+
+		 x	 y	x + y
+		 --------------------
+		-2	-2	-4
+		-1	-2	-3
+		 0	-1	-1
+		 1	-2	-1
+		 2	-2	 0
+
+
+		For all values of x, there is at least one value
+		of y such that the sum of x and y is not -y.
+
+		Using exhaustion, and the table above, we've 
+		proven that the negation of the given statement
+		is true. Therefore, the given statement is false.
+
+
+Solution:	The given statement is false, and its negation
+		is true.
+
+
+	c.	(A)x in D, (E)y in E s.t. xy ≥ y
+		
+		In English:
+
+		"For all x in D, there is at least one y
+		in E, such that xy is larger than or equal
+		to y."
+
+		Let's negate the statement:
+
+		~((A)x in D,) is equivalent to:
+			(E)x in D s.t.
+
+		~((E)y in E s.t. xy ≥ y) is equivalent to:
+			(A)y in E, xy < y
+
+		And if we put it together:
+
+		(E)x in D s.t. (A)y in E, xy < y
+
+		In English:
+
+		"There is at least one x in D, such that
+		for all y in E, xy is less than y."
+
+		Again, it feels more appropriate to test whether
+		the given statement is true or false:
+
+		D = E = {-2, -1, 0, 1, 2}.
+
+		(A)x in D, (E)y in E s.t. xy ≥ y
+
+
+		 x	 y	xy
+		 --------------------
+		-2	-2	 4
+		-1	-2	 2
+		 0	 0	 0
+		 1	 2	 2
+		 2	 2	 4 
+
+		
+		Since there is at least one value of y, where
+		xy is larger than or equal to y, for all values
+		of x in the subsets, we can conclude that
+		the given statement is true. Therefore, the
+		negation of the given statement is false.
+
+
+Solution:	The given statement is true, and its negation
+		is false.
+
+		
+	d.	(E)x in D s.t. (A)y in E, x ≤ y
+
+		In English:
+
+		"There is at least one x in D, such that
+		for all y in E, x is less than or equal to
+		y."
+
+		Let's start by negating once more:
+
+		~((E)x in D s.t.) is equivalent to:
+			(A)x in D,
+
+		~((A)y in E, x ≤ y) is equivalent to:
+			(E)y in E s.t. x > y
+
+		And if we put it together:
+
+		(A)x in D, (E)y in E s.t. x > y
+
+		In English:
+
+		"For all x in D, there is at least one
+		y in E, such that x is larger than y."
+
+		Let's check whether the negation is true
+		or false first:
+
+		D = E = {-2, -1, 0, 1, 2}.
+
+		(A)x in D, (E)y in E s.t. x > y
+
+
+		 x	 y	x > y
+		 --------------------
+		-2	-2	False
+		
+
+		There is no value for y in the subset, for
+		which x is larger than y. Since the given
+		statement is true, we can therefore conclude
+		that the negation must be false.
+
+
+Solution:	The given statement is true, and its negation
+		is false.

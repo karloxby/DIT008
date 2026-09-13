@@ -1,0 +1,67 @@
+In 20-38 determine whether the statement is true or
+false. Justify your answers with a proof or a counterexample,
+as approriate. In each case use only the definitions
+of the terms and the Assumptions listed on page 161, not
+any previously established properties.
+
+
+35.	If m and n are any positive integers and mn is a
+	perfect square, then m and n are perfect squares.
+
+
+	First, let's assess whether we think this is true
+	or false. I'm going to take a leap of faith here,
+	and say that my gut tells me we can prove this is
+	false using a counterexample.
+
+	Let's look at the given statement:
+
+	"If m and n are any positive integers, and mn is
+	a perfect square, then m and n are perfect squares."
+
+	And negate it:
+
+	"There is at least one case where m and n are positive
+	integers, such that mn is a perfect square, and m is not
+	a perfect square or n is not a perfect square."
+
+	And then define what a perfect square is:
+
+		"n is a perfect square <=> n = k**2 = k * k
+		for some integer k"
+
+	Suppose now that we are looking for values of m and n, 
+	where m and n are both positive integers.
+
+	We must prove prove that m or n is not a perfect square,
+	despite mn being a perfect square, in order for the
+	counterexample to be true.
+
+	Let m, n in Z+, and let k in Z
+
+		m = 2
+		n = 8
+
+		mn = 16
+
+		16 is a perfect square, since 4**2 = 4 * 4
+
+		However, neither 2 nor 8 are perfect squares,
+		since:
+
+			1 * 1 = 1
+			2 * 2 = 4
+
+		There is no integer with k**2 = 2
+
+			2 * 2 = 4
+			3 * 3 = 9
+
+		There is no integer with k**2 = 8
+
+	Therefore, there is at least one case where m and n
+	are positive integers, such that mn is a perfect square,
+	and m is not a perfect square or n is not a perfect square.
+
+
+Solution:	The statement is false.

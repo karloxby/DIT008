@@ -1,0 +1,69 @@
+30.	Prove that if one solution for a quadratic
+	equation of the form x**2 + bx + c = 0 is rational
+	(where b and c are rational), then the other
+	solution is also rational. (Use the fact that if
+	the solutions of the equation are r and s, then
+	x**2 + bx + c = (x - r)(x - s).)
+
+
+	Proof:
+
+		Suppose that if one particular solution
+		for a quadratic equation of the form:
+
+			x**2 + bx + c = 0
+
+		is rational, where b and c are rational.
+
+		We must prove that the other solution is
+		also rational.
+
+		Let's assume that the solutions of the
+		equation are r and s, then:
+
+			x**2 + bx + c = (x - r)(x - s)
+
+		Let's expand (x - r)(x - s):
+
+			(x - r)(x - s) = x**2 - xs - rx + rs
+
+		Which means:
+
+			x**2 + bx + c = x**2 - xs - rx + rs
+			bx + c = -xs - rx + rs
+			bx + c = -x(s + r) + rs
+			bx + c = -(s + r)x + rs
+
+			b = -(s + r)
+			c = rs
+
+		We know b and c are rational numbers, and we
+		know that one solution is also rational.
+
+		Assume r is rational.
+
+			s = -(b + r)
+
+		Let's look at the definition of a rational
+		number according to Epp:
+
+			"r is rational <=> (E) a, b in Z,
+			such that r = a / b and b ≠ 0"
+
+		Let p, q, m, n in Z, and q ≠ 0 and n ≠ 0.
+
+		b = (p / q)
+		r = (m / n)
+
+			s = -((p / q) + (m / n))
+			s = -((pn + mq) / (qn))
+		
+		Since we know that (pn + mq) and qn
+		are integers, and q ≠ 0, and n ≠ 0, the 
+		definition for s being a rational is fulfilled.
+
+		Therefore, r and s are rational.
+							(Proof)
+
+
+Solution:	Yes, both solutions are rational.

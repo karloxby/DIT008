@@ -1,0 +1,56 @@
+In 35-39 find the mistakes in the "proofs" that the sum
+of any two rational numbers is a rational number.
+
+
+36.	"Proof: Let rational numbers r = 1/4 and s = 1/2 be
+	given. Then r + s = 1/4 + 1/2 = 3/4, which is a rational
+	number. This is what was to be shown."
+
+
+	Let's first write our own proof:
+
+	Proof:
+		Assume r is 1/4, and s = 1/2, and that r and s are
+		rational numbers.
+
+		We must prove that r + s is a rational numbers.
+
+		First, we know that according to the defintion of
+		a rational number, a rational number has to be
+		the quotient of two integers.
+
+			1, 2 and 4 are all integers.
+	
+		Therefore, both r and s are rational numbers.
+
+		Let's look at the theorem of the sum of two
+		rational numbers next:
+
+		Let a, b, c, d, p, q be integers, and b ≠ 0
+		and d ≠ 0.
+			
+			r + s =	(a/b) + (c/d)
+		  	    =	(ad + bc) / (bd)
+
+		p = ad + bc and q = bd, then p and q
+		are integers, because products and sums of
+		integers are also integers. Also q ≠ 0 by the
+		zero product property.
+
+		Thus, r + s = p / q, where p and q are integers
+		and q ≠ 0.
+
+		Therefore, r + is is rational by definition of
+		a rational number, as was to be shown.
+							(Proof)
+	
+	Now that we have our own proof, we can compare to the
+	given proof. The mistake of the proof is that it's
+	not a proof whether they are rational, but more so
+	a pure calculation.
+
+
+Solution:	The mistake is that it is not a proof. It is
+		a calculation. It only proves for one specific
+		pair, but the given statement was for any sum
+		of rational numbers.

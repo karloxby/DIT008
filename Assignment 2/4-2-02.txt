@@ -1,0 +1,42 @@
+Prove the statements in 1-11. In each case use only the
+definitions of the terms and the Assumptions listed on
+page 161, not any previously established properties of
+odd and even integers. Follow the directions given in this
+section for writing proofs of universal statements.
+
+
+2.	For every integer m, if m is even then 3m + 5 is
+	odd.
+
+	Proof:
+
+		Suppose m is a particular but arbitrarily chosen
+		integer, and suppose m is even.
+
+		We have to prove that 3m + 5 is odd.
+
+		Let's look at the definitions of an even, and
+		respectively an odd number according to Epp:
+
+		n is even <=> n = 2k for some integer k
+		n is odd <=> n = 2k + 1 for some integer k
+		
+			Let k in Z.
+
+			m = 2k
+
+			3m + 5 = 3(2k) + 5 = 6k + 5
+
+			6k + 5 can be written as:
+
+				2(3k + 2) + 1
+
+		2(3k + 2) + 1 fulfills the definition of an
+		odd number, since 3k + 2 is also an integer.
+
+		Therefore, 3m + 5 is odd.
+
+							(Proof)
+
+
+Solution:	(A)m in Z, if m is even, then 3m + 5 is odd.

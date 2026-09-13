@@ -1,0 +1,47 @@
+28.	Suppose a, b, c and d are integers and a ≠ c.
+	Suppose also that x is a real number that
+	satisfies the equation
+
+		ax + b
+		------ = 1.
+		cx + d
+	
+	Must x be rational? If so, express x as a
+	ratio of two integers.
+	
+	
+	We must prove whether x is rational, and if
+	so, express x as a ratio of two integers.
+
+	Let's start by looking at the definition of 
+	a rational number according to Epp:
+
+		"r is rational <=> (E) a, b in Z
+		such that r = a / b and b ≠ 0."
+
+	Let a, b, c, d in Z.
+
+	Now, let's apply some algebra:
+
+		(ax + b) / (cx + d) = 1
+
+		ax + b = cx + d
+
+		ax - cx = d - b
+		
+		x(a - c) = d - b
+
+	Seeing that we know that a ≠ c, they cannot 
+	be the same number. Therefore, a - c ≠ 0.
+
+		x = (d - b) / (a - c)
+	
+	Since (d - b) / (a - c), where d - b, and
+	a - c, are integers, and a - c ≠ 0, the
+	definition of x being rational is fulfilled.
+
+	Therefore, x is rational.
+
+
+Solution:	Yes, x is rational: x = (d - b) / (a - c),
+		where (a - c) ≠ 0.

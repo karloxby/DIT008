@@ -1,0 +1,69 @@
+In 20-38 determine whether the statement is true or
+false. Justify your answers with a proof or a counterexample,
+as approriate. In each case use only the definitions
+of the terms and the Assumptions listed on page 161, not
+any previously established properties.
+
+
+36.	The difference of the squares of any two
+	consecutive integers is odd
+
+
+	Let's first assess what we're dealing with here
+	before we make any assumptions.
+
+	We are looking for any two consecutive integers. 
+	They are consecutive, because they follow each 
+	other on the number axis, e.g. 1 and 2.
+
+	Then we want to square these numbers, e.g. 1**2
+	and 2**2.
+
+	And in order for the statement to be true, the
+	difference of the two squares should be odd,
+	i.e. 1**2 - 2**2 is odd.
+
+	I think we can prove that this is true.
+
+	Proof:
+
+		Suppose that we have any two consecutive
+		integers, and their respective squares.
+
+		We have to prove that the difference of
+		the squares is odd.
+
+		The definition of odd according to Epp is:
+
+			"n is odd <=> n = 2k + 1 for some
+			integer k"
+
+		And the definition of even according to Epp
+		is:
+
+			"n is even <=> n = 2k for some
+			integer k"
+
+		If a and b are to be consecutive, either a
+		is even and b is odd, or a is odd and b is
+		even.
+
+			Let a in Z
+			b = a + 1
+
+			b**2 = (a + 1)**2 = a**2 + 2a + 1
+
+			a**2 - b**2 = a**2 - (a**2 + 2a + 1) =
+			= a**2 - a**2 - 2a - 1 = -2a - 1
+
+			-2a - 1 = 2(-a - 1) + 1
+
+		Since 2(-a - 1) + 1 fulfills the definition
+		of an odd number, where -a - 1 is an integer,
+		we have proven that the statement is true.
+
+		Therefore, the difference of the squares
+		of any two consecutive integers is odd.
+
+
+Solution:	The statement is true.

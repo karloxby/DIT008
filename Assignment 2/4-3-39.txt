@@ -1,0 +1,62 @@
+In 35-39 find the mistakes in the "proofs" that the sum of
+any two rational numbers is a rational number.
+
+
+39.	"Proof: Suppose r and s are rational numbers.
+	If r + s is rational, then by definition of
+	rational r + s = a / b for some integers a and b
+	with b ≠ 0. Also since r and s are rational,
+	r = i / j and s = m / n for some integers i, j, m,
+	and n, with j ≠ 0 and n ≠ 0. It follows that:
+
+		r + s = (i / j) + (m / n) = (a / b)
+	
+	which is a quotient of two integers with a nonzero
+	denominator. Hence it is a rational number. This is
+	what was to be shown."
+
+
+	Let's first break the proof apart, step by step,
+	to see whether we can follow along and deduct
+	if and when there're mistakes.
+
+	Proof:
+
+		Suppose r and s are rational numbers.
+
+		We must show that the sum of r + s is
+		also rational.
+
+		If r + s is rational, then by definition
+		of rational r + s = a / b, for some integers
+		a and b with b ≠ 0.
+
+		Let i, j, m, n be integers, and j ≠ 0 
+		and n ≠ 0
+
+		r = i / j
+		s = m / n
+		
+		It follows that r + s = (i / j) + (m / n) = (a / b)
+
+		Since r + s can be written as (a / b), where
+		a and b are integers, and b ≠ 0, the definition
+		of a rational number being the quotient of two
+		integers with a nonzero denominator is fulfilled.
+
+		Therefore, the sum of two rational numbers is
+		a rational number.
+							(Proof)
+
+	Upon closer examination, I believe the mistake made lies
+	in the initial assumption.
+
+	The proof claims:
+
+		"If r + s is rational, then by definition of..."
+
+	But this is what is to be shown.
+
+
+Solution:	The proof assumes that r + s is rational,
+		which is what is to be shown.

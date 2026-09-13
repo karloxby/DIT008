@@ -1,0 +1,51 @@
+In 20-38 determine whether the statement is true or
+false. Justify your answers with a proof or a counterexample,
+as approriate. In each case use only the definitions
+of the terms and the Assumptions listed on page 161, not
+any previously established properties.
+
+
+23.	The product of any even integer and any integer is
+	even.
+
+
+	Proof:
+
+		Suppose that we have any even integer, and any
+		integer, and suppose both numbers are particular,
+		but arbitrarily chosen.
+
+		We must prove that the product is even.
+
+		The definition of an even number according to
+		Epp:
+
+			"n is even <=> n = 2k for some integer k"
+
+		The definition of an odd number according to
+		Epp:
+
+			"n is odd <=> n = 2k + 1 for some integer k"
+
+		Let's look at the given statement:
+
+		"The product of any even integer and any integer
+		is even."
+
+		Let a, b, x, y in Z
+
+		a = 2x
+		b = y
+
+		ab = 2xy
+
+		Since 2xy fulfills the definition of an even
+		number, and xy is an integer, the statement is
+		true.
+
+		Therefore, the product of any even integer
+		and any integer is even.
+							(Proof)
+
+
+Solution:	The statement is true.
