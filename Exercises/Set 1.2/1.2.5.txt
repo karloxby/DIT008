@@ -1,0 +1,54 @@
+1.2.5.		Which of the following sets are equal?
+
+		A = {0, 1, 2}
+		B = {x ∈ R | -1 ≤ x < 3}
+		C = {x ∈ R | -1 < x < 3}
+		D = {x ∈ Z | -1 < x < 3}
+		E = {x ∈ Z⁺ | -1 < x 3}
+
+
+		A = {0, 1, 2}
+
+		A is a finite set with three elements: 
+		0, 1 and 2.
+
+
+		B = {x ∈ R | -1 ≤ x < 3}
+		
+		x is a real number, such that x is greater
+		than or equal to -1, and less than 3.
+
+		B is a restricted, infinite set.
+
+		
+		C = {x ∈ R | -1 < x < 3}
+
+		x is a real number, such that x is greater
+		than -1, and less than 3.
+
+		C is a proper subset of B. Therefore, the
+		sets are not equal.
+
+
+		D = {x ∈ Z | -1 < x < 3}
+
+		x is an integer, such that x is greater than
+		-1, and less than 3.
+
+		D is a finite set with three elements:
+		0, 1 and 2.
+
+		A = D
+		
+
+		E = {x ∈ Z⁺ | -1 < x < 3}
+
+		x is a positive integer, such that x is
+		greater than -1, and less than 3.
+
+		E is a proper subset of A and D, however
+		since 0 is a neutral integer, it is not
+		part of the set.
+
+
+Solution:	A is equal to D.

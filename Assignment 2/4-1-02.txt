@@ -33,8 +33,6 @@ even, odd, prime, and composite numbers.
 		n = rs for some integers r and s with 1 < r < n and
 		1 < s < n."
 
-		n is composite <=> n is not prime
-
 		n is composite <=> (E) r, s in Z+ s.t. n = rs ^ 1 < r < n ^ 1 < s < n.
 
 

@@ -32,12 +32,10 @@
 
 	We can check which option fits the negation best.
 
-	b.	Some dogs are disloyal.
-	c.	Some dogs are loyal.
+	c.	Some dogs are disloyal.
 
-	Both of these statements imply that there are both
-	loyal and disloyal dogs, which corresponds with our
-	negation of the given statement.
+	Since some refers to at least one, which corresponds
+	to our negation, c is a proper negation.
 
 
-Solution:	b and c are negations of the given statement.
+Solution:	c is a negation of the given statement.

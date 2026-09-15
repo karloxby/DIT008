@@ -1,0 +1,261 @@
+20260914
+
+Lecture 7
+
+(A) = For all: Universal 
+(E) There is at least one: Existential
+
+[x]f = floor
+[x]c = ceiling
+
+
+Recap:
+
+(A) x in R, THE ABSOLUTE VALUE OF X, |x|, is defined by:
+
+|x| = 	x if x ≥ 0, 
+	-x if x < 0
+
+LEMMA 4.5.4:
+
+(A) r in R, -|r| ≤ r ≤ |r|
+
+LEMMA 4.5.5
+
+(A) r in R, |-r| = |r|
+
+THEOREM 4.5.6 (Triangle inequality)
+
+(A) x, y in in R, |x + y| ≤ |x| + |y|
+
+
+Proof:
+	
+	Let x, y in R
+
+	Case 1:
+
+		x + y ≥ 0. Then, |x + y| = x + y. By Lemma
+		4.5.4:
+
+			x ≤ |x| and y ≤ |y|
+		
+		Therefore, |x + y| = x + y ≤ |x| + |y|
+
+	Case 2:
+
+		x + y < 0. Then , |x + y| = -(x + y) = -x + (-y)
+		By Lemma- 4.5.4 and 4.5.5:
+
+			-x ≤ |-x| = |x| and -y ≤ |-y| = |y|
+
+		Hence, |x + y| = -x + (-y) ≤ |x| + |y|
+
+	Therefore, in both cases, |x + y| ≤ |x| + |y|.
+						
+							(Proof)
+
+
+4.6 DIRECT PROOF AND COUNTEREXAMPLE VI: FLOOR AND CEILING
+
+On the number axis:
+
+
+				y		x
+	--------------------------------------------------------------------->	n in Z
+	n - 2		n - 1		n		n + 1		n + 2
+				________|________
+				|		|
+			ceiling y = [y]		floor x = [x]
+
+
+Definition:
+
+(A) x in R, (A) n in Z,		[x] = n <=> n ≤ x ≤ n + 1
+				[x] = n <=> n - 1 ≤ x ≤ n
+
+|_x_| is the floor of x, and |-x-| is the ceiling of x.
+
+E.g.
+
+	6 < 6.25 < 7, i.e. [6.25]f = 6 and [6.25]c = 7
+
+	-3 < -2.01 < -2, i.e. [-2.01]f = -3 and [-2.01]c -2
+
+
+Example 4.6.4
+
+Consider the statement:
+(A)x, y in R, [x + y]f = [x]f + [y]f
+
+This statement is false.
+
+Proof:
+
+	Let x = y = 1/2 in R. Then,
+	[x + y]f = [1/2 + 1/2]f = [1]f = 1, but
+	[x]f + [y]f = [1/2]f + [1/2]f = 0 + 0 = 0 ≠ 1
+
+							(Proof)
+
+
+THEOREM 4.6.1
+(A)x in R, (A)m in Z, floor(x + m) = floor(x) + m
+
+Proof:
+
+	Let x in R, and m in Z. 
+	Then, let floor(x) = n.
+
+	Hence, n ≤ x < n + 1
+
+	And therefore also n + m ≤ x + m < n + m + 1.
+
+	But this means that floor(x + m) is n + m by
+	definition of floor.
+
+	Hence, floor(x + m) = floor(x) + m
+						(Proof)
+
+
+
+	
+A property of floor which is often needed in
+run-time analysis is the (E)k in Z s.t. n = 2k + 1 = 2(k + 1) - 1
+
+
+THEOREM 4.6.2
+(A)n in Z, floor(n/2) =		n / 2 if n is even
+				(n - 1) / 2 if n is odd
+
+Proof:
+
+	Let n in Z.
+	
+	By the quotient remainder theorem, n is either
+	even or odd.
+
+	Case 1: n odd
+			
+		Let n = 2k + 1 for some k in Z.
+
+		Hence, floor(n / 2) = floor((2k + 1) / 2) =
+		floor(k + (1 / 2)) = floor(1 / 2) + k = k	*
+
+		Furthermore, we have (n - 1) / 2 = 2k / 2 = k
+
+		Plugging in *, we see that 
+		floor(n / 2) = (n  - 1) / 2.
+
+	Case 2: n is even
+
+		In this case, let n = 2k for some k in Z.
+
+		Hence, floor(n / 2) = floor(2k/2) =
+		floor(k) = k = n / 2
+	
+							(Proof)
+
+
+The floor function applied to a division yields the integer
+quotient.
+
+
+THEOREM 4.6.3
+
+Let n in Z, d in Z+, if q = floor(n / d) and r = n - d * (floor(n / d)),
+then n = dq + r and 0 ≤ r ≤ d.
+
+Proof:
+
+	Let n in Z, d in Z+, 
+	q = floor(n / d) and 
+	r = n - d * floor(n / d)
+
+	Then, dq + r = d * floor(n / d) + n - d * floor(n / d) = n
+
+	It remains to show that 0 ≤ r < d.
+
+	Since q = floor(n / d), q ≤ (n / d) < q + 1
+		dq ≤ n < d(q + 1)
+		0 ≤ n - dq < d
+	
+	But r = n - dq. Hence, 0 ≤ r ≤ d.
+
+							(Proof)
+
+
+Therefore, define (A)n, d in Z:
+	n div d = floor(n / d)
+	n mod d = n - d * (floor(n / d)
+
+Remark: Mod and div equal the quotient and
+	remainder from the Q-R Thm only
+	if d is in Z+. If d < 0, then n mod < 0
+	in contrast to 0 ≤ r < |d|.
+
+
+4.7 INDIRECT ARGUMENTS: CONTRADICTION AND CONTRAPOSITION
+
+Proof by contradiction:
+
+	Argument form:	   ~p -> contradiction
+			.: p
+
+	(1)	Suppose that the negation of the statement
+		is true.
+
+	(2)	Show that this supposition leads to a
+		contradiction.
+	
+Proofs by contradiction often work when you want
+to show that there is no object with a certain
+property
+
+
+THOREM 4.7.1
+
+There is no greatest integer.
+
+Proof:
+
+	Suppose not, i.e. suppose (E)N in Z s.t.
+	(A)n in Z, n ≤ N.
+
+	Let M = N + 1
+
+	Then, M in Z and M > N. Hence, N is not
+	the greatest integer.
+
+	This contradicts that N is the greatest.
+
+						(Proof)
+
+
+THEOREM 4.7.3
+
+The sum of any rational number and any irrational
+number is irrational.
+
+Proof:
+
+	Suppose not, i.e. suppose that (E) r in Q
+	and s in R irrational s.t. r + s in Q.
+
+	Since r, r + s in Q, (E) a, b, c, d in Z s.t.
+	r = a / b and r + s = c / d and b ≠ 0 and d ≠ 0.
+
+	Therefore, a / b + s = c / d
+		s = c / d - a / b = cb - ad / bd
+
+	Since cb - ad, bd in Z, and bd ≠ 0, s in Q.
+
+	This contradicts that s is irrational.
+
+						(Proof)
+
+
+ARGUMENT BY CONTRAPOSITION:
+
+One can prove a (universal) conditional statement by provings
+its contraposition directly.

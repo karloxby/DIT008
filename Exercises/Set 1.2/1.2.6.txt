@@ -1,0 +1,23 @@
+1.2.6		For each integer n, let Tₙ = {n, n²}. How many
+		elements are in each of T₂, T₋₃, T₁ and T₀? Justify
+		your answers.
+
+
+		T₋₃ = {(-3), (-3)²} = {-3, 9}
+
+Solution:	T₋₃ contains two elements: -3 and 9.
+
+
+		T₀ = {0, 0²} = {0, 0}
+		
+Solution:	T₀ contains one element: 0.
+
+
+		T₁ = {1, 1²}
+
+Solution:	T₁ contains one element: 1.
+
+
+		T₂ = {2, 2²}
+
+Solution:	T₂ contains two elements: 2 and 4.

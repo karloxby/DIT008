@@ -1,0 +1,40 @@
+1.2.2.	Write in words how to read each of the following
+	out loud.
+
+	a.	{x ∈ R⁺ | 0 < x < 1}
+	b.	{x ∈ R | x ≤ 0 or x ≥ 1}
+	c.	{n ∈ Z | n is a factor of 6}
+	d.	{n ∈ Z⁺ | n is a factor of 6}
+
+	
+	a.	{x ∈ R⁺ | 0 < x < 1}
+
+	"x is a positive real number, such that x is
+	greater than 0, and less than 1."
+	
+	b.	{x ∈ R | x ≤ 0 or x ≥ 1}
+
+	"x is a real number, such that x is less than
+	or equal to 0, or x is greater than or equal to 1."
+
+	c.	{n ∈ Z | n is a factor of 6}
+
+	"n is an integer, such that n is a factor of 6."
+
+	d.	{n ∈ Z⁺ | n is a factor of 6}
+
+	"n is a positive integer, such that n is a factor of 6."
+
+
+Solution:	a.	"x is a positive real number, such that
+			x is greater than 0, and less than 1."
+
+		b.	"x is a real number, such that x is less
+			than or equal to 0, or x is greater than or
+			equal to 1."
+
+		c.	"n is an integer, such that n is a factor
+			of 6."
+
+		d.	"n is a poitive integer, such that n is a
+			factor of 6."

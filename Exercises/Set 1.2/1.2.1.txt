@@ -1,0 +1,22 @@
+1.2.1.	Which of the following sets are equal?
+
+	A = {a, b, c, d}	B = {d, e, a, c}
+	C = {d, b, a, c}	D = {a, a, d, e, c, e}
+
+	
+	We know that elements in a set are distinct. It
+	also does not matter in which order they appear.
+
+	A and C both contain four elements:
+
+		a, b, c and d
+	
+	Similarly, B and D contain four elements:
+
+		a, c, d and e
+
+	Therefore, A and C are equal, and B and D
+	are equal.
+
+
+Solution:	A and C are equal, and B and D are equal.

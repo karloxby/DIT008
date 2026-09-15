@@ -34,7 +34,7 @@ Write a negation for each statement.
 	Therefore, 
 		~((A) n in Z, if n is prime, then n is odd or n = 2)
 		is logically equivalent to
-		(E) n in Z s.t., if n is prime, and n is not odd and n ≠ 2
+		(E) n in Z s.t., n is prime, and n is not odd and n ≠ 2
 
 
 Solution:	"There is at least one integer, such that n is prime, 

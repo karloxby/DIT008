@@ -1,0 +1,19 @@
+1.2.3.	a. Is 4 = {4}?
+	b. How many elements are in the set {3, 4, 3, 5}?
+	c. How many elements are in the set {1, {1}, {1, {1}}}?
+
+
+	a.	Is 4 = {4}?
+
+	Solution:	No, the integer 4 is not equal to {4}. However,
+			4 is an element of the set {4}.
+
+	b.	How many elements are in the set {3, 4, 3, 5}?
+
+	Solution:	There're three elements in the set: 
+			3, 4 and 5.
+
+	c.	How many elements are in the set {1, {1}, {1, {1}}}?
+
+	Solution:	There're three elements in the set:
+			1, {1} and {1, {1}}

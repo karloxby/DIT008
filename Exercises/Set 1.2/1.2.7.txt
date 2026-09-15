@@ -1,0 +1,8 @@
+1.2.7.		Use the set-roster notation to indicate the elements
+		in each of the following sets.
+
+		a. S = {n ∈ Z | n = (-1)ᵏ, for some integer k}.
+		b. T = {m ∈ Z | m = 1 + (-1)ⁱ, for some integer i}.
+
+
+

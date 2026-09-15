@@ -1,0 +1,30 @@
+1.2.4.		a. Is 2 ∈ {2}?
+		b. How many elements are in the set {2, 2, 2, 2}?
+		c. How many elements are in the set {0, {0}}?
+		d. Is {0} ∈ {{0}, {1}}?
+		e. Is 0 ∈ {{0}, {1}}
+
+
+		a. Is 2 ∈ {2}?
+
+Solution:	Yes, the integer 2 is in the set {2}.
+
+	
+		b. How many elements are in the set {2, 2, 2, 2}?
+
+Solution:	There's only one elements in the set: 2.
+
+		
+		c. How many elements are in the set {0, {0}}?
+
+Solution:	There're two elements in the set: 0 and {0}.
+
+
+		d. Is {0} ∈ {{0}, {1}}?
+
+Solution:	Yes, {0} is in the set {{0}, {1}}.
+
+
+		e. Is 0 ∈ {{0}, {1}}?
+
+Solution:	No, 0 is not in the set {{0}, {1}}.
