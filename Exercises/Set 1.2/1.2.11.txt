@@ -1,0 +1,53 @@
+1.2.11.		Let A = {w, x, y, z} and B = {a, b}. Use the set-
+		roster notation to write each of the following sets, and
+		indicate the number of elements that are in each set.
+
+		a. A × B
+		b. B × A
+		c. A × A
+		d. B × B
+
+
+		a.	A × B
+
+		A = {w, x, y, z}
+		B = {a, b}
+
+		A × B = {(w, a), (w, b), (x, a), (x, b), (y, a), (y, b), (z, a), (z, b)}
+
+Solution:	There are eight elements in the resulting set.
+		
+
+		b.	B × A
+
+		B = {a, b}
+		A = {w, x, y, z}
+
+		B × A = {(a, w), (b, w), (a, x), (b, x), (a, y), (b, y), (a, z), (b, z)}
+
+Solution:	There are eight elements in the resulting set.
+		
+
+		c.	A × A
+
+		A = {w, x, y, z}
+		A = {w, x, y, z}
+
+		A × A = {
+			(w, w), (w, x), (w, y), (w, z),
+			(x, w), (x, x), (x, y), (x, z),
+			(y, w), (y, x), (y, y), (y, z),
+			(z, w), (z, x), (z, y), (z, z)
+			}
+
+Solution:	There are sixteen elements in the resulting set.
+		
+
+		d.	B × B
+
+		B = {a, b}
+		B = {a, b}
+
+		B × B = {(a, a), (a, b), (b, a), (b, b)}
+
+Solution:	There are four elements in the resulting set.

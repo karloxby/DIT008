@@ -1,0 +1,41 @@
+1.2.8.		Let A = {c, d, f, g}, B = {f, j}, and C = {d, g}.
+		Answer each of the following questions. Give
+		reasons for your answers.
+
+		a. Is B ⊆ A?
+		b. Is C ⊆ A?
+		c. Is C ⊆ C?
+		d. Is C a proper subset of A?
+
+
+		a.	Is B ⊆ A?
+
+		A = {c, d, f, g}
+		B = {f, j}
+
+Solution:	No, since j is not in A, and so B ⊄ A.
+
+		
+		b.	Is C ⊆ A?
+
+		A = {c, d, f, g}
+		C = {d, g}
+
+Solution:	Yes, both d and g are in A, and so C ⊄ A.
+		
+
+		c.	Is C ⊆ C?
+
+		C = {d, g}
+
+Solution:	Yes, since the definition of subset implies
+		that all sets are subsets of themselves.
+
+
+		d. Is C a proper subset of A?
+
+		A = {c, d, f, g}
+		C = {d, g}
+
+Solution:	Yes, since all elements of C are in A, but
+		A has at least one element that is not in C.

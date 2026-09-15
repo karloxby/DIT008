@@ -1,0 +1,66 @@
+1.2.14.		Let R = {a}, S = {x, y}, and T = {p, q, r}. Find
+		each of the following sets.
+
+		a. R × (S × T)
+		b. (R × S) × T
+		c. R × S × T
+
+
+		a. R × (S × T)
+
+		R = {a}
+		S = {x, y}
+		T = {p, q, r}
+
+		(S × T) = {
+			(x, p), (x, q), (x, r),
+			(y, p), (y, q), (y, r)
+		}
+
+		R × (S × T) = {
+			(a, (x, p)), (a, (x, q)), (a, (x, r)),
+			(a, (y, p)), (a, (y, q)), (a, (y, r)),
+		}
+
+Solution:	R × (S × T) = {
+			(a, (x, p)), (a, (x, q)), (a, (x, r)),
+			(a, (y, p)), (a, (y, q)), (a, (y, r)),
+		}
+
+
+		b. (R × S) × T
+
+		R = {a}
+		S = {x, y}
+		T = {p, q, r}
+
+		(R × S) = {
+			(a, x), (a, y)
+		}
+
+		(R × S) × T = {
+			((a, x), p), ((a, x), q), ((a, x), r),
+			((a, y), p), ((a, y), q), ((a, y), r)
+		}
+
+Solution:	(R × S) × T = {
+			((a, x), p), ((a, x), q), ((a, x), r),
+			((a, y), p), ((a, y), q), ((a, y), r)
+		}
+
+
+		c. R × S × T
+
+		R = {a}
+		S = {x, y}
+		T = {p, q, r}
+
+		R × S × T = {
+			(a, x, p), (a, x, q), (a, x, r),
+			(a, y, p), (a, y, q), (a, y, r)
+		}
+
+Solution:	R × S × T = {
+			(a, x, p), (a, x, q), (a, x, r),
+			(a, y, p), (a, y, q), (a, y, r)
+		}

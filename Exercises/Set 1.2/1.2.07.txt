@@ -1,0 +1,77 @@
+1.2.7.		Use the set-roster notation to indicate the elements
+		in each of the following sets.
+
+		a. S = {n ∈ Z | n = (-1)ᵏ, for some integer k}.
+		b. T = {m ∈ Z | m = 1 + (-1)ⁱ, for some integer i}.
+		c. U = {r ∈ Z | 2 ≤ r ≤ -2}.
+		d. V = {s ∈ Z | s > 2 or s < 3}.
+		e. W = {t ∈ Z | 1 < t < -3}.
+		f. X = {u ∈ Z | u ≤ 4 or u ≥ 1}.
+
+		a.	S = {n ∈ Z | n = (-1)ᵏ, for some integer k}
+
+		n is an integer, such that n is (-1)ᵏ, for some
+		integer k.
+
+		If k is even, or if k is 0, then the element is 1, 
+		else if k is odd, then the element is -1.
+
+Solution:	S = {-1, 1}
+
+
+		b. T = {m ∈ Z | m = 1 + (-1)ⁱ, for some integer i}.
+
+		m is an integer, such that m is 1 + (-1)ⁱ, for some
+		integer i.
+
+		If i is even, or if i is 0, then the element is 2,
+		else if i is odd, then the element is 0.
+
+Solution:	T = {0, 2}
+
+
+		c. U = {r ∈ Z | 2 ≤ r ≤ -2}.
+
+		r is an integer, such that r is larger than or
+		equal to 2, and r is less than or equal to -2.
+
+		Since r has to be both greater than or equal to
+		2, and less than or equal to -2, there are no
+		elements which qualify.
+
+Solution:	U = ∅
+		
+
+		d. V = {s ∈ Z | s > 2 or s < 3}.
+
+		s is an integer, such that s is greater than 2,
+		or s is less than 3.
+
+		Since s can be either greater than 2, or is
+		less than 3, then s can be all integers.
+
+Solution:	V = Z
+
+
+		e. W = {t ∈ Z | 1 < t < -3}.
+
+		t is an integer, such that t is greater than 1,
+		and less than -3.
+
+		Since t has to be both greater than 1, and
+		less than -3, there are no elements which qualify.
+
+Solution:	W = ∅
+
+
+		f. X = {u ∈ Z | u ≤ 4 or u ≥ 1}.
+
+		u is an integer, such that u is less than
+		or equal to 4, or u is more than or equal
+		to 1.
+
+		Since u can be both less than or equal to 4,
+		or more than or equal to 1, then u can be
+		all integers.
+
+Solution:	X = Z

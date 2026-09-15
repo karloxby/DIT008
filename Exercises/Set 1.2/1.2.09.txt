@@ -1,0 +1,62 @@
+1.2.9.		a. Is 3 ∈ {1, 2, 3}?
+		b. Is 1 ⊆ {1}?
+		c. Is {2} ∈ {1, 2}?
+		d. Is {3} ∈ {1, {2}, {3}}?
+		e. Is 1 ∈ {1}?
+		f. Is {2} ⊆ {1, {2}, {3}}?
+		g. Is {1} ⊆ {1, 2}?
+		h. Is 1 ∈ {{1}, 2}?
+		i. Is {1} ⊆ {1, {2}}?
+		j. Is {1} ⊆ {1}?
+
+
+		a. Is 3 ∈ {1, 2, 3}?
+
+Solution:	Yes, 3 is an element of the set.
+
+
+		b. Is 1 ⊆ {1}?
+
+Solution:	No, 1 is not a subset of {1}.
+
+
+		c. Is {2} ∈ {1, 2}?
+
+Solution:	No, {2} is not an element of the set.
+
+
+		d. Is {3} ∈ {1, {2}, {3}}?
+		
+Solution:	Yes, {3} is an element of the set.
+
+
+		e. Is 1 ∈ {1}?
+
+Solution:	Yes, 1 is an element of the set.
+
+
+		f. Is {2} ⊆ {1, {2}, {3}}?
+
+Solution:	No, {2} is not a subset of the set.
+
+
+		g. Is {1} ⊆ {1, 2}?
+
+Solution:	Yes, {1} is a subset of the set.
+
+
+		h. Is 1 ∈ {{1}, 2}?
+
+Solution:	No, 1 is not an element of the set.
+
+
+		i. Is {1} ⊆ {1, {2}}?
+
+Solution:	Yes, {1} is a subset of the set.
+
+
+		j. Is {1} ⊆ {1}?
+		
+Solution:	Yes, {1} is a subset of the set.
+
+
