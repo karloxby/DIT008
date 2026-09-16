@@ -1,0 +1,194 @@
+Recap:
+
+Proof by contradiction:
+
+	~p → contradiction
+	∴ p
+
+
+ARGUMENT BY CONTRAPOSITION
+
+Proof by Contraposition:
+
+	(1)	Express the statement to be proven
+		in the form ∀x ∈ D, P(x) → Q(x)
+
+	(2)	Rewrite the statement in its
+		contrapositive
+
+		∀x ∈ D, ~Q(x) → ~P(x)
+	
+	(3)	Prove the contrapositive by direct
+		proof.
+
+		(a)	Let x ∈ D st Q(x) is false
+		(b)	Show that P(x) is false
+
+
+PROPOSITION (4.7.4)
+
+For every integer n, if n² is even, then n is even.
+
+∀n ∈ ℤ, n² is even → n is even
+
+Proof:
+
+	Prove the contrapositive:
+
+	∀n ∈ ℤ odd, n² is odd
+
+	Let n ∈ Z be odd. Then ∃k ∈ Z st n = 2k + 1
+
+	Hence, n² = (2k + 1)² = 4k² + 4k + 1 =
+	= 2(2k² + 2k) + 1
+
+	Since 2k² + 2k ∈ Z, n² is odd
+			
+					□
+
+
+5.1	SEQUENCES
+
+Consider the number of ancestors several
+generations back:
+
+
+Generation	1	2	3	4	...
+# ancestors	2	4	8	16	...
+
+
+In the kᵗʰ generation, we have Aₖ = 2ᵏ ancestors.
+
+DEFINITION
+
+A SEQUENCE assigns a number to either
+
+	- All integers between two given integers
+	- or all integers ≥ a given integer.
+
+We write:
+
+
+	    aₘ, 		aₘ₊₁, 		..., 		aₙ
+	    ---			----			       ---
+	initial term	        term			    final term
+
+
+	Aₖ = 2ᵏ is an EXPLICIT FORMULA.
+
+It is possible that sequences with different explicit
+formulas have the same terms.
+
+E.g.
+
+	aₖ = k / (k + 1)	k ≥ 1
+	bⱼ = (j - 1) / j	j ≥ 2
+
+Since	a₁ = 1 / 2 = b₂ ; a₂ = 2 / 3 = b₃
+
+
+SUMMATION NOTATION
+
+What is the total number of ancestors in the
+last 4 generations?
+
+A₁ + A₂ + A₃ + A₄ = 2¹ + 2² + 2³ + 2⁴ = 30
+
+
+DEFINITION:
+
+For m ≤ n integers, define:
+
+	ⁿ∑ₖ₌ₘ aₖ = aₘ + aₘ₊₁ + ... + aₙ
+
+Formally, define recursively ∀m ∈ Z
+
+	ᵐ∑ₖ₌ₘ aₖ = aₘ
+
+	and
+
+	ⁿ∑ₖ₌ₘ aₖ = aₙ + ⁿ⁻¹∑ₖ₌ₘ aₖ ∀n > m
+
+
+PRODUCT NOTATION
+
+Use ∏ to denote products, e.g. ₄∏ₖ₊₁ aₖ = a₁ * a₂ * a₃ * a₄
+
+For m ≤ n integers, define:
+	
+	ᵐ∏ₖ₌ₘ aₖ = aₘ
+
+	and
+
+	ⁿ∏ₖ₌ₘ aₖ = aₙ * ⁿ⁻¹∏ₖ₌ₘ aₖ ∀n > m
+
+
+THEOREM (5.1.1)
+
+Let am, am+1, ..., and bm, bm+1, ... be sequences in R and c ∈ R.
+
+Then for any n ≥ m
+
+	(1)	ⁿ∑ₖ₌ₘ aₖ + ⁿ∑ₖ₌ₘ bₖ = ⁿ∑ₖ₌ₘ (aₖ + bₖ)
+	
+	(2)	cⁿ∑ₖ₌ₘ aₖ = ⁿ∑ₖ₌ₘ caₖ
+
+	(3)	(ⁿ∏ₖ₌ₘ aₖ)(ⁿ∏ₖ₌ₘ bₖ) = ⁿ∏ₖ₌ₘ aₖbₖ
+
+
+Note that the summation variable is a DUMMY variable,
+i.e.:
+
+	ⁿ∑ₖ₌ₘ aₖ = ⁿ∑ⱼ₌ₘ aⱼ
+
+Therefore, one can change the summation variable:
+
+	ⁿ∑ₖ₌ₘ (k - 1)² ≡ ⁿ⁻¹∑ₘ₋₁ k²
+
+
+Consider the number of ways to order a list
+with four elements:
+
+	(1)	Pick 1ˢᵗ element	→ 4 options
+	(2)	2ⁿᵈ			→ 3
+	(3)	3ʳᵈ			→ 2
+	(4)	4ᵗʰ			→ 1
+
+The total number is 4 * 3 * 2 * 1 = 4!
+
+
+DEFINITION:
+
+∀n, m in Z⁺, define n-factorial by
+
+	n! = n * (n - 1) * (n - 2) * ... * 2 * 1
+
+Define O! = 1
+
+		1, n = 0
+Recursively, n! =
+		n * (n - 1)!, n ≥ 1
+
+
+5.2	MATHEMATICAL INDUCTION I: PROVING FORMULAS
+
+METHOD OF PROOF BY INDUCTION
+
+Consider the statement "∀n ∈ Z, n ≥ a, P(n)"
+
+	(1)	BASE STEP: 
+		Show that P(a) is true.
+
+	(2)	INDUCTIVE STEP:
+		Show that ∀k ∈ Z, k ≥ a, P(k) → P(k + 1)
+		
+		Suppose P(k) for any particular, but
+		arbitrary k ∈ Z, k ≥ a
+
+		("INDUCTIVE HYPOTHESIS")
+
+		Then, show P(k + 1)
+		
+THEOREM (5.2.1)
+
+

@@ -1,0 +1,31 @@
+4.4.39.		Suppose that in standard factored form
+		a = p₁ᵉ¹ p₂ᵉ² ... pₖᵉᵏ, where k is a positive integer: p₁,
+		p₂, ..., pₖ are prime numbers; and e₁, e₂, ..., eₖ 
+		are positive integers.
+
+		a. What is the standard factored form for a³?
+
+		b. Find the least positive integer k such that
+		2⁴ * 3⁵ * 7 * 11² * k is a perfect cube (that is, it
+		equals an integer to the third power). Write the
+		resulting product as a perfect cube.
+
+
+		a.	What is the standard factored form for a³?
+		
+		a³ = a¹ * a¹ * a¹
+		a³ = a¹ * a²
+
+Solution:	a³ = a¹ * a²
+
+		
+		b.	Find the least positive integer k such that
+			2⁴ * 3⁵ * 7 * 11² * k is a perfect cube (that is, it
+			equals an integer to the third power). Write the
+			resulting product as a perfect cube.
+			
+			2⁴ = 2² * 2² = 
+
+			* 3⁵ * 7 * 11² * k
+
+

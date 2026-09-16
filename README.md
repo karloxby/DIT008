@@ -105,163 +105,105 @@
 
 ## Useful Notation
 
+### Logic & Quantifiers
+
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| ¬ | ∧ | ∨ | → | ↔ | ≡ | ∴ | ∵ |
+| ∀ | ∃ | ∄ | ⊤ | ⊥ |   |   |   |
+
 ### Sets
 
-| Symbol | Meaning |
-|--------|---------|
-| ∈ | is an element of |
-| ∉ | is not an element of |
-| ⊆ | is a subset of |
-| ⊄ | is not a subset of |
-| ⊂ | is a proper subset of |
-| ⊈ | is not a subset of |
-| ∅ | empty set |
-| ∪ | union |
-| ∩ | intersection |
-| \ | set difference |
-| \| | such that |
-| { } | set |
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| ∈ | ∉ | ⊆ | ⊄ | ⊂ | ⊈ | ∅ | { } |
+| ∪ | ∩ | \ | \| | × | ℘ |   |   |
 
 ### Number Sets
 
-| Symbol | Meaning |
-|--------|---------|
-| ℕ | natural numbers |
-| ℤ | integers |
-| ℤ⁺ | positive integers |
-| ℤ⁻ | negative integers |
-| ℚ | rational numbers |
-| ℝ | real numbers |
-| ℝ⁺ | positive real numbers |
-| ℝ⁻ | negative real numbers |
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| ℕ | ℤ | ℤ⁺ | ℤ⁻ | ℚ | ℝ | ℝ⁺ | ℝ⁻ |
 
-### Cartesian Products
+### Relations & Comparison
 
-| Symbol | Meaning |
-|--------|---------|
-| × | Cartesian product |
-| A × B | Cartesian product of A and B |
-| A² | A × A |
-| A³ | A × A × A |
-| Aⁿ | A × A × ... × A, n times |
-| (x, y) | ordered pair |
-| (x, y, z) | ordered triple |
-| (x₁, x₂, ..., xₙ) | ordered n-tuple |
-| ℕ² | ℕ × ℕ |
-| ℤ² | ℤ × ℤ |
-| ℚ² | ℚ × ℚ |
-| ℝ² | ℝ × ℝ |
-| ℝ³ | ℝ × ℝ × ℝ |
-| ℝⁿ | n-tuples of real numbers |
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| = | ≠ | < | > | ≤ | ≥ | ∣ | ∤ |
 
-### Logic
+### Summation & Product
 
-| Symbol | Meaning |
-|--------|---------|
-| ¬ | not / negation |
-| ∧ | and |
-| ∨ | or |
-| → | implies / if...then |
-| ↔ | if and only if |
-| ≡ | logically equivalent |
-| ∴ | therefore |
-| ∵ | because |
+|   |   |   |   |   |   |
+|---|---|---|---|---|---|
+| ∑ | ∏ | ∑ᵢ₌₁ⁿ | ∑ₖ₌ₘⁿ | ∏ᵢ₌₁ⁿ | ∏ₖ₌ₘⁿ |
 
-### Quantifiers
+### Arithmetic
 
-| Symbol | Meaning |
-|--------|---------|
-| ∀ | for all |
-| ∃ | there exists |
-| ∄ | there does not exist |
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| + | − | × | ÷ | ± | √ | ∞ | ! |
+| ⌊x⌋ | ⌈x⌉ |   |   |   |   |   |   |
 
-### Comparison
+### Superscripts
 
-| Symbol | Meaning |
-|--------|---------|
-| = | equal to |
-| ≠ | not equal to |
-| < | less than |
-| > | greater than |
-| ≤ | less than or equal to |
-| ≥ | greater than or equal to |
+|   |   |   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|---|
+| ⁰ | ¹ | ² | ³ | ⁴ | ⁵ | ⁶ | ⁷ | ⁸ | ⁹ |
+| ᵃ | ᵇ | ᶜ | ᵈ | ᵉ | ᶠ | ᵍ | ʰ | ⁱ | ʲ |
+| ᵏ | ˡ | ᵐ | ⁿ | ᵒ | ᵖ | ʳ | ˢ | ᵗ | ᵘ |
+| ᵛ | ʷ | ˣ | ʸ | ᶻ |   |   |   |   |   |
+| ⁺ | ⁻ | ⁼ | ⁽ | ⁾ |   |   |   |   |   |
 
-### Divisibility
-
-| Symbol | Meaning |
-|--------|---------|
-| a \| b | a divides b |
-| a ∤ b | a does not divide b |
-
-### Powers
-
-| Symbol | Meaning |
-|--------|---------|
-| ⁰ | power of 0 |
-| ¹ | power of 1 |
-| ² | squared |
-| ³ | cubed |
-| ⁴ | power of 4 |
-| ⁵ | power of 5 |
-| ⁶ | power of 6 |
-| ⁷ | power of 7 |
-| ⁸ | power of 8 |
-| ⁹ | power of 9 |
-| ⁿ | power of n |
-| ᵏ | power of k |
-| ⁱ | power of i |
-| ʲ | power of j |
-| ᵐ | power of m |
+Missing: q
 
 ### Subscripts
 
-| Symbol | Meaning |
-|--------|---------|
-| ₀ | subscript 0 |
-| ₁ | subscript 1 |
-| ₂ | subscript 2 |
-| ₃ | subscript 3 |
-| ₄ | subscript 4 |
-| ₅ | subscript 5 |
-| ₆ | subscript 6 |
-| ₇ | subscript 7 |
-| ₈ | subscript 8 |
-| ₉ | subscript 9 |
-| ₙ | subscript n |
-| ᵢ | subscript i |
-| ⱼ | subscript j |
-| ₖ | subscript k |
-| ₘ | subscript m |
+|   |   |   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|---|
+| ₀ | ₁ | ₂ | ₃ | ₄ | ₅ | ₆ | ₇ | ₈ | ₉ |
+| ₐ | ₑ | ₕ | ᵢ | ⱼ | ₖ | ₗ | ₘ | ₙ | ₒ |
+| ₚ | ᵣ | ₛ | ₜ | ᵤ | ᵥ | ₓ |   |   |   |
+| ₊ | ₋ | ₌ | ₍ | ₎ |   |   |   |   |   |
 
-### Arithmetic and Other Symbols
+Missing: b, c, d, f, g, q, w, y, z
 
-| Symbol | Meaning |
-|--------|---------|
-| + | addition |
-| − | subtraction |
-| × | multiplication |
-| ÷ | division |
-| ± | plus or minus |
-| √ | square root |
-| ∞ | infinity |
-| ∑ | summation |
-| ∏ | product |
-| ⌊x⌋ | floor |
-| ⌈x⌉ | ceiling |
+### Sequences & Indexed Notation
 
-### Useful Combinations
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| a₀ | a₁ | a₂ | aₙ | aᵢ | aⱼ | aₖ | aₘ |
+| aₙ₋₁ | aₙ₊₁ | aₖ₋₁ | aₖ₊₁ | aₘ₋₁ | aₘ₊₁ | … | ⋯ |
 
-| Notation | Meaning |
-|----------|---------|
-| x ∈ A | x is an element of A |
-| x ∉ A | x is not an element of A |
-| A ⊆ B | A is a subset of B |
-| A ⊄ B | A is not a subset of B |
-| a \| b | a divides b |
-| a ∤ b | a does not divide b |
-| (x, y) ∈ A × B | (x, y) is an element of A × B |
-| (x, y) ∉ A × B | (x, y) is not an element of A × B |
-| ∀x ∈ ℤ | for every integer x |
-| ∃x ∈ ℤ | there exists an integer x |
-| ∀(x, y) ∈ ℤ² | for every ordered pair of integers |
-| ∃(x, y) ∈ ℤ² | there exists an ordered pair of integers |
+### Common Powers
+
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+| a⁰ | a¹ | a² | a³ | aⁿ | aᵐ | aᵏ | aⁱ |
+| 2ⁿ | 2ᵏ | aⁿ⁻¹ | aⁿ⁺¹ | aᵏ⁻¹ | aᵏ⁺¹ |   |   |
+
+### Ordered Tuples & Cartesian Products
+
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| (x, y) | (x, y, z) | (x₁, ..., xₙ) | A × B | A² | A³ | Aⁿ |
+| ℕ² | ℤ² | ℚ² | ℝ² | ℝ³ | ℝⁿ |   |
+
+### Common Quantified Forms
+
+|   |   |   |   |
+|---|---|---|---|
+| ∀x ∈ ℤ | ∃x ∈ ℤ | ∀x ∈ ℝ | ∃x ∈ ℝ |
+| ∀n ∈ ℤ | ∃n ∈ ℤ | ∀k ∈ ℤ | ∃k ∈ ℤ |
+| ∀x ∈ A | ∃x ∈ A | ∀(x,y) ∈ ℤ² | ∃(x,y) ∈ ℤ² |
+
+### Divisibility
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| a ∣ b | a ∤ b | m ∣ n | m ∤ n | d ∣ n |
+
+### Ordinals
+
+|   |   |   |   |
+|---|---|---|---|
+| ˢᵗ | ⁿᵈ | ʳᵈ | ᵗʰ |
