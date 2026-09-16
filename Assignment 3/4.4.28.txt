@@ -1,0 +1,9 @@
+For each statement in 20-32, determine whether the
+statement is true or false. Prove the statement directly
+from the definitions if its true, and give counterexample
+if its false.
+
+
+4.4.28.		For all integers a, b and c, if a|bc then a|b or a|c.
+
+		Suppose a, b and c 
