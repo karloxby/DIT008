@@ -47,7 +47,7 @@
 		greater than -1, and less than 3.
 
 		E is a proper subset of A and D, however
-		since 0 is a neutral integer, it is not
+		since 0 is not a positive integer, it is not
 		part of the set.
 
 

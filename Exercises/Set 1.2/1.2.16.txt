@@ -1,0 +1,13 @@
+1.2.16.		Let T = {x, y}. List all the strings of length 5 over
+		T that have exactly one y.
+
+
+		2⁵ = 32
+
+		There're 32 possible combinations of string of
+		length 5 for x and y.
+
+		We are looking for the strings with exactly
+		one y.
+
+Solution:	xxxxy, xxxyx, xxyxx, xyxxx, yxxxx

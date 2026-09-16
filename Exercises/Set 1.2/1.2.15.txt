@@ -1,0 +1,26 @@
+1.2.15.		Let S = {0, 1}. List all the strings of length 4 over
+		S that contains three or more 0's.
+
+		
+		Suppose S = {0, 1}
+
+		We must list all strings of length 4 over S that
+		contains three or more 0's.
+
+		Let elements in S = 2
+		Let length of strings = 4
+
+		2⁴ = 16
+
+		There are 16 possible combinations of strings
+		of length 4 over S.
+
+		0000, 0001, 0011, 0111 
+		0101, 0100, 0010, 1001
+		1010, 1011, 1101, 0110
+		1111, 1110, 1100, 1000
+
+		Since S = {0, 1}, then a string over S is called a
+		bit string.
+
+Solution:	0000, 0001, 0100, 0010, 1000

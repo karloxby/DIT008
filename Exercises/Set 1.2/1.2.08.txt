@@ -21,7 +21,7 @@ Solution:	No, since j is not in A, and so B ⊄ A.
 		A = {c, d, f, g}
 		C = {d, g}
 
-Solution:	Yes, both d and g are in A, and so C ⊄ A.
+Solution:	Yes, both d and g are in A, and so C ⊆ A.
 		
 
 		c.	Is C ⊆ C?
