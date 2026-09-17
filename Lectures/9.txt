@@ -1,0 +1,84 @@
+20260917
+
+LECTURE 9
+
+Base Step
+
+	(1) if n ≥ 1
+
+Inductive step
+
+	(k) then (k + 1)
+
+
+
+THEOREM (5.2.2): GEOMETRIC SUM
+
+(A) r in R, r ≠ 1 and (A) n in Z**≥0, (n)SUM(i=0) = r**i = r**n+1 - 1 / r - 1
+
+Proof (by Induction):
+
+Let r in R, r ≠ 1 and n in Z**≥0 Let P(n) be
+(n)SUM(i=0) = r**i = r**n+1 - 1 / r -1
+
+Base step:
+
+	Establish P(0)
+
+	LEFT:
+	(0)SUM(i=0) r**i = r**0 = 1
+
+	RIGHT:
+	r**0+1 - 1 / r - 1 = 1
+
+	Hence P(0) is true
+
+Inductive case:
+
+	Let k in Z**≥0 and assume P(k). Then,
+	(k+1)SUM(i=0) r**i = (k)SUM(i=0) r**i + r**k+1
+
+	P(k) = r**k+1 - 1 / r - 1 + r**k+1
+
+	= r**k+1 - 1 + r**k+1(r-1) / r - 1 = r**k+2 - 1 / r - 1
+
+	Hence P(k+1) is true.
+
+						(Proof)
+
+FUN PART COMES NOW
+
+5.6 	DEFINING SEQUENCES RECURSIVELY
+
+DEFINITION:
+
+(where v means subscript...)
+
+A recurrence relation for a sequence av0, av1, ...
+is a formula which relates each term avk to certain
+of its predecessors avk-1, ak-2,...,ak-i, where i in Z
+with k - i ≥ 0. The INITIAL CONDITIONS specify
+the values av0, av1, ..., avi-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

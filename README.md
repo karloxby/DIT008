@@ -5,7 +5,7 @@
 ### Upcoming Assignments
 
 <details>
-<summary><strong>Assignment 3</strong> — 94 points</summary>
+<summary><strong>Assignment 3</strong> — 28 exercises</summary>
 
 | Exercise | Points |
 |----------|-------:|
@@ -38,14 +38,14 @@
 | 5.2.26   | 2      |
 | 5.2.29   | 2      |
 
-**Total points: 94**
+**Total exercises: 28**
 
 </details>
 
 ### Past Assignments
 
 <details>
-<summary><strong>Assignment 2</strong> — 73 points</summary>
+<summary><strong>Assignment 2</strong> — 24 exercises</summary>
 
 | Exercise | Points |
 |----------|-------:|
@@ -74,12 +74,12 @@
 | 4.3.36   | 2      |
 | 4.3.39   | 3      |
 
-**Total points: 73**
+**Total exercises: 24**
 
 </details>
 
 <details>
-<summary><strong>Assignment 1</strong> — 74 points</summary>
+<summary><strong>Assignment 1</strong> — 15 exercises</summary>
 
 | Exercise | Points |
 |----------|-------:|
@@ -99,7 +99,7 @@
 | 2.3.40   | 4      |
 | 2.3.42   | 6      |
 
-**Total points: 74**
+**Total exercises: 15**
 
 </details>
 

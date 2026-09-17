@@ -1,0 +1,33 @@
+4.5.30.		a. Use the quotient-remainder theorem with divisor
+		equal to 3 to prove that the product of any two
+		consecutive integers has the form 3k or 3k + 2 for
+		some integer k.
+
+		b. Use the mod notation to rewrite the result of
+		part (a).
+
+
+		a.	Use the quotient-remainder theorem with
+			divisor equal to 3 to prove that the product
+			of any two consecutive integers has the form
+			3k or 3k + 2 for some integer k.
+
+		Suppose k is some integer.
+
+		We must show using the quotient-remainder theorem
+		with divisor equal to 3, that any two consecutive
+		integers has the form 3k or 3k + 2 for k.
+		
+		The quotient-remainder theorem:
+
+		"∀n ∈ ℤ, and ∀d ∈ ℤ⁺, ∃q, r ∈ ℤ st n = dq + r
+		and 0 ≤ r < d"
+
+		In English:
+
+		"For all integers n, and for all positive integers
+		d, there are some integers q and r, such that
+		n is dq + r, and r is greater than or equal to 0,
+		and less than d."
+
+		Let 
