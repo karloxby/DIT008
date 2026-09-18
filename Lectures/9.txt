@@ -60,8 +60,224 @@ of its predecessors avk-1, ak-2,...,ak-i, where i in Z
 with k - i ≥ 0. The INITIAL CONDITIONS specify
 the values av0, av1, ..., avi-1
 
+Remark: We cannot compute cv3 without cv2 etc.
+
+Note: 	recurrence relations may be written in
+	different equivalent ways, e.g.
+
+		Sk = 3Sk-1 - 1 (A) k ≥ 1
+		is equivalent to:
+		Sk+1 = 3Sk - 1 (A) k ≥ 0
 
 
+5.7	SOLVING RECURRENCE RELATIONS BY ITERATION
+
+Finding an explicit expression for a recurrence
+relation is called SOLVING the recurrence, e.g. for
+the tower of Hanoi, m(subscript)n = 2**n -1
+
+
+METHOD OF ITERATION
+
+Calculate successive terms until a pattern
+emerges and guess a general formula. This
+guess can be verified by an induction proof.
+
+A sequence a0, a1, ... is an ARITHMETIC SEQUENCE
+iff there is a constant d in R st ak = ak-1 + d (A) k ≥ 1
+
+Use method of iteration:
+
+a0
+a1 = a0 + d
+a2 = a1 + d = a0 + d + d = a0 + 2d
+a3 = a2 + d = a0 + 3d
+
+Hence, guess that ak = a0 + kd (A) k ≥ 0
+
+Proof by induction:
+
+Base case: k = 0
+
+	a0 + 0*d = 0
+
+	so ak = a0 + kd for k = 0
+
+Inductive step:
+
+Suppose that ak = a0 + kd for some k ≥ 0. Then
+
+	ak+1 = ak + d
+	= a0 + kd + d = a0 + (k+1)d, as desired
+
+					(Proof)
+
+DEFINITION:
+
+(where v means subscript)
+
+A sequence av0, av1, ... is a GEOMETRIC SEQUENCE iff
+there is a constant r, such that avk = ravk-1, (A)k ≥ 1
+
+a0
+a1 = ra1 = r**2a0
+a2 = ra2 = r**3a0
+
+Hence, guess that ak = rak = r**ka0, which can be
+proven by induction.
+
+Often, one can use expressions for sums to
+simplify the solution.
+
+
+6.1 	SET THEORY: DEFINITIONS AND THE ELEMENT METHOD OF PROOF
+
+A = { x in S | P(x) } 
+is the set of all x in S, such that P(x) is true
+
+
+DEFINITION
+
+A subset B iff (A)x, if x in A, then x in B
+A proper subset B iff:
+
+	(1) A is a subset of B
+	(2) (E)x in B st x is not in A
+
+
+ELEMENT ARGUMENTS FOR SUBSETS
+
+Let X, Y be sets. To prove that X subset y
+
+	(1) Suppose that x in X particular but arbitrary
+	(2) We show that x in Y
+
+
+SET EQUALITY
+
+Two sets are equal iff they have the same elements
+
+
+DEFINITION:
+
+Let A, B be sets. Then, A = B iff A is a subet of B, and
+B is a subset of A.
+
+
+Venn diagrams are useful stuff to represent sets as regions
+in the plane.
+
+
+DEFINITION:
+
+Let A, B be subsets of a universal set U.
+
+A ∪ B = {x in U | x in A or x in B)		"union"
+
+A ∩ B = {x in U | x in A and x in B}		"intersection"
+
+A - B = {x in U | x in A and x not in B}	"difference"
+
+Aᶜ = {x in U | x not in A}			"complement"
+
+
+DEFINITION:
+
+Given subsets A₀, A₁, ..., Aₙ of U and n in Z**≥0
+
+ⁿ∩ᵢ₌₀ Aᵢ = {x in U | (A) i in {0, 1, ..., n}, x in Aᵢ}
+
+The set with no elements is the EMPTY SET ∅.
+
+
+PARTITIONS OF SETS
+
+Sets can be divided into non-overlapping subsets. These
+are called partitions.
+
+
+DEFINITION:
+
+Let A, B be sets. Then, A and B are DISJOINT
+iff A ∩ B = ∅
+
+E.g.
+
+	{1, 2, 3} and {4, 5, 6} are disjoint.
+
+
+DEFINITION:
+
+Sets A₁, A₂, ... are MUTUALLY DISJOINT iff
+Aᵢ ∩ Aⱼ = ∅ ∀i, j ∈ {1, 2, ...} with i ≠ j
+
+
+DEFINITION:
+
+A collection {A₁, Aₙ, ...} of sets is a partition
+iff
+
+	(1)	A is the union of all Aᵢ
+	(2)	The Aᵢ are mutually disjoint
+
+
+DEFINITION:
+
+The POWER SET of a set A, 𝒫(A) is the set
+of all subsets of A.
+
+E.g. 𝒫({1, 2}) = {∅, {1}, {2}, {1, 2}}
+
+
+1.2	ORDERED PAIRS AND CARTESIAN PRODUCTS
+
+
+ORDERED PAIRS
+
+Given a and b, "(a, b)" denotes an ORDERED PAIR.
+
+	(a, b) = (c, d) means a = c and b = d
+
+E.g.
+
+	(1, 2) ≠ (2, 1) but {1, 2} = {2, 1}
+
+Let n be an integer and x₁, x₂, ..., xₙ be elements
+
+"(x₁, x₂, ..., xₙ)" is an ordered n-tuple
+
+(x₁, x₂, ..., xₙ) = (y₁, y₂, ..., yₙ) 	iff 	x₁ = y₁
+						x₂ = y₂
+						...
+						xₙ = yₙ
+
+n = 2 	"ordered pair"
+n = 3 	"ordered triple"
+
+
+CARTESIAN PRODUCT
+
+Given sets A₁, A₂, ..., Aₙ the CARTESIAN PRODUCT
+A₁ × A₂ × ... × Aₙ is the set of all ordered n-tuples
+(a₁, a₂, ..., aₙ) where aₙ ∈ Aₙ
+
+
+1.3	RELATIONS AND FUNCTIONS
+
+Consider relations between elements of sets.
+
+E.g. A = {0, 1, 2} and B = {1, 2, 3}
+
+Let a in A be related to b in B iff a < b.
+
+In this case, write aRb ("a related to b")
+
+	=> 0R1, 2R3, 2/R/1
+		where /R/ is the crossed R (not R)
+
+Consider the set of all tuples in A × B, which are related.
+
+R = {(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)}
 
 
 

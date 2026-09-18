@@ -11,23 +11,82 @@
 			divisor equal to 3 to prove that the product
 			of any two consecutive integers has the form
 			3k or 3k + 2 for some integer k.
-
-		Suppose k is some integer.
-
-		We must show using the quotient-remainder theorem
-		with divisor equal to 3, that any two consecutive
-		integers has the form 3k or 3k + 2 for k.
+	
 		
+		Suppose n is an integer.
+
+		Since two consecutive integers differ by 1, let the 
+		two consecutive integers be n and n + 1.
+
+		We must show that the product of n(n + 1) has the
+		form 3k or 3k + 2 for some integer k.
+
 		The quotient-remainder theorem:
 
-		"∀n ∈ ℤ, and ∀d ∈ ℤ⁺, ∃q, r ∈ ℤ st n = dq + r
-		and 0 ≤ r < d"
+		"n = dq + r and 0 ≤ r < d"
 
-		In English:
+		Since the exercise wants us to use the divisor 3,
+		let d = 3
 
-		"For all integers n, and for all positive integers
-		d, there are some integers q and r, such that
-		n is dq + r, and r is greater than or equal to 0,
-		and less than d."
+		Then, n = 3q + r and 0 ≤ r < 3
 
-		Let 
+		Since r has to be greater than or equal to 0, and
+		less than 3, we have three cases to test:
+
+		r = 0, r = 1, and r = 2
+
+		Remember, we are looking for the forms:
+
+		3k or 3k + 2, for some integer k.
+
+		Case 1: r = 0
+
+			n = 3q + 0
+
+			n(n + 1) = (3q)(3q + 1)
+			= 9q² + 3q
+			= 3(3q² + q)
+
+			k = 3q² + q, for some k ∈ ℤ
+
+			Therefore, n(n + 1) = 3k, when r = 0
+
+		Case 2: r = 1
+
+			n = 3q + 1
+
+			n(n + 1) = (3q + 1)(3q + 2)
+			= 9q² + 9q + 2
+			= 3(3q² + 3q) + 2
+
+			k = 3q² + 3q, for some k ∈ Z
+
+			Therefore, n(n + 1) = 3k + 2, when r = 1
+
+		Case 3: r = 2
+
+			n = 3q + 2
+
+			n(n + 1) = (3q + 2)(3q + 3)
+			= 9q² + 15q + 6
+			= 3(3q² + 5q + 2)
+
+			k = 3q² + 5q + 2, for some k ∈ Z
+
+			Therefore, n(n + 1) = 3k, when r = 2
+
+Solution:	The product of two consecutive integers has the
+		form 3k or 3k + 2 for some integer k, with divisor
+		3.
+
+
+		b.	Use the mod notation to rewrite the result of
+			part (a).
+
+
+		Definition of mod:
+		
+		"n mod d = r ↔ n = dq + r"
+
+Solution:	n(n + 1) mod 3 = 0 or n(n + 1) mod 3 = 2
+

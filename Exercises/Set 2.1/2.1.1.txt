@@ -1,0 +1,60 @@
+In each of 1-4 represent the common form of each argument
+using letters to stand for component sentences, and
+fill in the blanks so that the argument in part (b) has the
+same logical form as the argument in part (a).
+
+
+2.1.1.		a. If all integers are rational, then the number 1
+		is rational.
+		All integers are rational.
+		Therefore, the number 1 is rational.
+
+		b. If all algebraic expressions can be written in
+		prefix notation, then___________________________.
+		________________________________________________.
+		Therefore, (a + 2b)(a² - b) can be written in
+		prefix notation.
+
+
+		a.	If all integers are rational, then the number
+			1 is rational.
+
+			All integers are rational.
+
+			Therefore, the number 1 is rational.
+			
+			
+			Let p = All integers are rational
+			Let q = Number 1 is rational
+
+Solution:		p → q
+			p
+			∴ q
+
+			
+		b. 	If all algebraic expressions can be written in
+			prefix notation, then_________________________.
+			______________________________________________.
+			Therefore, (a + 2b)(a² - b) can be written in
+			prefix notation.
+
+
+			"If all algebraic expressions can be written in
+			prefix notation, then (a + 2b)(a² -b) can be
+			written in prefix notation.
+
+			All algebraic expressions can be written in
+			prefix notation.
+
+			Therefore, (a + 2b)(a² - b) can be written in
+			prefix notation"
+
+			Let p = 	All algebraic expressions can be
+					written in prefix notation
+
+			Let q =		(a + 2b)(a² - b) can be written
+					in prefix notation.
+
+Solution:		p → q
+			p
+			∴ q

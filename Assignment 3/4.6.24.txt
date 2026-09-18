@@ -1,0 +1,5 @@
+Prove each of the statements in 23-33.
+
+
+4.6.24.		For any integer m and any real number x, if x is
+		not an itneger, then 
