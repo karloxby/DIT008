@@ -1,0 +1,10 @@
+Compute the summations and products in 19-28.
+
+
+5.1.25.		²∏ₖ₌₂ (1 - (1 / k))
+
+
+		²∏ₖ₌₂ (1 - (1 / k)) = (1 - (1 / 2)) = 1 / 2
+
+
+Solution:	²∏ₖ₌₂ (1 - (1 / k)) = 1 / 2

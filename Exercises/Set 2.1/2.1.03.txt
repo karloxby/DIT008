@@ -1,0 +1,51 @@
+In each of 1-4 represent the common form of each argument
+using letters to stand for component sentences, and
+fill in the blanks so that the argument in part (b) has the
+same logical form as the argument in part (a).
+
+
+2.1.3.		a.	This number is even or this number is odd.
+			This number is not even.
+			Therefore, this number is odd.
+
+		b.	________ or logic is confusing.
+			My mind is not shot.
+			Therefore, ________.
+
+
+		a.	This number is even or this number is odd.
+
+			This number is not even.
+
+			Therefore, this number is odd.
+
+			p =	This number is even
+			q = 	This number is odd
+
+
+Solution:		p ∨ q
+			~p
+			∴ q
+
+
+		b.	________ or logic is confusing.
+
+			My mind is not shot.
+			
+			Therefore, ________.
+
+
+			My mind is shot or logic is confusing.
+
+			My mind is not shot.
+
+			Therefore, logic is confusing.
+
+			p =	My mind is shot
+			q =	Logic is confusing
+
+
+Solution:		p ∨ q
+			~p
+			∴ q
+

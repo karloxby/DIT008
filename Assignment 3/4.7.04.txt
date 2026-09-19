@@ -1,0 +1,38 @@
+4.7.4.		Use proof by contradiction to show that for every
+		integer m, 7m + 4 is not divisible by 7.
+
+		
+		Given statement is that ∀m ∈ ℤ, 7∤(7m + 4)
+
+		Proof:
+
+			Suppose not. Suppose m is some integer.
+
+			We must show that 7m + 4 is divisible by 7.
+
+				∃m ∈ ℤ st 7 ∣ 7m + 4
+
+			Definition of divisibility:
+			
+				d ∣ n ↔ ∃k ∈ ℤ such that n = dk
+
+			Let m ∈ ℤ
+
+			d = 7
+			n = 7m + 4
+
+			7 | 7m + 4 ↔ 7m + 4 = 7k, for some k ∈ ℤ
+
+				7m = 7k - 4
+				4 = 7k - 7m = 7(k - m)
+
+				4 / 7 = k - m
+
+			Since k - m ∈ ℤ, but 4 / 7 ∉ ℤ, the statement
+			is true by proof by contradiction, which is
+			what was to be shown.
+
+								□
+
+
+Solution:	Therefore, 7m + 4 is not divisible by 7.

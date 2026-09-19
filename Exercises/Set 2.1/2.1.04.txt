@@ -1,0 +1,72 @@
+In each of 1-4 represent the common form of each argument
+using letters to stand for component sentences, and
+fill in the blanks so that the argument in part (b) has the
+same logical form as the argument in part (a).
+
+
+2.1.4.		a.	If the program syntax is faulty, then the
+			computer will generate an error message.
+			If the computer generates an error message,
+			then the program will not run.
+			Therefore, if the program syntax is faulty, then
+			the program will not run.
+
+		b.	If this simple graph ________, then it is complete.
+			If this graph ________, then any two of its
+			vertices can be joined by a path.
+			Therefore, if this simple graph has 4 vertices and
+			6 edges, then ________.
+
+
+		a.	If the program syntax is faulty, then the
+			computer will generate an error message.
+
+			If the computer generates an error message,
+			then the program will not run.
+
+			Therefore, if the program syntax is faulty, then
+			the program will not run.
+
+			
+			Let p =		The program syntax is faulty
+			Let q =		The computer will generate an error 
+					message.
+
+			Let r =		The program will not run
+
+
+Solution:		p → q
+			q → r
+			∴ p → r
+
+
+		b.	If this simple graph ________, then it is complete.
+
+			If this graph ________, then any two of its
+			vertices can be joined by a path.
+
+			Therefore, if this simple graph has 4 vertices and
+			6 edges, then ________.
+
+
+			If this simple graph has 4 vertices and 6 edges,
+			then it is complete.
+
+			If this graph is complete, then any two of its
+			vertices can be joined by a path.
+
+			Therefore, if this simple graph has 4 vertices
+			and 6 edges, then any two of its vertices
+			can be joined by a path.
+
+			Let p =		This simple graph has 4 vertices
+					and 6 edges
+			Let q =		The graph is complete
+
+			Let r =		Any two of the graph's vertices
+					can be joined by a path.
+
+
+Solution:		p → q
+			q → r
+			∴ p → r

@@ -1,0 +1,59 @@
+4.7.13.		Let S be the statement: The product of any
+		irrational number and any nonzero rational
+		number is irrational.
+
+		a.	Write a negation for S.
+		b.	Prove S by contradiction.
+
+
+		a.	Write a negation for S.
+
+		S = 	The product of any irrational number and 
+			any nonzero rational number is irrational.
+
+			∀s ∈ ℝ, ∀r ∈ ℚ, s ∉ ℚ ∧ r ≠ 0 → rs ∉ ℚ
+
+		~S =	There is an irrational number and a nonzero
+			rational number, where the product is not 
+			irrational.
+
+			∃s ∈ ℝ st ∃r ∈ ℚ st s ∉ ℚ ∧ r ≠ 0 st rs ∈ ℚ
+		
+Solution:	∃s ∈ ℝ st ∃r ∈ ℚ st s ∉ ℚ ∧ r ≠ 0 st rs ∈ ℚ
+
+		
+		b. Prove S by contradiction
+
+		Proof:
+
+			Suppose not. That is, suppose there is an irrational
+			number and a nonzero rational number.
+
+			We must show that the product is irrational.
+
+			The definition of a rational number is:
+
+				r ∈ ℚ ↔ ∃a, b ∈ ℤ st r = a/b and b ≠ 0
+
+			Let s ∉ ℚ
+			Let r ∈ ℚ, r ≠ 0
+
+			r = a / b
+
+			Let's assume rs ∈ ℚ
+
+			s = rs / r
+		
+			Since r is a rational number a / b, for some
+			a, b ∈ ℤ, and rs is a rational number, which
+			can be written as c, d ∈ ℤ, rs / r is also
+			a rational number.
+
+			Because s = rs / r, which is rational, then
+			s ∈ ℚ.
+
+			But s ∉ ℚ, therefore the statement is proven
+			by contradiction, which's what was to be shown.
+
+Solution:	The product of any irrational number and any nonzero 
+		rational number is irrational, by proof by contradiction.
