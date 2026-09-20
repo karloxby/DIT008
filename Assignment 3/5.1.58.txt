@@ -1,0 +1,28 @@
+Transform each of 55-58 by making the change of variable
+j = i - 1.
+
+
+5.1.58.		²ⁿ∏ᵢ₌ₙ (n - i + 1) / (n + i)
+
+			j = i - 1
+			i = j + 1
+
+		Lower bound:
+
+			j + 1 = n
+			j = n - 1
+
+		Upper bound:
+
+			j + 1 = 2n
+			j = 2n - 1
+		
+		Change of variable:
+
+			(n - i + 1) = n - (j + 1) + 1
+			n - (j + 1) + 1 = n - j - 1 + 1 = n - j
+
+			(n + i) = n + (j + 1) = n + j + 1
+
+
+Solution:	²ⁿ⁻¹∏ⱼ₌ₙ₋₁ (n - j) / (n + j + 1)

@@ -1,0 +1,91 @@
+Prove each of the statements in 10-18 by mathematical
+induction.
+
+
+5.2.11.		1³ + 2³ + ... + n³ = [(n(n + 1)) / 2]², for every integer
+		n ≥ 1
+
+
+		1³ + 2³ + ... + n³ = ⁿ∑ₖ₌₁ k³
+
+		ⁿ∑ₖ₌₁ k³ = [(n(n + 1)) / 2]² = P(n)
+
+		Proof:
+
+			Step 1 (basis step):
+
+				We must show that P(a) is true for
+				both sides.
+
+				a = 1
+
+					¹∑ₖ₌₁ k³ = (1)³ = 1
+
+					[(1(1 + 1)) / 2]² = [(1(2)) / 2]² = [2 / 2]² = [1]² = 1
+
+				Therefore, P(1) is true.
+
+			Step 2 (inductive step):
+
+				Suppose that P(k) is true, where k is
+				any particular but arbitrarily chosen
+				integer with k ≥ a.
+
+					ᵏ∑ᵢ₌₁ i³ = [(k(k + 1)) / 2]²
+
+				We must show that P(k + 1) is true for
+				both sides.
+
+				We know that for k:
+
+					ᵏ∑ᵢ₌₁ i³ = 1³ + 2³ + ... + k³ = [(k(k + 1)) / 2]²
+
+				So, k + 1 must be:
+
+					ᵏ⁺¹∑ᵢ₌₁ i³ = 1³ + 2³ + ... + k³ + (k + 1)³ = [((k + 1)(k + 2)) / 2]²
+
+				Since ᵏ⁺¹∑ᵢ₌₁ i³ = 1³ + 2³ + ... + k³ + (k + 1)³ and 
+				ᵏ∑ᵢ₌₁ i³ = 1³ + 2³ + ... + k³, we can write the left 
+				side as:
+
+					ᵏ⁺¹∑ᵢ₌₁ i³ = ᵏ∑ᵢ₌₁ i³ + (k + 1)³
+
+				And now we must show the right hand, where we are
+				looking for the form:
+
+					[((k + 1)(k + 2)) / 2]²
+
+				And since we know that the left side can be expressed
+				as ᵏ⁺¹∑ᵢ₌₁ i³ = ᵏ∑ᵢ₌₁ i³ + (k + 1)³, we can express
+				the right hand as:
+
+				[(k(k + 1)) / 2]² + (k + 1)³
+
+				Using algebra:
+
+					[(k(k + 1)) / 2]² = (k²(k + 1)²) / 4
+
+					(k + 1)³ = (k + 1)²(k + 1)
+
+					(k²(k + 1)²) / 4 + (k + 1)²(k + 1)
+
+					(k + 1)²[(k² / 4) + (k + 1)]
+
+						k² / 4 + (k + 1) = (k² + 4k + 4) / 4
+
+					(k + 1)²[(k² + 4k + 4) / 4]
+
+						(k² + 4k + 4) / 4 = (k + 2)² / 4
+
+					(k + 1)²[(k + 2)² / 4]
+
+					((k + 1)²(k + 2)²) / 4 = [((k + 1)(k + 2)) / 2]²
+
+				Therefore, P(k + 1) is true for both sides,
+				which is what was to be shown.
+
+											□
+
+
+Solution:	1³ + 2³ + ... + n³ = [(n(n + 1)) / 2]², for every integer
+		n ≥ 1 is true.

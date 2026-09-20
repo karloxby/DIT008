@@ -1,0 +1,72 @@
+Prove each of the statements in 10-18 by mathematical
+induction.
+
+
+5.2.14.		ⁿ⁺¹∑ᵢ₌₁ i*2ⁱ = n*2ⁿ⁺² + 2, for every integer n ≥ 0.
+
+
+		P(n) : ⁿ⁺¹∑ᵢ₌₁ i*2ⁱ = n*2ⁿ⁺² + 2
+		
+		Proof:
+			
+		Basic step P(0):
+
+			⁽⁰⁾⁺¹∑ᵢ₌₁ i*2ⁱ = ¹∑ᵢ₌₁ i*2ⁱ
+
+			Which means that the lower bound is 1,
+			and the upper bound is 1. So from i = 1
+			to i = 1.
+
+			For the left side:
+
+				¹∑ᵢ₌₁ i*2ⁱ = (1)*2⁽¹⁾ = 1 * 2 = 2
+
+			And for the right side:
+
+				n*2ⁿ⁺² + 2 = (0)*2⁽⁰⁺²⁾ + 2 = 0 * 4 + 2 = 2
+			
+			Therefore, P(0) is true, for every integer n ≥ 0.
+
+		Inductive step P(k + 1):
+
+			Suppose P(k) is true.
+
+				P(k) : ᵏ⁺¹∑ᵢ₌₁ i*2ⁱ = k*2ᵏ⁺² + 2
+
+			We must show that P(k + 1) is true.
+
+				P(k + 1) : ᵏ⁺²∑ᵢ₌₁ i*2ⁱ = (k + 1)*2ᵏ⁺³ + 2
+
+			Since P(k) can be written as:
+
+				ᵏ⁺¹∑ᵢ₌₁ i*2ⁱ = 1*2² + 2*2³... + (k + 1)*2ᵏ⁺¹
+
+			We can write P(k + 1) as:
+
+				ᵏ⁺²∑ᵢ₌₁ i*2ⁱ = 1*2² + 2*2³... + (k + 1)*2ᵏ⁺¹ + (k + 2)*2ᵏ⁺²
+				ᵏ⁺²∑ᵢ₌₁ i*2ⁱ = ᵏ⁺¹∑ᵢ₌₁ i*2ⁱ + (k + 2)*2ᵏ⁺²
+
+				k*2ᵏ⁺² + 2 + (k + 2)*2ᵏ⁺² = 2ᵏ⁺²(k + k + 2) + 2
+				2ᵏ⁺²(k + k + 2) + 2 = 2ᵏ⁺²(2k + 2) + 2
+
+					2k + 2 = 2(k + 1)
+
+				2ᵏ⁺²(2k + 2) + 2 = 2ᵏ⁺²(2(k + 1)) + 2
+
+					2ᵏ⁺² * 2¹ = 2ᵏ⁺³
+
+				2ᵏ⁺³(k + 1) + 2 = (k + 1)*2ᵏ⁺³ + 2
+
+			Therefore, the left side is proven for P(k + 1).
+
+			And for the right side:
+
+				n*2ⁿ⁺² + 2 = (k + 1)*2⁽⁽ᵏ⁺¹⁾⁺²⁾ + 2 = (k + 1)*2ᵏ⁺³ + 2
+				(k + 1)*2ᵏ⁺³ + 2 = 2ᵏ⁺³(k + 1) + 2
+			
+			Which is what was to be shown.
+
+										□
+
+										
+Solution:	ⁿ⁺¹∑ᵢ₌₁ i*2ⁱ = n*2ⁿ⁺² + 2, for every integer n ≥ 0 is true.

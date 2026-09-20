@@ -13,7 +13,7 @@ j = i - 1.
 
 			ⁿ⁻¹∑ᵢ₌₁ i / (n - i)² =
 			ⁿ⁻¹∑ᵢ₌₁ (j + 1) / (n - (j + 1))² =
-			ⁿ⁻¹∑ᵢ₌₁ (j + 1) / (n - - j - 1)²
+			ⁿ⁻¹∑ᵢ₌₁ (j + 1) / (n - j - 1)²
 
 		Now we must also change the lower- and upper
 		bounds.
