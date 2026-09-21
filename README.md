@@ -5,6 +5,37 @@
 ### Upcoming Assignments
 
 <details>
+<summary><strong>Assignment 4</strong> — 19 exercises</summary>
+
+| Exercise | Points |
+|----------|-------:|
+| 5.6.14   | 3      |
+| 5.6.18   | 11     |
+| 5.6.23   | 5      |
+| 5.6.40   | 4      |
+| 5.7.21   | 6      |
+| 5.7.25   | 4      |
+| 6.1.7    | 6      |
+| 6.1.20   | 3      |
+| 6.1.25   | 7      |
+| 6.1.35   | 4      |
+| 7.1.2    | 3      |
+| 7.1.4    | 3      |
+| 7.1.7    | 3      |
+| 7.1.18   | 7      |
+| 7.1.24   | 2      |
+| 7.1.36   | 4      |
+| 7.2.9    | 4      |
+| 7.2.29   | 4      |
+| 7.2.34   | 3      |
+
+**Total exercises: 19**
+
+</details>
+
+### Past Assignments
+
+<details>
 <summary><strong>Assignment 3</strong> — 28 exercises</summary>
 
 | Exercise | Points |
@@ -41,8 +72,6 @@
 **Total exercises: 28**
 
 </details>
-
-### Past Assignments
 
 <details>
 <summary><strong>Assignment 2</strong> — 24 exercises</summary>
@@ -220,7 +249,6 @@ Missing Unicode subscripts: b, c, d, f, g, q, w, y, z
 |   |   |   |   |
 |---|---|---|---|
 | ˢᵗ | ⁿᵈ | ʳᵈ | ᵗʰ |
-
 
 ## Definitions & Reference
 
