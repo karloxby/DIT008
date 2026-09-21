@@ -5,3 +5,101 @@ DIT008
 Lecture 10
 
 
+ARROW DIAGRAMS
+
+One can represent relations diagramatically:
+
+	(1)	Draw regions for A, B with points for element
+	(2)	Draw as arrow from a ∈ A to b ∈ B iff aRb.
+
+
+7.1	FUNCTIONS DEFINED ON GENERAL SETS
+
+For X, Y sets, a FUNCTION 𝑓: X → Y is
+a relation from the domain X to the co-
+domain Y, such that 
+
+	(1)	(A)x ∈ X, (E)y ∈ Y st (x, y) ∈ 𝑓
+	(2)	If (x, y) ∈ 𝑓 and (x, z) ∈ 𝑓, then y = z
+
+Hence, 𝑓 maps each x ∈ X to a unique element
+𝑓(x) ∈ Y, the IMAGE OF X UNDER 𝑓.
+
+Furthermore, RANG of 𝑓 	= 	image of X under 𝑓
+			=	{y ∈ Y | (E)x ∈ X st y = 𝑓(x)}
+			=	{𝑓(x) | x ∈ X)
+
+Given y ∈ Y, if an x ∈ X exists st 𝑓(x) = y,
+then x is a preimage of y.
+
+The inverse image of y {x ∈ X | 𝑓(x) = y}.
+
+The function is 𝑓, 𝑓(x) is the value of 𝑓 at x.
+
+
+DEFINITION
+The function Iₓ : X → X defined by Iₓ(x) = x
+is the IDENTITY FUNCTION.
+
+Infinite sequences are functions {k ∈ ℤ | k ≥ a} → ℝ
+for some a ∈ ℤ. E.g. the geometric sequence is defined
+by g(k) = rᵏ * c for r,c ∈ ℝ
+
+
+DEFINITION
+Let a ∈ ℝ⁺ with a ≠ 1. Then ∀x ∈ ℝ⁺, logₐ x = y ↔ aʸ = x
+
+The logarithm with base a of x.
+
+Then logₐ ℝ⁺ → ℝ is the log function with bare a.
+
+	We say a function is not well-defined if it fails to
+	satisfy at least one of the requirements of being a
+	function.
+
+
+f: X -> Y
+
+A subset of X and B subset of Y
+
+IMAGE OF A:
+𝑓(A) = {y ∈ Y | (E)x ∈ A st 𝑓(x) = y} =
+= {𝑓(x) | x ∈ A}
+
+PREIMAGE OF B:
+𝑓⁻¹(B) = {x ∈ X | 𝑓(x) ∈ B}
+
+
+7.2	ONE-TO-ONE, ONTO AND INVERSE FUNCTIONS
+
+Functions can map two different elements of the
+domain to the same element of the co-domain.
+
+If this does not happen, the function is INJECTIVE.
+
+
+DEFINITION
+
+Let F : X → Y be a function. F is injective (one-to-one)
+↔ ∀x₁, x₂ ∈ X : F(x₁) = F(x₂) → x₁ = x₂
+
+Hence, F : X → Y is not injective ↔ ∃x₁, x₂ ∈ X st F(x₁) = F(x₂) and x₁ ≠ x₂
+
+To prove injectivity, use a direct proof.
+
+Suppose x₁, x₂ in X are such that F(x₁) = F(x₂)
+Show that x₁ = x₂
+
+i.e.
+	To prove that a function is not injective, find x₁, x₂ ∈ X, such that
+	F(x₁) = F(x₂) but x₁ ≠ x₂
+
+
+
+
+
+
+
+
+
+
