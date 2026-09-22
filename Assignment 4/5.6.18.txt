@@ -1,0 +1,230 @@
+5.6.18.		Tower of Hanoi with Adjacency Requirement:
+		Suppose the same situation as in exercise 17. Let
+
+			bₙ = [
+				the minimum number of moves 
+				needed to transfer a tower of n
+				disks from pole A to Pole B
+			]
+
+		a.	Find b₁, b₂, and b₃.
+		b.	Find b₄.
+		c.	Show that bₖ = aₖ₋₁ + 1 + bₖ₋₁ for each
+			integer k ≥ 2, where a₁, a₂, a₃, ... is the
+			sequence defined in exercise 17.
+		d.	Show that bₖ ≤ 3bₖ₋₁ + 1 for each integer
+			k ≥ 2.
+
+
+		Context regarding Tower of Hanoi:
+
+		Suppose that in addition to the requirement that
+		they never move a larger disk on top of a smaller
+		one, the priests who move the disks of the Tower
+		of Hanoi are also allowed only to move disks one
+		by one from one pole to an adjacent pole. Assume
+		poles A and C are at the two ends of the row and
+		pole B is in the middle.
+
+
+			|		|		|
+			|		|		|
+			|		|		|
+			|		|		|
+		________________________________________________
+			A		B		C
+
+
+		a.	Find b₁, b₂, and b₃.
+
+		Suppose bₙ is the minimum number of moves needed to
+		transfer a tower of n disks from Pole A to B.
+
+		We must find b₁, b₂, and b₃.
+
+		Hence, b₁ is the number of moves, and there is only
+		the one disk.
+
+		In order to move from A to B, we only need the one
+		move and we are done.
+
+		Therefore, b₁ = 1
+
+		Next, we must find b₂, which's two disks.
+
+		We can illustrate this as a series of moves:
+
+			(1) 	Since we are restricted from free
+				movement between poles, and only
+				able to move the disks to an adjacent
+				pole, our only move for the top disk
+				is from A to B.
+
+			(2)	We are also restricted from placing
+				a larger disk on top of a smaller disk.
+				Hence, our next move must be moving the
+				top disk from B to C.
+
+			(3)	Now we can move the larger, bottom disk
+				from A to B.
+
+			(4)	Which allows us to move the top disk
+				on top of the bottom disk from C to B.
+
+		The running total is four steps. Therefore b₂ = 4.
+
+		Now we must find b₃, which are three disks: The
+		top disk, the middle disk and the bottom disk.
+
+			Top disk < Middle disk < Bottom disk
+
+		Again, we can illustrate this as a series of moves:
+
+			(1)	We move top disk from A to B.
+
+			(2)	Then the top disk from B to C.
+
+			(3)	Now we can move the middle disk
+				from A to B.
+
+			(4)	But before we can move the bottom
+				disk, we must move the top disk
+				back from C to B.
+
+			(5)	Then the top disk from B to A.
+
+			(6)	Now the middle disk can move
+				from B to C.
+
+			(7)	Which allows us to move the top
+				disk from A to B
+
+			(8)	And then the top disk from B to C.
+
+			(9)	This opens up the bottom disk to
+				move from A to B.
+
+			(10)	Which means in order for the middle
+				disk to move to B, we must shuffle the
+				top disk from C to B.
+
+			(11)	And again, the top disk from B to A.
+
+			(12)	Now the middle disk can be moved from
+				C to B.
+
+			(13)	And our final move is the top disk from
+				A to B.
+
+		Therefore, b₃ = 13.
+
+Solution:	b₁ = 1, b₂ = 4 and b₃ = 13
+
+
+		b.	Find b₄.
+
+		We could use the same manual method for finding b₄. But
+		before we do that, let's look at b₁, b₂ and b₃ to see if
+		we can find a pattern.
+
+		b₁ is just the one move. It does not tell us much.
+
+		However, b₂ is divided into sequences of moves:
+
+			- Moves 1 through 2: 2 moves
+			- Move 3: 1 move
+			- Move 4: 1 move
+
+			b₂ = 2 + 1 + 1 = 4
+
+		We won't be able to deduct much from b₂ alone, without
+		looking at b₃:
+
+			- Moves 1 through 8: 8 moves
+			- Move 9: 1 move
+			- Move 10 through 13: 4 moves
+			
+			b₃ = 8 + 1 + 4
+		
+		The pattern here is not numerical, but in what each
+		sequence of moves accomplishes.
+
+		We know that b₄ involves moving four disks. And in
+		order for the largest, bottom disk to be able to move
+		once from A to B, we have to transfer all other disks
+		to pole C first.
+
+		By following the same exercise as for finding b₁, b₂
+		and b₃:
+
+			- Moves 1 through 26: 26 moves
+			- Move 27: 1 move
+			- Moves 28 through 40: 13 moves
+
+			b₄ = 26 + 1 + 13 = 40
+
+		Therefore b₄ = 40.
+
+Solution:	b₄ = 40
+
+
+		c.	Show that bₖ = aₖ₋₁ + 1 + bₖ₋₁ for each
+			integer k ≥ 2, where a₁, a₂, a₃, ... is the
+			sequence defined in exercise 17.
+
+		Suppose k ∈ ℤ and k ≥ 2, and aₙ : A → C, and bₙ : A → B
+
+		We must show that to move k disks from A to B, first 
+		we must move the k - 1 smaller disks from A to C, then 
+		move the largest disk once from A to B, and finally move 
+		the k - 1 smaller disks from C to B.
+
+			bₖ = aₖ₋₁ + 1 + bₖ₋₁
+
+		Before the largest disk can move from A to B, the other
+		k - 1 disks must be moved from A to C, which requires
+		aₖ₋₁ moves.
+
+		Then the largest disk is free to move once.
+
+		Now the k - 1 smaller disks have to be transferred from
+		C to B, and because C is an end pole and B is the middle
+		pole, this is the same type of transfer counted by bₙ,
+		and thus requires bₖ₋₁ moves.
+
+		And in order for this to make sense, we need at least
+		two disks.
+
+		Therefore bₖ = aₖ₋₁ + 1 + bₖ₋₁
+
+Solution:	bₖ = aₖ₋₁ + 1 + bₖ₋₁ for each integer k ≥ 2.
+
+
+		d.	Show that bₖ ≤ 3bₖ₋₁ + 1 for each integer
+			k ≥ 2.
+
+		Suppose k ∈ ℤ and k ≥ 2, and bₖ = aₖ₋₁ + 1 + bₖ₋₁
+
+		We know that aₖ₋₁ is the minimum number of moves
+		needed to transfer k - 1 disks from A to C.
+
+		One possible way to transfer k - 1 disks from A to C
+		is to first transfer them from A to B, and then from
+		B to C.
+
+		Each of these transfers requires bₖ₋₁ moves. Hence:
+
+			aₖ₋₁ ≤ 2bₖ₋₁
+
+		Now we can use this inequality:
+
+			bₖ = aₖ₋₁ + 1 + bₖ₋₁ ≤ 2bₖ₋₁ + 1 + bₖ₋₁
+			
+				2bₖ₋₁ + 1 + bₖ₋₁ = 3bₖ₋₁ + 1
+
+		Therefore:
+			
+			aₖ₋₁ + 1 + bₖ₋₁ ≤ 3bₖ₋₁ + 1
+			bₖ ≤ 3bₖ₋₁ + 1
+
+Solution:	bₖ ≤ 3bₖ₋₁ + 1 for each integer k ≥ 2.

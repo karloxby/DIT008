@@ -1,0 +1,161 @@
+5.6.23.		Fibonacci Variation: A single pair of rabbits
+		(male and female) is born at the beginning of a 
+		year. Assume the following conditions:
+
+		(1)	Rabbit pairs are not fertile during their first
+			two months of life, but thereafter give birth
+			to three new male/female pairs at the end of
+			every month.
+
+		(2)	No rabbits die.
+
+		a.	Let sₙ = the number of pairs of rabbits alive at
+			the end of month n, for each integer n ≥ 1, and
+			let s⁰ = 1. Find a recurrence relation for s⁰, s¹,
+			s², .... Justify your answer.
+
+		b.	Compute s₀, s₁, s₂, s₃, s₄, and s₅.
+
+		c.	How many rabbits will there be at the end of
+			the year?
+
+
+		a.	Let sₙ = the number of pairs of rabbits alive at
+			the end of month n, for each integer n ≥ 1, and
+			let s⁰ = 1. Find a recurrence relation for s⁰, s¹,
+			s², .... Justify your answer.
+
+		Alright, so what do we know? 
+
+		We know that sₙ is the number of pairs of rabbits alive
+		at the end of month n. So n is the month.
+
+		Furthermore, we know that s₀ = 1, which means that we
+		start with one pair of rabbits.
+
+		Rabbits do not give birth during their first two months
+		of life, so we may assume:
+
+			s₀ = 1
+			s₁ = 1
+			s₂ = 1
+
+		Now, the pair gives birth three new pairs. Therefore:
+
+			s₃ = 1 + 3 			= 4
+		
+		We have for pairs in total, whereas the first pair will
+		keep giving birth to three new pairs, and the current
+		pairs will not start giving birth until two months after
+		they were born. Hence:
+
+			s₄ = 4 + 3			= 7
+			s₅ = 7 + 3			= 10
+
+		By keeping track of the pairs giving birth from s⁶
+		through s⁸, we find that:
+
+			s₆ = 10 + 3₂ + 3		= 22
+			s₇ = 22 + 3₂ + 3₂ + 3		= 43
+			s₈ = 43 + 3₂ + 3₂ + 3₂ + 3	= 73
+
+		Now, if we put them all together, we might be able to
+		spot a recurrence relation:
+
+			s₀ = 1
+			s₁ = 1
+			s₂ = 1
+			s₃ = 1 + 3 			= 4
+			s₄ = 4 + 3			= 7
+			s₅ = 7 + 3			= 10
+			s₆ = 10 + 3 + 3 + 3 + 3		= 22
+			s₇ = 22 + 3₂ + 3₂ + 3		= 43
+			s₈ = 43 + 3₂ + 3₂ + 3₂ + 3	= 73
+
+		Which can be written as:
+
+			s₀ = 1
+			s₁ = 1
+			s₂ = 1
+			s₃ = 1 + 3 			= 4
+			s₄ = 4 + 3			= 7
+			s₅ = 7 + 3			= 10
+			s₆ = 10 + 3(4)			= 22
+			s₇ = 22 + 3(7)			= 43
+			s₈ = 43 + 3(10)			= 73
+
+		Which in turn can be written as:
+
+			s₀ = 1
+			s₁ = 1
+			s₂ = 1
+			s₃ = s₂ + 3 			= 4
+			s₄ = s₃ + 3			= 7
+			s₅ = s₄ + 3			= 10
+			s₆ = s₅ + 3s₃			= 22
+			s₇ = s₆ + 3s₄			= 43
+			s₈ = s₇	+ 3s₅			= 73
+
+		But this does not give us the supposed pattern. Let's
+		look closer at what happens with the subscripts:
+
+			s₆ = s₅ + 3s₃
+				
+				6 → 5 and 6 → 3
+
+			s₇ = s₆ + 3s₄
+
+				7 → 6 and 7 → 4
+
+			s₈ = s₇	+ 3s₅
+
+				8 → 7 and 8 → 5
+
+		Which can be denoted as:
+
+			sₙ = sₙ₋₁ + 3sₙ₋₃
+
+		Suppose our guess is this pattern as denoted above.
+		Let's apply it to our known range and see whether it
+		holds:
+
+			s₀ = 1
+			s₁ = 1
+			s₂ = 1
+			s₃ = s₂ + 3s₀
+			s₄ = s₃ + 3s₁
+			s₅ = s₄ + 3s₂
+			s₆ = s₅ + 3s₃
+			s₇ = s₆ + 3s₄
+			s₈ = s₇	+ 3s₅
+		
+		Since s₂ + 3s₀ is 1 + 3 * 1 = 4, and s₃ + 3s₁ is 4 + 3 * 1 = 7,
+		we suppose to guess that the pattern is sₙ = sₙ₋₁ + 3sₙ₋₃, which
+		is what was to be shown.
+
+Solution:	sₙ = sₙ₋₁ + 3sₙ₋₃ is the recurrence relation as motived above.
+
+
+		b.	Compute s₀, s₁, s₂, s₃, s₄, and s₅.
+
+		
+		Suppose sₙ = sₙ₋₁ + 3sₙ₋₃, then:
+
+			s₀ = 1				= 1
+			s₁ = 1				= 1
+			s₂ = 1				= 1
+			s₃ = s₂ + 3 			= 4
+			s₄ = s₃ + 3			= 7
+			s₅ = s₄ + 3			= 10
+
+Solution:	Compute s₀ = 1, s₁ = 1, s₂ = 1, s₃ = 4, s₄ = 7, and s₅ = 10.
+
+
+		c.	How many rabbits will there be at the end of
+			the year?
+
+		Lorem ipsum
+
+Solution:
+
+
