@@ -1,0 +1,49 @@
+For each statement in 20-32, determine whether the
+statement is true or false. Prove the statement directly
+from the definitions if its true, and give counterexample
+if its false.
+
+
+4.4.28.		For all integers a, b and c, if a|bc then a|b or a|c.
+
+		Suppose a, b and c ∈ Z.
+
+		We must show that if a is divisible by bc, then
+		a is divisible by b or a is divisible by c.
+
+		Argument form:
+		∀a, b, c ∈ Z, a|bc → a|b ∨ a|c
+
+		"For all integers a, b and c, if a divides bc,
+		then a divides b or a divides c."
+
+		Negation:
+		∃a, b, c ∈ Z st a|bc ∧ ~(a|b) ∧ ~(a|c)
+
+		"There are integers a, b and c, such that
+		a divides bc, a does not divide b, and a
+		does not divide c."
+
+		Definition of divisibility:
+
+		"n is divisible by d ↔ n = dk, for some integer
+		k, and d ≠ 0."
+		
+		Let a = 6
+		Let b = 3
+		Let c = 2
+		
+		bc = 6
+
+			a|bc = bc / a = 6 / 6 = 1 ∈ Z
+
+		Therefore, a|bc.
+
+			a|b = b / a = 3 / 6 = 1 / 2 ∉ Z
+			a|c = 2 / 6 = 1 / 3 ∉ Z
+
+		Therefore, a∤b, and a∤c.
+
+
+Solution:	Since a|bc, but a∤b and a∤c, the satement is false
+		by counterexample.

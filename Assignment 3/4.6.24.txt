@@ -1,0 +1,59 @@
+Prove each of the statements in 23-33.
+
+
+4.6.24.		For any integer m and any real number x, if x is
+		not an integer, then ⌊x⌋ + ⌊m - x⌋ = m - 1
+
+
+		Suppose m is any integer, and x is any real number.
+
+		We must show that if x is not also an integer, then
+		the sum of ⌊x⌋ and ⌊m - x⌋ is m - 1.
+
+		∀m ∈ ℤ, x ∉ ℤ → ⌊x⌋ + ⌊m - x⌋ = m - 1
+
+		Definition of floor:
+
+		"⌊x⌋ = n ↔ n ≤ x < n + 1"
+
+		Proof:
+			
+			Let n ∈ ℤ = ⌊x⌋
+			
+			Since n is the floor of x:
+
+				n ↔ n ≤ x < n + 1
+
+			But x ∉ ℤ. Therefore x ≠ n, so:
+
+				n ↔ n < x < n + 1
+
+			n + ⌊m - x⌋ = m - 1
+
+			⌊m - x⌋ = m - 1 - n
+
+			But we must show this. Since m - 1 - n is 
+			the floor of ⌊m - x⌋:
+
+				(m - 1 - n) ↔ (m - 1 - n) ≤ m - x ≤ (m - 1 - n) + 1
+
+			We know n < x < n + 1, and we want to find
+			m - x. So we can multiply the inequality
+			by - 1:
+
+				-n > -x > -(n + 1)
+
+			Now we can add m to the inequality:
+
+				m - n > m - x > m - n - 1 
+				≡ 
+				m - n - 1 < m - x < m - n
+
+			Therefore, ⌊m - x⌋ = m - n - 1 and 
+			⌊x⌋ + ⌊m - x⌋ = n + (m - n - 1) = m - 1,
+			which is what was to be shown.
+
+								□
+
+
+Solution:	If x ∉ ℤ, then ⌊x⌋ + ⌊m - x⌋ is m - 1, for any m ∈ ℤ.

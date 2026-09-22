@@ -1,0 +1,54 @@
+Prove each of the statements in 23-33.
+
+
+4.6.29.		For any odd integer n, ⌈n² / 4⌉ = (n² + 3) / 4
+
+
+		Proof:
+
+		Suppose n is any odd integer.
+
+		We must show that the ceiling of n² divided by 4
+		is equal to the sum of n² + 3 divided by 4.
+
+		Definition of odd:
+
+			n is odd ↔ n = 2k + 1, for some k ∈ ℤ
+
+		Definition of ceiling:
+
+			⌈x⌉ = n ↔ n - 1 < x ≤ n
+
+		Let k ∈ ℤ
+
+		n = 2k + 1
+
+		⌈n² / 4⌉ = ⌈(2k + 1)² / 4⌉
+
+			(2k + 1)² = 4k² + 4k + 1
+
+			(4k² + 4k + 1) / 4 = k² + k + (1 / 4)
+
+		⌈n² / 4⌉ = ⌈k² + k + (1 / 4)⌉
+
+		(n² + 3) / 4 = ((2k + 1)² + 3) / 4
+
+			((4k² + 4k + 1) + 3) / 4 = (4k² + 4k + 4) / 4 = k² + k + 1
+
+		(n² + 3) / 4 = k² + k + 1
+		
+		⌈k² + k + (1 / 4)⌉ = (k² + k + 1) ↔ (k² + k + 1) - 1 < k² + k + (1 / 4) ≤ k² + k + 1
+		
+			(k² + k + 1) - 1 < k² + k + (1 / 4) ≤ k² + k + 1
+			k² + k < k² + k + (1 / 4) ≤ k² + k + 1
+
+		The inequality k² + k < k² + k + (1 / 4) ≤ k² + k + 1 is
+		true.
+
+		Hence, ⌈k² + k + (1 / 4)⌉ = ((2k + 1)² + 3) / 4 is
+		true, which is what was to be shown.
+
+									□
+
+
+Solution:	For any odd integer n, ⌈n² / 4⌉ = (n² + 3) / 4 is true.
