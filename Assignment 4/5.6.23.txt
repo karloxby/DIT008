@@ -144,9 +144,9 @@ Solution:	sₙ = sₙ₋₁ + 3sₙ₋₃ is the recurrence relation as motived 
 			s₀ = 1				= 1
 			s₁ = 1				= 1
 			s₂ = 1				= 1
-			s₃ = s₂ + 3 			= 4
-			s₄ = s₃ + 3			= 7
-			s₅ = s₄ + 3			= 10
+			s₃ = s₂ + 3s₀			= 4
+			s₄ = s₃ + 3s₁			= 7
+			s₅ = s₄ + 3s₂			= 10
 
 Solution:	Compute s₀ = 1, s₁ = 1, s₂ = 1, s₃ = 4, s₄ = 7, and s₅ = 10.
 
@@ -154,8 +154,27 @@ Solution:	Compute s₀ = 1, s₁ = 1, s₂ = 1, s₃ = 4, s₄ = 7, and s₅ = 1
 		c.	How many rabbits will there be at the end of
 			the year?
 
-		Lorem ipsum
+		Suppose sₙ = sₙ₋₁ + 3sₙ₋₃, then:
+			
+			Month			Calc.				Sum
 
-Solution:
+			s₀ = 1			= 1				= 1
+			s₁ = 1			= 1				= 1
+			s₂ = 1			= 1				= 1
+			s₃ = s₂ + 3s₀		= 1 + 3(1)			= 4
+			s₄ = s₃ + 3s₁		= 4 + 3(1)			= 7
+			s₅ = s₄ + 3s₂		= 7 + 3(1)			= 10
+			s₆ = s₅ + 3s₃		= 10 + 3(4)			= 22
+			s₇ = s₆ + 3s₄		= 22 + 3(7)			= 43
+			s₈ = s₇ + 3s₅		= 43 + 3(10)			= 73
+			s₉ = s₈ + 3s₆		= 73 + 3(22)			= 139
+			s₁₀ = s₉ + 3s₇		= 139 + 3(43)			= 268
+			s₁₁ = s₁₀ + 3s₈		= 268 + 3(73)			= 487
+			s₁₂ = s₁₁ + 3s₉		= 487 + 3(139)			= 904
 
+		Since we know that there're 904 pairs at the end of the
+		year:
 
+		Therefore, 904 * 2 = 1808 rabbits.
+
+Solution:	There're 1808 rabbits at the end of the year.

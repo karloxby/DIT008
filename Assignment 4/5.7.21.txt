@@ -1,0 +1,57 @@
+5.7.21.		Suppose r is a fixed constant and a₀, a₁, a₂, ... is
+		a sequence that satisfies the recurrence relation
+		aₖ = raₖ₋₁, for each integer k ≥ 1 and a₀ = a. Use
+		mathematical induction to prove that aₙ = arⁿ, for
+		every integer n ≥ 0.
+
+		
+		Proof:
+
+		Suppose r is a fixed constant and a₀, a₁, a₂, ... is
+		a sequence that satisfies the recurrence relation
+		aₖ = raₖ₋₁, for each integer k ≥ 1 and a₀ = a.
+
+		We must show using induction that aₙ = rⁿa = arⁿ, for
+		every integer n ≥ 0.
+
+			a₀ = a
+			a₁ = ra₀ = ra
+			a₂ = ra₁ = r(ra) = r²a
+			a₃ = ra₂ = r(r²a) = r³a
+			a₄ = ra₃ = r(r³a) = r⁴a
+		
+		Guess: aₙ = rⁿa = arⁿ for any arbitrary integer n ≥ 0.
+
+		P(n) : aₙ = rⁿa = arⁿ
+
+		Basic step: P(0)
+
+			P(0) : a₀ = r⁰a = ar⁰ = a(1) = a
+
+			Therefore, P(0) is true.
+
+		Inductive step: P(k + 1)
+
+			Let k ∈ ℤ
+
+			Suppose P(k) is true. Then:
+
+				P(k) : aₖ = rᵏa = arᵏ
+
+			And we must show that P(k + 1) is true for
+			the recurrence relation aₖ = raₖ₋₁. Let's replace
+			k with k + 1:
+
+				aₖ₊₁ = ra₍ₖ₊₁₎ - 1 = raₖ
+
+			Therefore, we recurrence relation is true
+			for k + 1.
+	
+Solution:	The recurrence relation aₖ = raₖ₋₁, for each integer k ≥ 1
+		and a₀ = a
+			aₖ₋₁ = arᵏ⁻¹
+
+		a sequence that satisfies the recurrence relation
+		aₖ = raₖ₋₁, for each integer k ≥ 1 and a₀ = a. Use
+		mathematical induction to prove that aₙ = arⁿ, for
+		every integer n ≥ 0.

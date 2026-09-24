@@ -1,0 +1,74 @@
+5.6.40.		A set of blocks contains blocks of heights 1, 2,
+		and 4 centimeters. Imagine constructing tower by
+		piling blocks of different heights directly on top
+		of one another. (A tower of height 6 cm could be
+		obtained using six 1-cm blocks, three 2-cm blocks
+		one 2-cm block with one 4-cm block on top, one
+		4-cm block with one 2-cm block on top, and so
+		forth.) Let tₙ be the number of ways to construct
+		a tower of height n cm using blocks from the set.
+		(Assume an unlimited supply of blocks of each
+		size.) Find a recurrence relation for t₁, t₂, t₃, ....
+		Justify your answer.
+
+
+		Suppose tₙ is the number of ways to construct a
+		tower of height n.
+
+		Let T = {1, 2, 4}
+		
+		The set T contains all different types of blocks,
+		defined by their height in centimeters.
+
+		Before finding the recurrence relation, we should try 
+		to find the initial values of the sequence. Since our 
+		recurrence will depend on previous terms, these initial 
+		values will give us a starting point from which the 
+		recurrence can be applied.
+
+		For the initial values:
+
+			t₁ : (1)
+			t₁ = 1
+
+			t₂ : (2), (1, 1)
+			t₂ = 2
+
+			t₃ : (1, 2), (1, 1, 1), (2, 1)
+			t₃ = 3
+
+			t₄ : (4), (1, 1, 1, 1), (2, 2), (1, 1, 2), (1, 2, 1), (2, 1, 1)
+			t₄ = 6
+
+		Now that we have a set of initial values within
+		reason, we can try to find a recurrence relation
+		that describes how the remaining terms can be
+		obtained from previous term.
+
+		Consider a tower of height n. The block on top of
+		the tower must have a height contained in our set
+		T.
+
+		If the top block has height 1 cm, then the remaining
+		tower must have height n - 1, which means there're
+		tₙ₋₁ ways to construct this tower. The same thing
+		can be said for 2 and 4 cm respectively.
+
+		Therefore, the number of ways to construct a tower
+		of height n is:
+
+			tₙ = tₙ₋₁ + tₙ₋₂ + tₙ₋₄, for n ≥ 5
+
+		Since the smallest subscript starts at t₁, n cannot
+		be less than 5. For example, if n = 4:
+
+			t₄ = t₃ + t₂ + t₀
+
+		But t₀ is not defined. However, if n = 5:
+
+			t₅ = t₄ + t₃ + t₁
+
+		Therefore, the recurrence relation applies for n ≥ 5.
+
+Solution:	tₙ = tₙ₋₁ + tₙ₋₂ + tₙ₋₄, for n ≥ 5, and t₁ = 1, t₂ = 2, 
+		t₃ = 3, and t₄ = 6
