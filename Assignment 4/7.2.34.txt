@@ -1,0 +1,48 @@
+The properties of logarithm established in 33-35 are used
+in sections 11.4 and 11.5.
+
+7.2.34.		Prove that for all positive real numbers a, x, and y
+		with a ≠ 1,
+
+			logₐ (xy) = logₐ x + logₐ y
+
+		(Note: Substituted subscript b for a)
+
+
+		Proof:
+
+		Suppose a, x, and y are positive real numbers, with
+		a ≠ 1.
+
+		We must show that logₐ (xy) = logₐ x + logₐ y.
+
+		Let a, x, y ∈ ℝ⁺, a ≠ 1
+
+		Definition of Logarithm and Logarithmic functions:
+
+			logₙ r = s ↔ nˢ = r
+
+		Let z, u, v ∈ ℝ | u = logₐ x, v = logₐ y, and 
+		logₐ (xy) = z, then:
+
+			logₐ (xy) = z ↔ aᶻ = xy
+			
+			logₐ x = u ↔ aᵘ = x
+			logₐ y = v ↔ aᵛ = y
+
+		Hence, aᶻ = xy, aᵘ = x and aᵛ = y. Then:
+
+			xy = aᵘaᵛ = aᵘ⁺ᵛ
+			xy = aᵘ⁺ᵛ
+
+			xy = aᶻ
+			aᶻ = aᵘ⁺ᵛ
+
+		Therefore, z = u + v, and since z = logₐ (xy),
+		u = logₐ x, and v = logₐ y, then logₐ (xy) = 
+		logₐ x + logₐ y, which what was to be shown.
+
+								□
+
+Solution:	for all positive real numbers a, x, and y with a ≠ 1,
+		logₐ (xy) = logₐ x + logₐ y is true.

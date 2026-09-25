@@ -1,0 +1,101 @@
+6.1.7.		Let A = {x ∈ ℤ | x = 6a + 4 for some integer a},
+		B = {y ∈ ℤ | y = 18b - 2 for some integer b}, and
+		C = {z ∈ ℤ | z = 18c + 16 for some integer c.
+
+		Prove or disprove each of the following statements.
+
+		a.	A ⊆ B
+		b	B ⊆ A
+		c.	B = C
+
+
+		a.	A ⊆ B
+
+		Proof:
+
+		Let A = {x ∈ ℤ | x = 6a + 4}
+		Let B = {y ∈ ℤ | y = 18b - 2}
+
+		Definition:
+
+			A ⊆ B ↔ ∀x, x ∈ A → x ∈ B
+
+		Suppose x ∈ A. We must show that ∀x ∈ A,
+		if x ∈ A, then x ∈ B.
+
+		Let a, b ∈ ℤ
+
+			x = 6a + 4
+			y = 18b - 2
+
+			x = y
+
+			6a + 4 = 18b - 2
+			6a = 18b - 6
+
+			a = 3b - 1
+			
+		Let a = 0
+
+			6(0) + 4 = 4 ∈ ℤ
+
+			3b - 1 = 0
+			3b = 1
+
+			b = 1 / 3 ∉ ℤ
+
+		Therefore, A ⊈ B
+
+Solution:	A ⊈ B
+
+
+		b	B ⊆ A
+
+		Let B = {y ∈ ℤ | y = 18b - 2}
+		Let A = {x ∈ ℤ | x = 6a + 4}
+
+		Definition:
+
+			B ⊆ A ↔ ∀y, y ∈ B → y ∈ A
+
+		Suppose y ∈ B. We must show that ∀y ∈ B,
+		if y ∈ B, then y ∈ A.
+
+		Let b, a ∈ ℤ
+
+			y = 18b - 2
+			x = 6a + 4
+
+			y = x
+
+			a = 3b - 1 ∈ ℤ
+
+		Therefore, B ⊆ A
+
+Solution:	B ⊆ A
+
+
+		c.	B = C
+
+		B = {y ∈ ℤ | y = 18b - 2}
+		C = {z ∈ ℤ | z = 18c + 16)
+
+		Suppose B = C. We must show that B ⊆ C
+		and C ⊆ B.
+
+		Let b, a ∈ ℤ
+
+			y = 18b - 2
+			z = 18c + 16
+
+			y = z
+
+			18b - 2 = 18c + 16
+			18b = 18c + 18
+			
+			b = c + 1 ∈ ℤ
+			c = b - 1 ∈ ℤ
+
+		Therefore, B = C.
+
+Solution:	B = C

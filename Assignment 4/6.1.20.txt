@@ -1,0 +1,71 @@
+6.1.20.		Let Bᵢ = {x ∈ ℝ | 0 ≤ x ≤ i} for each integer
+		i = 1, 2, 3, 4.
+
+		a.	B₁ ∪ B₂ ∪ B₃ ∪ B₄ = ?
+		b.	B₁ ∩ B₂ ∩ B₃ ∩ B₄ = ?
+		c.	Are B₁, B₂, B₃, B₄ mutually disjoint?
+			Explain.
+
+
+		a.	B₁ ∪ B₂ ∪ B₃ ∪ B₄ = ?
+
+		We must show the union of B₁, B₂, B₃ and B₄.
+
+		Definition:
+
+			A ∪ B = {x ∈ U | x ∈ A or x ∈ B}
+
+		Let Bᵢ = {x ∈ ℝ | 0 ≤ x ≤ i}
+
+			B₁ = {x ∈ ℝ | 0 ≤ x ≤ 1}
+			B₂ = {x ∈ ℝ | 0 ≤ x ≤ 2}
+			B₃ = {x ∈ ℝ | 0 ≤ x ≤ 3}
+			B₄ = {x ∈ ℝ | 0 ≤ x ≤ 4}
+
+		B₁ ∪ B₂ ∪ B₃ ∪ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 1 or 0 ≤ x ≤ 2 or 0 ≤ x ≤ 3 or 0 ≤ x ≤ 4}
+		
+		Therefore, B₁ ∪ B₂ ∪ B₃ ∪ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 4}
+
+Solution:	B₁ ∪ B₂ ∪ B₃ ∪ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 4}
+
+
+		b.	B₁ ∩ B₂ ∩ B₃ ∩ B₄ = ?
+
+		We must show the intersection of B₁, B₂, B₃ and B₄.
+
+		Definition:
+			
+			A ∩ B = {x ∈ U | x ∈ A and x ∈ B}
+
+		Let Bᵢ = {x ∈ ℝ | 0 ≤ x ≤ i}
+
+			B₁ = {x ∈ ℝ | 0 ≤ x ≤ 1}
+			B₂ = {x ∈ ℝ | 0 ≤ x ≤ 2}
+			B₃ = {x ∈ ℝ | 0 ≤ x ≤ 3}
+			B₄ = {x ∈ ℝ | 0 ≤ x ≤ 4}
+
+		B₁ ∩ B₂ ∩ B₃ ∩ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 1 and 0 ≤ x ≤ 2 and 0 ≤ x ≤ 3 and 0 ≤ x ≤ 4}
+
+		Therefore, B₁ ∩ B₂ ∩ B₃ ∩ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 1}
+
+Solution:	B₁ ∩ B₂ ∩ B₃ ∩ B₄ = {x ∈ ℝ | 0 ≤ x ≤ 1}
+
+
+		c.	Are B₁, B₂, B₃, B₄ mutually disjoint?
+			Explain.
+
+		We must show whether B₁, B₂, B₃, B₄ are mutually disjoint.
+
+		Definition:
+
+			Aᵢ ∩ Aⱼ = ∅ whenever i ≠ j
+
+		So by definition, we must show whether the sets have no elements
+		in common.
+
+		But we know from solution (a) that B₁ ⊆ B₂ ⊆ B₃ ⊆ B₄.
+
+		Hence, they are not mutually disjoint, because B₄ contains
+		elements from all other sets.
+
+Solution:	B₁, B₂, B₃, B₄ are not mutually disjoint.

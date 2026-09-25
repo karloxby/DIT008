@@ -1,0 +1,60 @@
+5.7.25.		A certain computer algorithm executes twice
+		as many operations when it is run with an input
+		of size k as when it is run with an input of size
+		k - 1 (where k is an integer that is greater than 1).
+		When the algorithm is run with an input of size 1,
+		it executes seven operations. How many operations
+		does it execute when it is run with an input of size 25?
+
+
+		Suppose a certain computer algorithm executes twice
+		as many operations when it is run with an input of size
+		k, as when it is run with an input of size k - 1.
+
+		As in, k executes twice as many operations as k - 1, for 
+		some integer k, where k > 1.
+
+		Suppose the algorithm executes seven operations when run
+		with an input of size 1.
+
+		We must show how many operations the algorithm executes
+		when run with an input of size 25.
+
+		What do we know?
+
+			- P(k) executes twice as many operations as P(k - 1)
+			- P(1) executes seven operations
+			- k is some integer
+			- k > 1
+
+		aₖ = number of operations for an input of size k
+
+		Since P(k) executes twice as many operations as P(k - 1),
+		then:
+
+			aₖ = 2aₖ₋₁
+		
+		And we know that a₁ = 7, hence:
+
+			a₂ = 2a₂₋₁ = 2a₁ = 2 * 7 = 14
+			a₃ = 2a₂ = 2 * 14 = 28
+			a₄ = 2a₃ = 2 * 28 = 56
+
+		From the recurrence relation:
+
+			aₖ = 2aₖ₋₁
+
+		We suppose to guess this pattern:
+
+			aₖ = 7 * 2ᵏ⁻¹
+
+			a₁ = 7
+			a₂ = 7 * 2¹ 		= 14
+			a₃ = 7 * 2² 		= 28
+			a₄ = 7 * 2³ 		= 56
+			.
+			.
+			.
+			a₂₅ = 7 * 2²⁴ 		= 117 440 512
+
+Solution:	The algorithm executes 117 440 512 operations with an input size 25.

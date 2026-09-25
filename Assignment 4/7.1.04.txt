@@ -1,0 +1,113 @@
+7.1.4.		a.	Find all functions from X = {a, b} to Y = {u, v}.
+		b.	Find all functions from X = {a, b, c} to Y = {u}.
+		c.	Find all functions from X = {a, b, c} to Y = {u, v}.
+
+
+a.	Find all functions from X = {a, b} to Y = {u, v}.
+
+	Let f : X → Y
+
+	Domain of f 	= {a, b}
+	Co-domain of f 	= {u, v}
+
+	Definition of f : X → Y:
+
+		(1)	Every element in X is related to some 
+			element in Y
+
+		(2)	No element in X is related to more than 
+			one element in Y
+
+	Hence:
+
+		f₁(a) = u
+		f₁(b) = v
+
+		Range of f₁ = {u, v}
+
+		f₂(a) = v
+		f₂(b) = u
+
+		Range of f₂ = {v, u}
+
+		f₃(a) = u
+		f₃(b) = u
+
+		Range of f₃ = {u}
+
+		f₄(a) = v
+		f₄(b) = v
+
+		Range of f₄ = {v}
+
+Solution:	There are 4 functions from X = {a, b} to Y = {u, v}.
+
+
+b.	Find all functions from X = {a, b, c} to Y = {u}.
+
+	Let f : X → Y
+
+	Domain of f 	= {a, b, c}
+	Co-domain of f 	= {u}
+
+	Definition of f : X → Y:
+
+		(1)	Every element in X is related to some 
+			element in Y
+
+		(2)	No element in X is related to more than 
+			one element in Y
+
+	Hence:
+
+		f(a) = u
+		f(b) = u
+		f(c) = u
+
+		Range of f = {u}
+
+Solution:	There is one function from X = {a, b, c} to Y = {u}
+
+
+c.	Find all functions from X = {a, b, c} to Y = {u, v}.
+
+	Let f : X → Y
+
+	Domain of f 	= {a, b, c}
+	Co-domain of f 	= {u, v}
+
+	Definition of f : X → Y:
+
+		(1)	Every element in X is related to some 
+			element in Y
+
+		(2)	No element in X is related to more than 
+			one element in Y
+
+	Hence:
+
+		f₁(a) = u		f₂(a) = v
+		f₁(b) = u		f₂(b) = v
+		f₁(c) = u		f₂(c) = v
+
+		Range of f₁ = {u}	Range of f₂ = {v}
+
+		f₃(a) = u		f₄(a) = v
+		f₃(b) = v		f₄(b) = u
+		f₃(c) = v		f₄(c) = u
+
+		Range of f₃ = {u, v}	Range of f₄ = {u, v}
+
+		f₅(a) = v		f₆(a) = u
+		f₅(b) = u		f₆(b) = v
+		f₅(c) = v		f₆(c) = u
+
+		Range of f₅ = {u, v}	Range of f₆ = {u, v}
+
+		f₇(a) = v		f₈(a) = u
+		f₇(b) = v		f₈(b) = u
+		f₇(c) = u		f₈(c) = v
+
+		Range of f₇ = {u, v}	Range of f₈ = {u, v}
+
+Solution:	There are 8 functions from X = {a, b, c} to Y = {u, v}

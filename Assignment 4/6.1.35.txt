@@ -1,0 +1,99 @@
+6.1.35.		Let A = {a, b}, B = {1, 2}, and C = {2, 3}. Find
+		each of the following sets.
+
+		a.	A × (B ∪ C)
+		b.	(A × B) ∪ (A × C)
+		c.	A × (B ∩ C)
+		d.	(A × B) ∩ (A × C)
+
+a.	A × (B ∪ C)
+
+		A = {a, b}
+		B = {1, 2}
+		C = {2, 3}
+
+		Definition of union:
+
+			B ∪ C = {x ∈ U | x ∈ B or x ∈ C}
+
+		Hence, B ∪ C = {1, 2, 3}
+
+		A × (B ∪ C) = {
+			(a, 1), (a, 2), (a, 3),
+			(b, 1), (b, 2), (b, 3)
+		}
+
+Solution:	A × (B ∪ C) = {(a, 1), (a, 2), (a, 3), (b, 1), (b, 2), (b, 3)}
+
+
+b.	(A × B) ∪ (A × C)
+
+		A = {a, b}
+		B = {1, 2}
+		C = {2, 3}
+
+		(A × B) = {
+			(a, 1), (a, 2),
+			(b, 1), (b, 2)
+		}
+
+		(A × C) = {
+			(a, 2), (a, 3),
+			(b, 2), (b, 3)
+		}
+
+		Definition of union:
+
+			(A × B) ∪ (A × C) = {x ∈ U | x ∈ (A × B) or x ∈ (A × C)}
+
+		Hence (A × B) ∪ (A × C) = {
+			(a, 1), (a, 2), (b, 1), 
+			(b, 2), (a, 3), (b, 3)
+		}
+
+Solution:	(A × B) ∪ (A × C) = {(a, 1), (a, 2), (b, 1), (b, 2), (a, 3), (b, 3)}
+
+
+
+c.	A × (B ∩ C)
+
+		A = {a, b}
+		B = {1, 2}
+		C = {2, 3}
+
+		Definition of intersection:
+
+			B ∩ C = {x ∈ U | x ∈ B and x ∈ C}
+
+		Hence, B ∩ C = {2}
+
+		A × (B ∩ C) = {(a, 2), (b, 2)}
+
+Solution:	A × (B ∩ C) = {(a, 2), (b, 2)}
+
+
+d.	(A × B) ∩ (A × C)
+
+		A = {a, b}
+		B = {1, 2}
+		C = {2, 3}
+
+		(A × B) = {
+			(a, 1), (a, 2),
+			(b, 1), (b, 2)
+		}
+
+		(A × C) = {
+			(a, 2), (a, 3),
+			(b, 2), (b, 3)
+		}
+
+		Definition of intersection:
+
+			(A × B) ∩ (A × C) = {x ∈ U | x ∈ (A × B) and x ∈ (A × C)}
+
+		Hence (A × B) ∩ (A × C) = {(a, 2), (b, 2)}
+
+Solution:	(A × B) ∩ (A × C) = {(a, 2), (b, 2)}
+
+

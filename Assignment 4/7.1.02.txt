@@ -1,0 +1,38 @@
+7.1.2.		Let X = {1, 3, 5} and Y = {a, b, c, d}. Define
+		g : X → Y by the following arrow diagram.
+
+		X	g	Y
+
+		1	→	b
+		3	→	b
+		5	→	b
+
+
+		Suppose X is the domain and Y is the co-domain for
+		function g.
+
+		We must define g : X → Y
+
+		g satisfies two properties:
+
+			(1)	Every element in X is related
+				to some element in Y.
+
+			(2)	No element in X is related to
+				more than one element in Y.
+		
+		X is the domain and Y is the co-domain.
+
+			- domain of g = {1, 3, 5}
+			- co-domain of g = {a, b, c, d}
+
+		g(1) = b, g(3) = b, and g(5) = b
+
+			Range of g = image of X under g = {y ∈ Y | g(x) = y for some x ∈ X}
+
+		Hence, range of g = {b}
+
+Solution:	g(1) = b, g(3) = b, g(5) = b
+		Domain of g = {1, 3, 5}
+		Co-domain of g = {a, b, c, d}
+		Range of g = {b}

@@ -32,26 +32,26 @@
 
 		Inductive step: P(k + 1)
 
-			Let k ∈ ℤ
+			Let k ∈ ℤ, k ≥ 0
 
 			Suppose P(k) is true. Then:
 
 				P(k) : aₖ = rᵏa = arᵏ
 
-			And we must show that P(k + 1) is true for
-			the recurrence relation aₖ = raₖ₋₁. Let's replace
-			k with k + 1:
+			We must show that P(k + 1) is true:
 
-				aₖ₊₁ = ra₍ₖ₊₁₎ - 1 = raₖ
+				P(k + 1) : aₖ₊₁ = arᵏ⁺¹
 
-			Therefore, we recurrence relation is true
-			for k + 1.
+			From the recurrence relation:
+
+				aₖ₊₁ = ra₍ₖ₊₁₎₋₁ = raₖ
+
+			By the inductive hypothesis:
+
+				aₖ₊₁ = r(arᵏ) = arᵏ⁺¹
+
+			Therefore, P(k + 1) is true, which is
+			what was to be shown.
 	
-Solution:	The recurrence relation aₖ = raₖ₋₁, for each integer k ≥ 1
-		and a₀ = a
-			aₖ₋₁ = arᵏ⁻¹
-
-		a sequence that satisfies the recurrence relation
-		aₖ = raₖ₋₁, for each integer k ≥ 1 and a₀ = a. Use
-		mathematical induction to prove that aₙ = arⁿ, for
-		every integer n ≥ 0.
+Solution:	Since P(0) is true, and P(k) → P(k + 1) is true, by proof
+		by induction, aₙ = arⁿ, for ever integer n ≥ 0.

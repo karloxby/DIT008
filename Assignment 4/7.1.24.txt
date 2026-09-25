@@ -1,0 +1,27 @@
+7.1.24.		If a and y are positive real numbers such that
+		logₐ y = 2, what is logₐ² (y)? Explain.
+
+		(Note, could not use subscript b, so used a)
+
+
+		Definition Logarithms and Logarithmic Functions:
+
+			logₐ x = y ↔ aʸ = x
+
+		Let a, y ∈ ℝ⁺
+
+			logₐ y = 2 ↔ a² = y
+			
+				a² = y
+
+			logₐ² (y) = x ↔ (a²)ˣ = y
+			logₐ² (a²) = x ↔ (a²)ˣ = a²
+
+				(a²)ˣ = a²ˣ
+				a²ˣ = a²
+
+				x = 1
+
+		Hence, logₐ² y = 1
+
+Solution:	logₐ² y = 1

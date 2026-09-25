@@ -1,0 +1,99 @@
+7.2.09.		Let X = {1, 2, 3}, Y = {1, 2, 3, 4}, and Z = {1, 2}.
+
+		a.	Define a function f : X → Y that is injective
+			but not surjective.
+
+		b.	Define a function g : X → Z that is surjective
+			but not injective
+
+		c.	Define a function h : X → X that is neither
+			injective or surjective.
+
+		d.	Define a function k : X → X that is injective
+			and surjective but is not the identity function
+			on X.
+
+
+a.	Define a function f : X → Y that is injective
+	but not surjective.
+
+	Let X = {1, 2, 3}
+	Let Y = {1, 2, 3, 4}
+
+	Definition of injective: 
+
+		Outputs cannot be shared
+	
+	Hence, f : f(x) = x
+
+		f(1) = 1
+		f(2) = 2
+		f(3) = 3
+	
+Solution:	f : f(x) = x
+
+
+b.	Define a function g : X → Z that is surjective
+	but not injective
+
+	Let X = {1, 2, 3}
+	Let Z = {1, 2}
+
+	Definition of surjective: 
+
+		Outputs cannot go unused
+
+	Hence, g : x is odd = 1, x is even = 2
+
+		g(1) = 1
+		g(2) = 2
+		g(3) = 1
+
+Solution:	g : x is odd = 1, x is even = 2
+
+
+c.	Define a function h : X → X that is neither
+	injective or surjective.
+
+	Let X = {1, 2, 3}
+
+	Definition of injective negated:
+
+		Outputs can be shared
+	
+	Definition of surjective negated:
+
+		Outputs can go unused
+
+	Hence, h : h(x) = 1
+
+		h(1) = 1
+		h(2) = 1
+		h(3) = 1
+
+Solution:	h : h(x) = 1
+
+
+d.	Define a function k : X → X that is injective
+	and surjective but is not the identity function
+	on X.
+
+	Let X = {1, 2, 3}
+
+	Definition of injective:
+
+		Outputs cannot be shared
+	
+	Definition of surjective:
+
+		Outputs cannot go unused
+
+	Since k ≠ the identity function on X, then:
+
+	k : x < 2 → 3 and x ≥ 2 → x - 1
+
+		k(1) = 3
+		k(2) = 1
+		k(3) = 2
+
+Solution:	k : x < 2 → 3 and x ≥ 2 → x - 1

@@ -1,0 +1,143 @@
+6.1.25.		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)] for
+		each positive integer i.
+
+		a.	⁴∪ᵢ₌₁ Rᵢ = ?
+		b.	⁴∩ᵢ₌₁ Rᵢ = ?
+		c. 	Are R₁, R₂, R₃,... mutually disjoint? Explain.
+		d.	ⁿ∪ᵢ₌₁ Rᵢ = ?
+		e.	ⁿ∩ᵢ₌₁ Rᵢ = ?
+		f.	∞∪ᵢ₌₁ Rᵢ = ?
+		g.	∞∩ᵢ₌₁ Rᵢ = ?
+
+
+a.	⁴∪ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		Since i ∈ ℤ⁺
+
+		⁴∪ᵢ₌₁ Rᵢ = R₁ ∪ R₂ ∪ R₃ ∪ R₄
+
+			R₁ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+			R₂ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/2)}
+			R₃ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/3)}
+			R₄ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/4)}
+
+		Definition of union of an indexed collection:
+
+			⁴∪ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for at least one i = 1, 2, 3, 4}
+
+		Therefore, ⁴∪ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+Solution:	⁴∪ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+
+b.	⁴∩ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		Since i ∈ ℤ⁺
+
+		⁴∩ᵢ₌₁ Rᵢ = R₁ ∩ R₂ ∩ R₃ ∩ R₄
+
+			R₁ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+			R₂ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/2)}
+			R₃ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/3)}
+			R₄ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/4)}
+
+		Definition of intersection of an indexed collection:
+
+			⁴∩ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for every i = 1, 2, 3, 4}
+
+		Therefore, ⁴∩ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/4)}
+
+Solution:	⁴∩ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/4)}
+
+
+c. 	Are R₁, R₂, R₃,... mutually disjoint? Explain.
+
+		Definition of mutually disjoint:
+
+			Aᵢ ∩ Aⱼ = ∅ whenever i ≠ j
+
+		Since R₁ ⊇ R₂ ⊇ R₃,..., ⊇ Rₙ
+
+		So by definition, we must show whether the sets have no elements
+		in common.
+
+		However, R₁ ⊇ R₂ ⊇ R₃,..., ⊇ Rₙ, hence they are not mutually
+		disjoint, because R₁ contains elements from all other sets.
+
+Solution:	R₁, R₂, R₃,... are not mutually disjoint.
+
+
+d.	ⁿ∪ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		ⁿ∪ᵢ₌₁ Rᵢ = R₁ ∪ R₂ ∪ R₃ ... ∪ Rₙ
+
+		Definition of union of an indexed collection:
+
+			ⁿ∪ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for at least one i = 1, 2, 3,..., n}
+
+		Therefore, ⁿ∪ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+Solution:	ⁿ∪ᵢ₌₁ Rᵢ ={x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+
+e.	ⁿ∩ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		ⁿ∩ᵢ₌₁ Rᵢ = R₁ ∩ R₂ ∩ R₃ ... ∩ Rₙ
+
+		Definition of intersection of an indexed collection:
+
+			ⁿ∩ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for every i = 1, 2, 3,..., n}
+
+		Therefore, ⁿ∩ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/n)}
+
+Solution:	ⁿ∩ᵢ₌₁ Rᵢ ={x ∈ ℝ | 1 ≤ x ≤ 1 + (1/n)}
+
+
+f.	∞∪ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		∞∪ᵢ₌₁ Rᵢ = R₁ ∪ R₂ ∪ R₃ ... 
+
+		Definition of union of an indexed collection:
+
+			∞∪ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for at least one positive integer i}
+
+		Therefore, ∞∪ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+Solution:	∞∪ᵢ₌₁ Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/1)}
+
+
+g.	∞∩ᵢ₌₁ Rᵢ = ?
+
+		Let Rᵢ = {x ∈ ℝ | 1 ≤ x ≤ 1 + (1/i)} = [1, 1 + (1/i)]
+
+		∞∩ᵢ₌₁ Rᵢ = R₁ ∩ R₂ ∩ R₃ ...
+
+		Definition of intersection of an indexed collection:
+
+			∞∩ᵢ₌₁ Aᵢ = {x ∈ U | x ∈ Aᵢ for every positive integer i}
+
+		Since Rᵢ = [1, 1 + (1/i)], as i gets larger:
+
+			R₁ = [1, 1 + (1/1)] 		= [1, 2]
+			R₂ = [1, 1 + (1/2)] 		= [1, 1.5]
+			R₃ = [1, 1 + (1/3)] 		= [1, 1.33...]
+			R₁₀ = [1, 1 + (1/10)] 		= [1, 1.1]
+			R₁₀₀ = [1, 1 + (1/100)] 	= [1, 1.01]
+			R₁₀₀₀ = [1, 1 + (1/1000)] 	= [1, 1.001]
+
+		Hence, the interval keeps shrinking toward 1, and there is
+		exactly one number that is in every set.
+
+		Therefore, ∞∩ᵢ₌₁ Rᵢ = {1}.
+
+Solution:	∞∩ᵢ₌₁ Rᵢ = {1}
