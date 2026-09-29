@@ -5,6 +5,66 @@
 ### Upcoming Assignments
 
 <details>
+<summary><strong>Assignment 5</strong> — 16 exercises</summary>
+
+| Exercise | Points |
+|----------|-------:|
+| 9.1.11   | 3      |
+| 9.1.19   | 3      |
+| 9.1.22   | 6      |
+| 9.2.10   | 2      |
+| 9.2.32   | 3      |
+| 9.2.33   | 3      |
+| 9.3.12   | 2      |
+| 9.3.17   | 6      |
+| 9.3.34   | 8      |
+| 9.4.4    | 2      |
+| 9.4.11   | 2      |
+| 9.4.34   | 6      |
+| 9.5.2    | 4      |
+| 9.5.7    | 6      |
+| 9.5.20   | 3      |
+| 9.5.21   | 1      |
+
+**Total exercises: 16**
+
+</details>
+
+<details>
+<summary><strong>Assignment 6</strong> — 22 exercises</summary>
+
+| Exercise     | Points |
+|--------------|-------:|
+| 9.6.4        | 3      |
+| 9.6.6        | 2      |
+| 9.6.20       | 6      |
+| 10.1.2       | 6      |
+| 10.1.5       | 3      |
+| 10.1.8 b,c,d | 3      |
+| 10.1.13      | 2      |
+| 10.1.15      | 2      |
+| 10.2.16      | 5      |
+| 10.2.18      | 8      |
+| 10.2.23      | 8      |
+| 10.3.3       | 3      |
+| 10.3.4       | 3      |
+| 10.3.5       | 3      |
+| 10.3.17      | 5      |
+| 10.4.15      | 1      |
+| 10.4.16      | 1      |
+| 10.4.17      | 1      |
+| 10.4.19      | 1      |
+| 10.4.20      | 1      |
+| 10.4.23      | 1      |
+| 10.4.24      | 3      |
+
+**Total exercises: 22**
+
+</details>
+
+### Past Assignments
+
+<details>
 <summary><strong>Assignment 4</strong> — 19 exercises</summary>
 
 | Exercise | Points |
@@ -32,8 +92,6 @@
 **Total exercises: 19**
 
 </details>
-
-### Past Assignments
 
 <details>
 <summary><strong>Assignment 3</strong> — 28 exercises</summary>
