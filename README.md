@@ -190,178 +190,68 @@
 
 </details>
 
-## Useful Notation
+## Course Plan
 
-### Logic & Quantifiers
+### Chapter 1
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ¬ | ∧ | ∨ | → | ↔ | ≡ | ∴ | ∵ |
-| ∀ | ∃ | ∄ | ⊤ | ⊥ | ⇒ | ⇔ | □ |
+- Section 1.2
+- Section 1.3 — Relations and arrow diagrams only
+- Section 1.4 — Definitions only
 
-### Sets
+### Chapter 2
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ∈ | ∉ | ⊆ | ⊈ | ⊂ | ⊄ | ⊇ | ⊉ |
-| ⊃ | ⊅ | ∅ | ∪ | ∩ | ∖ | ∁ | ℘ |
-| { | } | \| | : |   |   |   |   |
+- Section 2.1
+- Section 2.2
+- Section 2.3
 
-### Number Sets
+### Chapter 3
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ℕ | ℤ | ℤ⁺ | ℤ⁻ | ℚ | ℝ | ℝ⁺ | ℝ⁻ |
+- Section 3.1
+- Section 3.2
+- Section 3.3
 
-### Relations, Ordering & Divisibility
+### Chapter 4
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| = | ≠ | < | > | ≤ | ≥ | ∣ | ∤ |
-| ≡ | ≢ | ≈ | ∼ | ≺ | ≻ | ⪯ | ⪰ |
+- Section 4.1
+- Section 4.2
+- Section 4.3
+- Section 4.4
+- Section 4.5
+- Section 4.6
+- Section 4.7
 
-### Floor, Ceiling & Grouping
+### Chapter 5
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ⌊ | ⌋ | ⌈ | ⌉ | ( | ) | [ | ] |
-| { | } | ⟨ | ⟩ |   |   |   |   |
+- Section 5.1
+- Section 5.2
+- Section 5.6
+- Section 5.7
 
-### Arithmetic
+### Chapter 6
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| + | − | × | ÷ | ± | √ | ∛ | ∞ |
-| ! | · | / | % | mod |   |   |   |
+- Section 6.1
 
-### Fractions
+### Chapter 7
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ½ | ⅓ | ⅔ | ¼ | ¾ | ⅕ | ⅖ | ⅗ |
-| ⅘ | ⅙ | ⅚ | ⅛ | ⅜ | ⅝ | ⅞ |   |
+- Section 7.1
+- Section 7.2
 
-### Summation & Product
+### Chapter 9
 
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| ∑ | ∏ | ∐ | ⋃ | ⋂ |   |   |   |
-| ⁿ∑ᵢ₌₁ | ⁿ∑ₖ₌ₘ | ⁿ∏ᵢ₌₁ | ⁿ∏ₖ₌ₘ |   |   |   |   |
+- Section 9.1
+- Section 9.2
+- Section 9.3
+- Section 9.4
+- Section 9.5
+- Section 9.6
 
-### Superscripts
+### Chapter 10
 
-|   |   |   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|---|
-| ⁰ | ¹ | ² | ³ | ⁴ | ⁵ | ⁶ | ⁷ | ⁸ | ⁹ |
-| ᵃ | ᵇ | ᶜ | ᵈ | ᵉ | ᶠ | ᵍ | ʰ | ⁱ | ʲ |
-| ᵏ | ˡ | ᵐ | ⁿ | ᵒ | ᵖ | ʳ | ˢ | ᵗ | ᵘ |
-| ᵛ | ʷ | ˣ | ʸ | ᶻ |   |   |   |   |   |
-| ⁺ | ⁻ | ⁼ | ⁽ | ⁾ |   |   |   |   |   |
+- Section 10.1 — Excluding Hamiltonian circuits
+- Section 10.2
+- Section 10.3
+- Section 10.4
 
-Missing Unicode superscript: q
+### Additional Material
 
-### Subscripts
-
-|   |   |   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|---|
-| ₀ | ₁ | ₂ | ₃ | ₄ | ₅ | ₆ | ₇ | ₈ | ₉ |
-| ₐ | ₑ | ₕ | ᵢ | ⱼ | ₖ | ₗ | ₘ | ₙ | ₒ |
-| ₚ | ᵣ | ₛ | ₜ | ᵤ | ᵥ | ₓ |   |   |   |
-| ₊ | ₋ | ₌ | ₍ | ₎ |   |   |   |   |   |
-
-Missing Unicode subscripts: b, c, d, f, g, q, w, y, z
-
-### Sequences & Indexed Notation
-
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| a₀ | a₁ | a₂ | a₃ | aₙ | aᵢ | aⱼ | aₖ |
-| aₘ | aₙ₋₁ | aₙ₊₁ | aₖ₋₁ | aₖ₊₁ | aₘ₋₁ | aₘ₊₁ | … |
-
-### Common Powers
-
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| a⁰ | a¹ | a² | a³ | aⁿ | aᵐ | aᵏ | aⁱ |
-| 2ⁿ | 2ᵏ | aⁿ⁻¹ | aⁿ⁺¹ | aᵏ⁻¹ | aᵏ⁺¹ |   |   |
-
-### Tuples, Products & Miscellaneous
-
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| (x, y) | (x, y, z) | (x₁, ..., xₙ) | × | ℕ² | ℤ² | ℚ² | ℝ² |
-| ℝ³ | ℝⁿ | … | ⋯ | ⋮ | ⋱ |   |   |
-
-### Greek Letters
-
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-| α | β | γ | δ | ε | ζ | η | θ |
-| ι | κ | λ | μ | ν | ξ | ο | π |
-| ρ | σ | τ | υ | φ | χ | ψ | ω |
-| Γ | Δ | Θ | Λ | Ξ | Π | Σ | Φ |
-| Ψ | Ω |   |   |   |   |   |   |
-
-### Ordinals
-
-|   |   |   |   |
-|---|---|---|---|
-| ˢᵗ | ⁿᵈ | ʳᵈ | ᵗʰ |
-
-## Definitions & Reference
-
-### Even
-
-n is even ↔ ∃k ∈ ℤ such that n = 2k
-
-### Odd
-
-n is odd ↔ ∃k ∈ ℤ such that n = 2k + 1
-
-### Divisibility
-
-d ∣ n ↔ ∃k ∈ ℤ such that n = dk
-
-### Rational Number
-
-r ∈ ℚ ↔ ∃a, b ∈ ℤ such that r = a/b and b ≠ 0
-
-### Quotient-Remainder Theorem
-
-∀n ∈ ℤ and ∀d ∈ ℤ⁺, ∃q, r ∈ ℤ such that
-
-n = dq + r and 0 ≤ r < d
-
-### Floor
-
-⌊x⌋ = n ↔ n ≤ x < n + 1
-
-### Ceiling
-
-⌈x⌉ = n ↔ n - 1 < x ≤ n
-
-### Mod
-
-n mod d = r ↔ n = dq + r
-
-where 0 ≤ r < d
-
-### Set Difference
-
-A ∖ B = {x ∈ A | x ∉ B}
-
-### Subset
-
-A ⊆ B ↔ ∀x (x ∈ A → x ∈ B)
-
-### Set Equality
-
-A = B ↔ A ⊆ B ∧ B ⊆ A
-
-### Cartesian Product
-
-A × B = {(a, b) | a ∈ A ∧ b ∈ B}
-
-### Power Set
-
-℘(A) = {B | B ⊆ A}
+- Halting Problem — Not in the book
