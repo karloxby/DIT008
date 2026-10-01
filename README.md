@@ -1,5 +1,9 @@
 # DIT008 H26 Discrete Mathematics
 
+## Course Literature
+
+Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metric version). Cengage Learning.
+
 ## Assignments
 
 ### Upcoming Assignments
@@ -192,65 +196,65 @@
 
 ## Course Plan
 
-### Chapter 1
+### Chapter 1 — Speaking Mathematically
 
-- Section 1.2
-- Section 1.3 — Relations and arrow diagrams only
-- Section 1.4 — Definitions only
+- 1.2 The Language of Sets
+- 1.3 The Language of Relations and Functions — Relations and arrow diagrams only
+- 1.4 The Language of Graphs — Definitions only
 
-### Chapter 2
+### Chapter 2 — The Logic of Compound Statements
 
-- Section 2.1
-- Section 2.2
-- Section 2.3
+- 2.1 Logical Form and Logical Equivalence
+- 2.2 Conditional Statements
+- 2.3 Valid and Invalid Arguments
 
-### Chapter 3
+### Chapter 3 — The Logic of Quantified Statements
 
-- Section 3.1
-- Section 3.2
-- Section 3.3
+- 3.1 Predicates and Quantified Statements I
+- 3.2 Predicates and Quantified Statements II
+- 3.3 Statements with Multiple Quantifiers
 
-### Chapter 4
+### Chapter 4 — Elementary Number Theory and Methods of Proof
 
-- Section 4.1
-- Section 4.2
-- Section 4.3
-- Section 4.4
-- Section 4.5
-- Section 4.6
-- Section 4.7
+- 4.1 Direct Proof and Counterexample I: Introduction
+- 4.2 Direct Proof and Counterexample II: Rational Numbers
+- 4.3 Direct Proof and Counterexample III: Divisibility
+- 4.4 Direct Proof and Counterexample IV: Division into Cases and the Quotient-Remainder Theorem
+- 4.5 Direct Proof and Counterexample V: Division into Cases and the Quotient-Remainder Theorem
+- 4.6 Direct Proof and Counterexample VI: Floor and Ceiling
+- 4.7 Indirect Argument: Contradiction and Contraposition
 
-### Chapter 5
+### Chapter 5 — Sequences, Mathematical Induction, and Recursion
 
-- Section 5.1
-- Section 5.2
-- Section 5.6
-- Section 5.7
+- 5.1 Sequences
+- 5.2 Mathematical Induction I: Proving Formulas
+- 5.6 Defining Sequences Recursively
+- 5.7 Solving Recurrence Relations by Iteration
 
-### Chapter 6
+### Chapter 6 — Set Theory
 
-- Section 6.1
+- 6.1 Set Theory: Definitions and the Element Method of Proof
 
-### Chapter 7
+### Chapter 7 — Properties of Functions
 
-- Section 7.1
-- Section 7.2
+- 7.1 Functions Defined on General Sets
+- 7.2 One-to-One, Onto, and Inverse Functions
 
-### Chapter 9
+### Chapter 9 — Counting and Probability
 
-- Section 9.1
-- Section 9.2
-- Section 9.3
-- Section 9.4
-- Section 9.5
-- Section 9.6
+- 9.1 Introduction to Probability
+- 9.2 Possibility Trees and the Multiplication Rule
+- 9.3 Counting Elements of Disjoint Sets: The Addition Rule
+- 9.4 The Pigeonhole Principle
+- 9.5 Counting Subsets of a Set: Combinations
+- 9.6 r-Combinations with Repetition Allowed
 
-### Chapter 10
+### Chapter 10 — Theory of Graphs and Trees
 
-- Section 10.1 — Excluding Hamiltonian circuits
-- Section 10.2
-- Section 10.3
-- Section 10.4
+- 10.1 Trails, Paths, and Circuits — Excluding Hamiltonian circuits
+- 10.2 Matrix Representations of Graphs
+- 10.3 Isomorphisms of Graphs
+- 10.4 Trees: Examples and Basic Properties
 
 ### Additional Material
 
