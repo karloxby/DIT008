@@ -196,25 +196,35 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 
 ## Course Plan
 
-### Chapter 1 — Speaking Mathematically
+<details>
+<summary><strong>Chapter 1 — Speaking Mathematically</strong></summary>
 
 - 1.2 The Language of Sets
 - 1.3 The Language of Relations and Functions — Relations and arrow diagrams only
 - 1.4 The Language of Graphs — Definitions only
 
-### Chapter 2 — The Logic of Compound Statements
+</details>
+
+<details>
+<summary><strong>Chapter 2 — The Logic of Compound Statements</strong></summary>
 
 - 2.1 Logical Form and Logical Equivalence
 - 2.2 Conditional Statements
 - 2.3 Valid and Invalid Arguments
 
-### Chapter 3 — The Logic of Quantified Statements
+</details>
+
+<details>
+<summary><strong>Chapter 3 — The Logic of Quantified Statements</strong></summary>
 
 - 3.1 Predicates and Quantified Statements I
 - 3.2 Predicates and Quantified Statements II
 - 3.3 Statements with Multiple Quantifiers
 
-### Chapter 4 — Elementary Number Theory and Methods of Proof
+</details>
+
+<details>
+<summary><strong>Chapter 4 — Elementary Number Theory and Methods of Proof</strong></summary>
 
 - 4.1 Direct Proof and Counterexample I: Introduction
 - 4.2 Direct Proof and Counterexample II: Rational Numbers
@@ -224,23 +234,35 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 - 4.6 Direct Proof and Counterexample VI: Floor and Ceiling
 - 4.7 Indirect Argument: Contradiction and Contraposition
 
-### Chapter 5 — Sequences, Mathematical Induction, and Recursion
+</details>
+
+<details>
+<summary><strong>Chapter 5 — Sequences, Mathematical Induction, and Recursion</strong></summary>
 
 - 5.1 Sequences
 - 5.2 Mathematical Induction I: Proving Formulas
 - 5.6 Defining Sequences Recursively
 - 5.7 Solving Recurrence Relations by Iteration
 
-### Chapter 6 — Set Theory
+</details>
+
+<details>
+<summary><strong>Chapter 6 — Set Theory</strong></summary>
 
 - 6.1 Set Theory: Definitions and the Element Method of Proof
 
-### Chapter 7 — Properties of Functions
+</details>
+
+<details>
+<summary><strong>Chapter 7 — Properties of Functions</strong></summary>
 
 - 7.1 Functions Defined on General Sets
 - 7.2 One-to-One, Onto, and Inverse Functions
 
-### Chapter 9 — Counting and Probability
+</details>
+
+<details>
+<summary><strong>Chapter 9 — Counting and Probability</strong></summary>
 
 - 9.1 Introduction to Probability
 - 9.2 Possibility Trees and the Multiplication Rule
@@ -249,13 +271,21 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 - 9.5 Counting Subsets of a Set: Combinations
 - 9.6 r-Combinations with Repetition Allowed
 
-### Chapter 10 — Theory of Graphs and Trees
+</details>
+
+<details>
+<summary><strong>Chapter 10 — Theory of Graphs and Trees</strong></summary>
 
 - 10.1 Trails, Paths, and Circuits — Excluding Hamiltonian circuits
 - 10.2 Matrix Representations of Graphs
 - 10.3 Isomorphisms of Graphs
 - 10.4 Trees: Examples and Basic Properties
 
-### Additional Material
+</details>
+
+<details>
+<summary><strong>Additional Material</strong></summary>
 
 - Halting Problem — Not in the book
+
+</details>
