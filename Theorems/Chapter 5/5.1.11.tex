@@ -1,0 +1,106 @@
+\documentclass{article}
+
+\usepackage{changepage}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\definecolor{blue}{RGB}{0, 166, 223}
+\definecolor{lightblue}{RGB}{220, 240, 247}
+
+\newcommand{\definition}[1]{
+	\vspace{0.25cm}
+	\begin{tcolorbox}[
+		colback=lightblue,
+		colframe=blue,
+		colbacktitle=blue,
+		coltitle=white,
+		title=\textbf{Definition},
+		boxrule=0.5pt,
+		arc=0pt,
+		left=0.4cm,
+		right=0.4cm,
+		top=0.25cm,
+		bottom=0.35cm,
+		toptitle=0.1cm,
+		bottomtitle=0.075cm
+	]
+		#1
+	\end{tcolorbox}
+	\vspace{0.25cm}
+}
+
+\newcommand{\theorem}[2]{
+	\vspace{0.25cm}
+	\begin{tcolorbox}[
+		colback=lightblue,
+		colframe=blue,
+		boxrule=0.5pt,
+		toprule=2pt,
+		arc=0pt,
+		left=0.4cm,
+		right=0.4cm,
+		top=0.25cm,
+		bottom=0.35cm
+	]
+		\textcolor{blue}{\textbf{Theorem #1}}
+
+		\vspace{0.15cm}
+
+		#2
+	\end{tcolorbox}
+	\vspace{0.25cm}
+}
+
+\newcommand{\container}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\padding}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0cm}
+}
+
+\newcommand{\calc}[1]{
+	\[
+		#1
+	\]
+}
+
+\begin{document}
+
+	\container{
+		\textcolor{blue}{\textbf{5.1.11 Properties of Summations and Products}}
+	}
+
+	\container{
+		The following theorem states general properties 
+		of summations and products. The proof of the theorem
+		is discussed in Section 5.6.
+	}
+
+	\theorem{5.1.1}{
+		If \(a_m, a_{m+1}, a_{m+2}, \text{...}\) and \(b_m, b_{m+1},
+		b_{m+2}, \text{...}\) are sequences of real numbers and c is
+		any real number, then the following equations hold for any
+		integer \(n \geq m\):
+
+		\calc{
+			\begin{aligned}
+				&\text{1.} \sum_{k=m}^{n} a_k + \sum_{k=m}^{n} b_k = \sum_{k=m}^{n} \left(a_k + b_k\right) \\
+				&\text{2. } c \times \sum_{k=m}^{n} a_k = \sum_{k=m}^{n} c \times a_k \textcolor{blue}{\tiny\text{ generalized distributive law}} \\
+				&\text{3.} \left(\prod_{k=m}^{n} a_k\right) \times \left(\prod_{k=m}^{n} b_k\right) = \prod_{k=m}^{n} \left(a_k \times b_k\right)
+			\end{aligned}
+		}
+	}
+
+\end{document}
