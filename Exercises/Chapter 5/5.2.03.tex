@@ -1,0 +1,161 @@
+\documentclass{article}
+
+\usepackage{changepage}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\definecolor{blue}{RGB}{0, 166, 223}
+\definecolor{lightblue}{RGB}{220, 240, 247}
+
+\newcommand{\header}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			\textcolor{blue}{\textbf{#1}}
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\question}[2]{
+	\vspace{0.125cm}
+		\begin{adjustwidth}{0.25cm}{0cm}
+			\textbf{#1} #2
+		\end{adjustwidth}
+	\vspace{0.125cm}
+}
+
+\newcommand{\container}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\solution}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			\textbf{Solution:} #1
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\wrapper}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0cm}
+}
+
+\newcommand{\calc}[1]{
+	\[
+		#1
+	\]
+}
+
+\begin{document}
+	
+	\header{5.2.2}
+
+	\container{
+		For each positive integer \emph{n}, let \emph{P(n)} be
+		the formula
+
+		\calc{1^{2} + 2^{2} + \text{...} + n^{2} = \frac{n(n + 1)(2n + 1)}{6}}
+
+		\question{a.}{Write \emph{P(1)}. Is \emph{P(1)} true?}
+		\question{b.}{Write \emph{P(k)}.}
+		\question{c.}{Write \emph{P(k + 1)}.}
+		\question{d.}{
+			In a proof by mathematical induction that the
+			formula holds for every integer \(n \geq 1\),
+			what must be shown in the inductive step?
+		}
+	}
+
+	\container {
+		Let \emph{P(n)} be
+
+		\calc{
+			\sum_{i=1}^{n} i^{2} = \frac{n(n + 1)(2n + 1)}{6}
+		}
+	}
+
+	\container {
+		\textbf{a.}
+
+		\wrapper{For the left hand side:}
+
+		\calc{
+			P(1) = \sum_{i=1}^{1} i^{2} = (1)^{2} = 1^{2} = \boxed{1}
+		}
+
+		\wrapper{For the right hand side:}
+
+		\calc{
+			P(1) = \frac{1(1 + 1)(2(1) + 1)}{6} = \frac{2 \times 3}{6} = \frac{6}{6} = \boxed{1}
+		}
+	}
+
+	\solution{\emph{P(1)} is true.}
+
+	\container {
+		\textbf{b.}
+
+		\wrapper{For the left hand side:}
+
+		\calc{
+			P(k) = \sum_{i=1}^{k} i^{2} = \boxed{1^{2} + 2^{2} + \text{...} + k^{2}}
+		}
+
+		\wrapper{For the right hand side:}
+
+		\calc{
+			P(k) = \boxed{\frac{k(k + 1)(2k + 1)}{6}}
+		}
+	}
+
+	\solution{\(P(k) = 1^{2} + 2^{2} + ... + k^{2} = \frac{k(k + 1)(2k + 1)}{6}\)}
+
+	\container {
+		\textbf{c.}
+		
+		\wrapper{For the left hand side:}
+
+		\calc{
+			\sum_{i=1}^{k + 1} i^{2} = 1^{2} + 2^{2} + \text{...} + k^{2} + (k + 1)^{2}
+		}
+
+		\wrapper{Let \(\frac{k(k + 1)(2k + 1)}{6} = 1^{2} + 2^{2} + \text{...} + k^{2}\).}
+
+		\calc{
+			\sum_{i=1}^{k + 1} i^{2} = \frac{k(k + 1)(2k + 1)}{6} + (k + 1)^{2}
+		}
+
+		\wrapper{For the right hand side:}
+
+		\calc{
+			\frac{(k + 1)((k + 1) + 1)(2(k + 1) + 1)}{6} = \boxed{\frac{(k + 1)(k + 2)(2k + 3)}{6}}
+		}
+	}
+
+	\solution{}
+
+	\container {
+		\textbf{d.}
+		
+		\wrapper{
+			In a proof by mathematical induction that the
+			formula holds for every integer \(n \geq 1\),
+			we suppose that the formula is true for a particular
+			but arbitrarily chosen integer \emph{k}, and if true,
+			it must also be true for \emph{k + 1}, for both
+			the left-hand side and the right-hand side.
+		}
+	}
+
+	\solution{See above.}
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{changepage}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\definecolor{blue}{RGB}{0, 166, 223}
+\definecolor{lightblue}{RGB}{220, 240, 247}
+
+\newcommand{\definition}[2]{
+	\vspace{0.25cm}
+	\begin{tcolorbox}[
+		colback=lightblue,
+		colframe=blue,
+		colbacktitle=blue,
+		coltitle=white,
+		title=\textbf{#1},
+		boxrule=0.5pt,
+		arc=0pt,
+		left=0.4cm,
+		right=0.4cm,
+		top=0.25cm,
+		bottom=0.35cm,
+		toptitle=0.1cm,
+		bottomtitle=0.075cm
+	]
+		#2
+	\end{tcolorbox}
+	\vspace{0.25cm}
+}
+
+\newcommand{\header}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			\textcolor{blue}{\textbf{#1}}
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\question}[2]{
+	\vspace{0.125cm}
+		\begin{adjustwidth}{0.25cm}{0cm}
+			\textbf{#1} #2
+		\end{adjustwidth}
+	\vspace{0.125cm}
+}
+
+\newcommand{\container}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\solution}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			\textbf{Solution:} #1
+		\end{adjustwidth}
+	\vspace{0.25cm}
+}
+
+\newcommand{\wrapper}[1]{
+	\vspace{0.25cm}
+		\begin{adjustwidth}{0cm}{0cm}
+			#1
+		\end{adjustwidth}
+	\vspace{0cm}
+}
+
+\newcommand{\calc}[1]{
+	\[
+		#1
+	\]
+}
+
+\begin{document}
+
+	\definition{Definition}{
+		If a sum with a variable number of terms is shown to
+		equal an expression that does not contain either an ellipsis
+		or a summation symbol, we say that the sum is written
+		\textbf{in closed form}.
+	}
+
+	\container{
+		For example, writing \(1 + 2 + 3 + \text{...} + n = \frac{n(n + 1)}{2}\) 
+		expresses the sum \(1 + 2 + 3 + \text{...} + n\) in closed form.
+	}
+
+\end{document}
