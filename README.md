@@ -9,32 +9,6 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 ### Upcoming Assignments
 
 <details>
-<summary><strong>Assignment 5</strong> — 16 exercises</summary>
-
-| Exercise | Points |
-|----------|-------:|
-| 9.1.11   | 3      |
-| 9.1.19   | 3      |
-| 9.1.22   | 6      |
-| 9.2.10   | 2      |
-| 9.2.32   | 3      |
-| 9.2.33   | 3      |
-| 9.3.12   | 2      |
-| 9.3.17   | 6      |
-| 9.3.34   | 8      |
-| 9.4.4    | 2      |
-| 9.4.11   | 2      |
-| 9.4.34   | 6      |
-| 9.5.2    | 4      |
-| 9.5.7    | 6      |
-| 9.5.20   | 3      |
-| 9.5.21   | 1      |
-
-**Total exercises: 16**
-
-</details>
-
-<details>
 <summary><strong>Assignment 6</strong> — 22 exercises</summary>
 
 | Exercise     | Points |
@@ -66,7 +40,90 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 
 </details>
 
+<details>
+<summary><strong>Assignment 7</strong> — 30 exercises</summary>
+
+| Exercise | Points |
+|----------|-------:|
+| 10.4.15  | 1      |
+| 10.4.16  | 1      |
+| 10.4.17  | 1      |
+| 10.4.19  | 1      |
+| 10.4.20  | 1      |
+| 10.4.23  | 1      |
+| 10.4.24  | 3      |
+| 10.5.12  | 1      |
+| 10.5.13  | 1      |
+| 10.5.14  | 1      |
+| 10.5.15  | 1      |
+| 10.5.16  | 1      |
+| 10.5.17  | 1      |
+| 10.5.18  | 1      |
+| 10.5.19  | 1      |
+| 10.6.4   | 2      |
+| 10.6.8   | 7      |
+| 10.6.14  | 16     |
+| 10.6.19  | 8      |
+| 10.6.29  | 2      |
+| 11.1.4   | 4      |
+| 11.1.16  | 4      |
+| 11.1.20  | 4      |
+| 11.2.3   | 4      |
+| 11.2.7   | 1      |
+| 11.2.8   | 1      |
+| 11.2.9   | 1      |
+| 11.2.11  | 8      |
+| 11.2.35  | 4      |
+| 11.2.49  | 6      |
+
+**Total exercises: 30**
+
+</details>
+
+<details>
+<summary><strong>Assignment 8</strong> — 7 exercises</summary>
+
+| Exercise    | Points |
+|-------------|-------:|
+| 11.3.5      | 6      |
+| 11.3.10     | 4      |
+| 11.3.16     | 5      |
+| 11.4.14     | 4      |
+| 11.4.22 (a) | 4      |
+| 11.4.34     | 4      |
+| 11.4.38     | 5      |
+
+**Total exercises: 7**
+
+</details>
+
 ### Past Assignments
+
+<details>
+<summary><strong>Assignment 5</strong> — 16 exercises</summary>
+
+| Exercise | Points |
+|----------|-------:|
+| 9.1.11   | 3      |
+| 9.1.19   | 3      |
+| 9.1.22   | 6      |
+| 9.2.10   | 2      |
+| 9.2.32   | 3      |
+| 9.2.33   | 3      |
+| 9.3.12   | 2      |
+| 9.3.17   | 6      |
+| 9.3.34   | 8      |
+| 9.4.4    | 2      |
+| 9.4.11   | 2      |
+| 9.4.34   | 6      |
+| 9.5.2    | 4      |
+| 9.5.7    | 6      |
+| 9.5.20   | 3      |
+| 9.5.21   | 1      |
+
+**Total exercises: 16**
+
+</details>
 
 <details>
 <summary><strong>Assignment 4</strong> — 19 exercises</summary>
