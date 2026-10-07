@@ -9,7 +9,7 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 ### Upcoming Assignments
 
 <details>
-<summary><strong>Assignment 6</strong> — 22 exercises</summary>
+<summary><strong>Assignment 6</strong> — 15 exercises</summary>
 
 | Exercise     | Points |
 |--------------|-------:|
@@ -18,7 +18,7 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 | 9.6.20       | 6      |
 | 10.1.2       | 6      |
 | 10.1.5       | 3      |
-| 10.1.8 b,c,d | 3      |
+| 10.1.8       | 3      |
 | 10.1.13      | 2      |
 | 10.1.15      | 2      |
 | 10.2.16      | 5      |
@@ -28,15 +28,8 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 | 10.3.4       | 3      |
 | 10.3.5       | 3      |
 | 10.3.17      | 5      |
-| 10.4.15      | 1      |
-| 10.4.16      | 1      |
-| 10.4.17      | 1      |
-| 10.4.19      | 1      |
-| 10.4.20      | 1      |
-| 10.4.23      | 1      |
-| 10.4.24      | 3      |
 
-**Total exercises: 22**
+**Total exercises: 15**
 
 </details>
 
@@ -89,7 +82,7 @@ Epp, S. S. (2020). *Discrete Mathematics with Applications* (Fifth edition, metr
 | 11.3.10     | 4      |
 | 11.3.16     | 5      |
 | 11.4.14     | 4      |
-| 11.4.22 (a) | 4      |
+| 11.4.22     | 4      |
 | 11.4.34     | 4      |
 | 11.4.38     | 5      |
 
